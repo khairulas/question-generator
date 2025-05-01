@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Educational Question Generator</h1>
+    <p>Generate questions based on your course materials using DeepSeek AI</p>
+    
+    <form method="POST">
+        <div class="form-group">
+            <label for="course_material">Course Material:</label>
+            <textarea id="course_material" name="course_material" rows="10" required></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label>Question Types:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="question_types" value="MCQ"> Multiple Choice</label>
+                <label><input type="checkbox" name="question_types" value="True/False"> True/False</label>
+                <label><input type="checkbox" name="question_types" value="Short Answer"> Short Answer</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="bloom_level">Bloom's Taxonomy Level:</label>
+            <select id="bloom_level" name="bloom_level" required>
+                <option value="Remembering">Remembering</option>
+                <option value="Understanding">Understanding</option>
+                <option value="Applying">Applying</option>
+                <option value="Analyzing">Analyzing</option>
+                <option value="Evaluating">Evaluating</option>
+                <option value="Creating">Creating</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="num_questions">Number of Questions:</label>
+            <input type="number" id="num_questions" name="num_questions" min="1" max="20" value="5" required>
+        </div>
+        
+        <button type="submit">Generate Questions</button>
+    </form>
+{% endblock %}

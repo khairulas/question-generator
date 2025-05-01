@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Generated Questions</h1>
+    <a href="{{ url_for('index') }}">Generate More Questions</a>
+    
+    <div class="questions-container" style="white-space: pre-line; line-height: 1;">
+        {{ questions.replace('\n\n', '\n') }}
+    </div>
+{% endblock %}
