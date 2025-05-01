@@ -2,7 +2,7 @@
 
 A Flask web application that generates quiz questions (MCQ, True/False, Short Answer) from course materials using AI (Gemini API). Designed for educators.
 
-![App Screenshot](/static/screenshot.png) <!-- Add a screenshot later -->
+![App Screenshot](/static/question-generator.png) <!-- Add a screenshot later -->
 
 ## Features
 
