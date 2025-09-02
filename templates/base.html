@@ -7,9 +7,46 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <header class="app-header">
+        <div class="header-content">
+            <div class="header-left">
+                <a href="{{ url_for('index') }}" class="site-title">Question Generator</a>
+                
+                <nav class="main-nav">
+                    {% if current_user.is_authenticated %}
+                        <a href="{{ url_for('index') }}" class="nav-link">Dashboard</a>
+                        <a href="{{ url_for('create_quiz') }}" class="nav-link">Create New Quiz</a>
+                    {% endif %}
+                </nav>
+            </div>
+            
+            <nav class="user-nav">
+                {% if current_user.is_authenticated %}
+                    <span class="user-name">Welcome, {{ current_user.username }}</span>
+                     <a href="{{ url_for('change_password') }}" class="nav-link">Change Password</a>
+                    <a href="{{ url_for('logout') }}" class="nav-link">Logout</a>
+                {% else %}
+                    <a href="{{ url_for('login') }}" class="nav-link">Login</a>
+                    <a href="{{ url_for('register') }}" class="nav-link">Register</a>
+                {% endif %}
+            </nav>
+        </div>
+    </header>
+
     <div class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
         {% block content %}{% endblock %}
     </div>
+    
     <!-- page Footer -->
     <footer class="app-footer">
         <p>&copy; 2025 Khairul Anwar Sedek. Educational Question Generator. All rights reserved.</p>

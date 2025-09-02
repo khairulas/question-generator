@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ quiz.title }}</h1>
+<p>Please answer the questions below.</p>
+
+<form method="POST" action="{{ url_for('submit_quiz', public_id=quiz.public_id) }}">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <div class="form-group">
+        <label for="student_name">Your Name:</label>
+        <input type="text" id="student_name" name="student_name" size="30" required class="form-control">
+    </div>
+    <hr>
+    ```
+    {% for question in quiz.questions %}
+    <div class="question-card">
+        <h3>Question {{ loop.index }}:</h3>
+        <p class="question-text">{{ question.content }}</p>
+
+        {% if question.question_type == 'MCQ' %}
+        <div class="options">
+            {% for option in question.options.split('\n') %}
+            {% if option %}
+                <label>
+                    {% set option_letter = option.split(')')[0] %}
+                    <input type="radio" name="question_{{ question.id }}" value="{{ option_letter }}" required>
+                    {{ option }}
+                </label>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+        {% elif question.question_type == 'True/False' %}
+        <div class="options">
+            <label>
+                <input type="radio" name="question_{{ question.id }}" value="True" required> True
+            </label>
+            <label>
+                <input type="radio" name="question_{{ question.id }}" value="False" required> False
+            </label>
+        </div>
+        
+        {% elif question.question_type == 'Short Answer' %}
+        <div class="form-group">
+            <label for="question_{{ question.id }}">Your Answer:</label>
+            <textarea id="question_{{ question.id }}" 
+                      name="question_{{ question.id }}" 
+                      class="form-control" 
+                      rows="4" 
+                      required></textarea>
+        </div>
+        
+        {% endif %}  </div> {% endfor %}
+    
+    <button type="submit" class="btn-save">Submit Answers</button>
+</form>
+
+{% endblock %}

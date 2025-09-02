@@ -1,10 +1,28 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Generated Questions</h1>
-    <a href="{{ url_for('index') }}">Generate More Questions</a>
+<h1>Generated Questions</h1>
+
+<div class="questions-container">
+    {{ questions }}
+</div>
+
+<form method="POST" action="{{ url_for('save_questions') }}">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+    <input type="hidden" name="questions_text" value="{{ questions }}">
     
-    <div class="questions-container" style="white-space: pre-line; line-height: 1;">
-        {{ questions.replace('\n\n', '\n') }}
+    <div class="form-group">
+        <label for="quiz_title">Save as Quiz:</label>
+        <input type="text" id="quiz_title" name="quiz_title" 
+               placeholder="My Quiz" class="form-control">
     </div>
+    
+    <button type="submit" class="btn-save">
+        Save Questions
+    </button>
+</form>
+
+<a href="{{ url_for('index') }}" class="btn-new">
+    Generate New Questions
+</a>
 {% endblock %}
