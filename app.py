@@ -15,6 +15,7 @@ from bleach import clean
 import logging
 import os
 import time
+from datetime import datetime
 from collections import defaultdict
 from sqlalchemy.exc import OperationalError
 from sqlalchemy import text 
@@ -206,6 +207,8 @@ def validate_input(form):
 
     return errors, course_material, question_types, num_questions, bloom_level
 
+# Main route to create quiz
+# This route handles both GET and POST requests for creating a quiz
 @app.route('/create-quiz', methods=['GET', 'POST'])
 @login_required
 def create_quiz():
@@ -220,81 +223,79 @@ def create_quiz():
             return render_template('index.html', errors=errors, form=request.form), 400
 
         sanitized_course_material = clean(course_material)
-        # Pass the selected 'question_types' to the function
+        # 1. Generate questions (this returns a raw JSON string)
         questions_text = generate_questions(sanitized_course_material, question_types, num_questions, bloom_level)
-        session['bloom_level'] = bloom_level
+        
+        # 2. Parse the JSON string into a Python list for display
+        questions_list_for_display = parse_questions(questions_text)
+
+        # 3. Save the RAW text for the 'save' function later
         session['generated_questions'] = questions_text
+        
         csrf_token = generate_csrf()
-        return render_template('results.html', questions=questions_text, csrf_token=csrf_token)
+        
+        # 4. Pass BOTH the parsed list and the raw text to the template
+        return render_template(
+            'results.html', 
+            questions_list=questions_list_for_display, # The formatted list for display
+            raw_questions_text=questions_text,         # The raw text for the hidden form field
+            csrf_token=csrf_token
+        )
+
     csrf_token = generate_csrf()
     return render_template('index.html', errors={}, csrf_token=csrf_token)
 
 
-# In app.py
+# Function to generate questions using Gemini API
+# Updated to request JSON output
 
 def generate_questions(material, types, count, bloom_level):
     model = genai.GenerativeModel('gemini-1.5-flash')
-
-    # --- Start of new dynamic prompt logic ---
     type_string = ", ".join(types)
-    prompt_examples = ""
 
-    if "MCQ" in types:
-        prompt_examples += """
-    **Question Example (MCQ):**
-    [Type: MCQ] What is a primary challenge of big data?
-    A) Small data volume
-    B) Lack of data sources
-    C) The large volume and variety of data
-    D) Ease of processing
-    Answer: C
-    """
-
-    if "True/False" in types:
-        prompt_examples += """
-    **Question Example (True/False):**
-    [Type: True/False] Most data generated today is structured.
-    Answer: False
-    """
-
-    if "Short Answer" in types:
-        prompt_examples += """
-    **Question Example (Short Answer):**
-    [Type: Short Answer] Name one characteristic of big data.
-    Answer: Volume
-    """
-    # --- End of new dynamic prompt logic ---
-
+    # NEW: Updated prompt requesting JSON output
     prompt = f"""
-    Generate exactly {count} questions of the following types: {type_string}.
-    Use the provided course material and adhere to the Bloom's Taxonomy level of '{bloom_level}'.
+    Generate exactly {count} quiz questions based on the provided course material.
+    The questions should be of the following types: {type_string}.
+    Adhere to the Bloom's Taxonomy level of '{bloom_level}'.
 
-    MARKING RUBRIC:
-    - Assign marks based on the question type and its complexity.
-    - True/False questions should be worth 1-2 marks.
-    - Multiple Choice (MCQ) questions should be worth 2-3 marks.
-    - Short Answer questions should be worth 3-5 marks.
-    - Questions at a higher Bloom's level like 'Analyzing' or 'Evaluating' should be assigned more marks within their range.
+    CRITICAL: You MUST respond with only a valid JSON array of objects. Do not include any introductory text, explanations, or markdown formatting outside of the JSON block.
 
-    STRICT FORMATTING RULES:
-    1. Begin each question with '**Question X:**'.
-    2. Always include the type in brackets, like '[Type: MCQ]'.
-    3. Always include the suggested marks based on the rubric, like '[Marks: 4]'.
-    4. Always include the Bloom's level, like '[Bloom: Remembering]'.
-    5. For MCQs, provide four options labeled A), B), C), and D).
-    6. Each question must end with a single line: 'Answer: [Correct Answer]'.
-    7. Separate each complete question block with a blank line.
-    8. Do not use any HTML tags like <br> in your output.
-    9. Make questions standalone. Do not use phrases like "According to the text", "Based on the provided text", or "mentioned in the text".
+    The JSON array should contain one object for each question. Each object must have the following keys:
+    - "type": (String) The type of question ("MCQ", "True/False", or "Short Answer").
+    - "marks": (Integer) A suggested mark, from 1 to 5, based on complexity.
+    - "bloom_level": (String) The Bloom's level you targeted.
+    - "text": (String) The content of the question itself.
+    - "options": (Array of Strings) For "MCQ" questions, an array of four option strings. For other types, this should be an empty array [].
+    - "answer": (String) The correct answer. For MCQs, this should be the full text of the correct option.
+
+    JSON Structure Example:
+    [
+      {{
+        "type": "MCQ",
+        "marks": 3,
+        "bloom_level": "Remembering",
+        "text": "What is the primary characteristic of big data?",
+        "options": ["Small volume", "High velocity", "Simple structure", "Limited sources"],
+        "answer": "High velocity"
+      }},
+      {{
+        "type": "True/False",
+        "marks": 1,
+        "bloom_level": "Understanding",
+        "text": "Structured data is the most common type of data generated today.",
+        "options": [],
+        "answer": "False"
+      }}
+    ]
 
     COURSE MATERIAL:
     "{material}"
     """
     try:
         response = model.generate_content(prompt)
-        questions = response.text
-        sanitized_questions = clean(questions)
-        return sanitized_questions
+        # We now expect the response.text to be a JSON string
+        return response.text
     except Exception as e:
         logging.error(f"Gemini API Error: {str(e)}")
         return "An error occurred while generating questions. Please try again later.", 500
@@ -436,77 +437,47 @@ def change_password():
 # It extracts the question type, marks, Bloom's level, question text, options, and answer.
 
 def parse_questions(questions_text):
-    """Parse Gemini's output, with correct type, marks, and bloom level detection."""
-    questions = []
-    cleaned_text = re.sub(r'<br\s*/?>', '\n', str(questions_text), flags=re.IGNORECASE)
-    blocks = cleaned_text.split('**Question')[1:]
+    """
+    Parses a JSON string from Gemini into a list of question dictionaries.
+    This is more robust than parsing plain text.
+    """
+    try:
+        # The AI might wrap the JSON in markdown fences (```json ... ```), so we clean it.
+        # This regex finds the content between the first '{' or '[' and the last '}' or ']'.
+        json_match = re.search(r'\[.*\]|\{.*\}', questions_text, re.DOTALL)
+        if not json_match:
+            logging.error(f"Could not find valid JSON in AI response: {questions_text}")
+            return []
 
-    for block in blocks:
-        block = block.strip()
-        if not block:
-            continue
+        clean_json_str = json_match.group(0)
         
-        current = {}
-        lines = [line.strip() for line in block.split('\n') if line.strip()]
-        first_line = lines[0] # The line with the tags
+        # Parse the cleaned string into a Python list of dictionaries
+        parsed_data = json.loads(clean_json_str)
 
-        # --- START OF NEW PARSING LOGIC ---
-        # 1. Extract Type from the first line of the block
-        question_type = 'Short Answer'
-        type_match = re.search(r'\[Type:\s*(.*?)\]', first_line, re.IGNORECASE)
-        if type_match:
-            found_type = type_match.group(1).strip()
-            if 'mcq' in found_type.lower():
-                question_type = 'MCQ'
-            elif 'true/false' in found_type.lower():
-                question_type = 'True/False'
-        
-        # 2. Extract Marks from the first line
-        marks = 5
-        marks_match = re.search(r'\[Marks:\s*(\d+)\]', first_line, re.IGNORECASE)
-        if marks_match:
-            marks = int(marks_match.group(1))
+        # --- Data Transformation Step ---
+        # The new parser returns a list of dicts. The old code expected a specific format.
+        # We'll transform the JSON into the format the rest of your app expects.
+        questions_for_app = []
+        for q in parsed_data:
+            new_q = {
+                'type': q.get('type'),
+                'marks': q.get('marks'),
+                'bloom_level': q.get('bloom_level'),
+                'text': q.get('text'),
+                'answer': q.get('answer'),
+                # For MCQs, join the options array into a single string with newlines
+                'options': '\n'.join(q.get('options', []))
+            }
+            questions_for_app.append(new_q)
 
-        # 3. Extract Bloom's Level from the first line
-        bloom_level = 'Remembering'
-        bloom_match = re.search(r'\[Bloom:\s*(.*?)\]', first_line, re.IGNORECASE)
-        if bloom_match:
-            bloom_level = bloom_match.group(1).strip()
-            
-        current['type'] = question_type
-        current['marks'] = marks
-        current['bloom_level'] = bloom_level
-        # --- END OF NEW PARSING LOGIC ---
+        return questions_for_app
 
-        # Separate the actual question content, options, and answer
-        content_lines = lines[1:]
-        question_text_lines = []
-        option_lines = []
-        answer_line = None
-
-        for line in content_lines:
-            if line.lower().startswith('answer:'):
-                answer_line = line
-            elif re.match(r'^[A-D]\)', line):
-                option_lines.append(line)
-            else:
-                question_text_lines.append(line)
-
-        if not answer_line:
-            continue
-            
-        current['text'] = ' '.join(question_text_lines)
-        current['answer'] = answer_line.split(':', 1)[1].strip()
-
-        if question_type == 'MCQ':
-            current['options'] = '\n'.join(option_lines)
-        else:
-            current['options'] = ''
-
-        if current.get('text') and current.get('answer'):
-            questions.append(current)
-            
-    return questions
+    except json.JSONDecodeError as e:
+        logging.error(f"JSON Parsing Error: {e}\nRaw Response was:\n{questions_text}")
+        return [] # Return an empty list to prevent the app from crashing
+    except Exception as e:
+        logging.error(f"An unexpected error occurred in parse_questions: {e}")
+        return []
 
 # Change the route from <int:quiz_id> to <public_id>
 # This allows us to use the public_id instead of the primary key
@@ -767,6 +738,14 @@ def delete_quiz(public_id):
     
     return redirect(url_for('index'))
 
+@app.context_processor
+def inject_now():
+    """
+    Injects a formatted string of the current date and time into templates.
+    Usage in template: {{ now }}
+    """
+    return {'now': datetime.now().strftime('%Y-%m-%d %H:%M')}
+
 # Add temporary debug route to app.py
 @app.route('/debug-db')
 def debug_db():
@@ -819,4 +798,4 @@ def test_db():
         return jsonify(error_info), 500
     
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

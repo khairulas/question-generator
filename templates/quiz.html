@@ -42,7 +42,7 @@
         <h4>Options:</h4>
         <ul>
             {% for option in question.options.split('\n') %}
-            <li>{{ option }}</li>
+            <li><strong>{{ ['A', 'B', 'C', 'D'][loop.index0] }})</strong> {{ option }}</li>
             {% endfor %}
         </ul>
     </div>

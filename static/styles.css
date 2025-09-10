@@ -105,6 +105,21 @@ button:hover {
     margin-top: 10px;
 }
 
+/* New styles for radio button options in quizzes */
+.options-group {
+    margin-top: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px; /* Adds space between options */
+}
+
+.option label {
+    margin-left: 8px; /* Adds space between the radio button and the text */
+}
+
 .share-widget {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
