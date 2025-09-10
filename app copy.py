@@ -234,7 +234,6 @@ def create_quiz():
 
 def generate_questions(material, types, count, bloom_level):
     model = genai.GenerativeModel('gemini-1.5-flash')
-    model = genai.GenerativeModel('gemini-1.5-flash')
 
     # --- Start of new dynamic prompt logic ---
     type_string = ", ".join(types)
