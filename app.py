@@ -9,7 +9,6 @@ from flask import Flask, render_template
 from flask_wtf.csrf import CSRFProtect, generate_csrf
 import qrcode
 import requests
-from dotenv import load_dotenv
 import google.generativeai as genai
 from bleach import clean
 import logging
@@ -19,7 +18,6 @@ from datetime import datetime
 from collections import defaultdict
 from sqlalchemy.exc import OperationalError
 from sqlalchemy import text 
-load_dotenv()
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -27,6 +25,9 @@ from flask_login import LoginManager, UserMixin, login_user, logout_user, login_
 from markupsafe import Markup
 import markdown
 import pdfplumber
+
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -417,6 +418,10 @@ def register():
         username = request.form.get('username')
         password = request.form.get('password')
         confirm_password = request.form.get('confirm_password')
+
+        if not request.form.get('agree_terms'):
+            flash('You must agree to the Terms of Use and Privacy Policy to create an account.', 'danger')
+            return redirect(url_for('register'))
         
         # Check if username already exists
         user = User.query.filter_by(username=username).first()
@@ -836,6 +841,16 @@ def delete_quiz(public_id):
     db.session.commit()
     
     return redirect(url_for('index'))
+
+@app.route('/terms')
+def terms():
+    """Renders the Terms of Use page."""
+    return render_template('terms.html')
+
+@app.route('/privacy')
+def privacy():
+    """Renders the Privacy Policy page."""
+    return render_template('privacy.html')
 
 @app.context_processor
 def inject_now():
