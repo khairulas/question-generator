@@ -26,6 +26,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
 from markupsafe import Markup
 import markdown
+import pdfplumber
 
 app = Flask(__name__)
 
@@ -209,41 +210,101 @@ def validate_input(form):
 
 # Main route to create quiz
 # This route handles both GET and POST requests for creating a quiz
+def extract_text_from_pdf(pdf_stream):
+    """Extracts text from a PDF file stream."""
+    text = ""
+    try:
+        with pdfplumber.open(pdf_stream) as pdf:
+            for page in pdf.pages:
+                page_text = page.extract_text()
+                if page_text:
+                    text += page_text + "\n"
+        return text
+    except Exception as e:
+        logging.error(f"Error extracting text from PDF: {e}")
+        return None
+
+# Main route to create quiz
+# This route handles both GET and POST requests for creating a quiz
 @app.route('/create-quiz', methods=['GET', 'POST'])
 @login_required
 def create_quiz():
-    user_ip = request.remote_addr
-    if is_rate_limited(user_ip):
-        return "Too many requests", 429
-        
     if request.method == 'POST':
-        errors, course_material, question_types, num_questions, bloom_level = validate_input(request.form)
+        # --- Start of logic for extract material from text input or a PDF document ---
         
-        if errors:
-            return render_template('index.html', errors=errors, form=request.form), 400
+        # 1. Initialize course_material variable
+        course_material = ""
+        form_data = request.form
+        
+        # 2. Check for an uploaded PDF file first
+        if 'pdf_file' in request.files:
+            pdf_file = request.files['pdf_file']
+            if pdf_file.filename != '':
+                if not pdf_file.filename.lower().endswith('.pdf'):
+                    flash("Invalid file type. Please upload a PDF.", 'danger')
+                    return redirect(url_for('index'))
+                
+                # Call the extraction function ONLY when a valid file exists
+                course_material = extract_text_from_pdf(pdf_file.stream)
+                
+                if course_material is None:
+                    flash("Could not extract text from the PDF. The file might be corrupted or image-based.", 'danger')
+                    return redirect(url_for('index'))
+        
+        # 3. If no text was extracted from a PDF, fall back to the textarea
+        if not course_material:
+            course_material = form_data.get('course_material')
 
+        # 4. Now, validate that we have material from one of the sources
+        if not course_material.strip():
+            flash("No course material provided. Please paste text or upload a PDF.", 'danger')
+            return redirect(url_for('index'))
+
+        # 5. Validate the rest of the form inputs
+        if not form_data.getlist('question_types'):
+            flash("Please select at least one question type.", 'danger')
+            return redirect(url_for('index'))
+
+        # --- End of logic for extract material from text input or a PDF document ---
+
+        # --- Start of validation and question generation logic ---
         sanitized_course_material = clean(course_material)
-        # 1. Generate questions (this returns a raw JSON string)
+        question_types = form_data.getlist('question_types')
+        num_questions = int(form_data.get('num_questions', 2))
+        bloom_level = form_data.get('bloom_level')
+        
         questions_text = generate_questions(sanitized_course_material, question_types, num_questions, bloom_level)
         
-        # 2. Parse the JSON string into a Python list for display
         questions_list_for_display = parse_questions(questions_text)
 
-        # 3. Save the RAW text for the 'save' function later
+        # --- START:  sorting logic ---
+
+        # 1. Define the desired order of question types. You can change this list to alter the order.
+        question_type_order = ["True/False", "MCQ", "Fill-in-the-Blank", "Short Answer"]
+
+        # 2. Sort the list of questions based on your custom order.
+        # This works by finding the index of each question's type in your order list.
+        sorted_questions = sorted(
+            questions_list_for_display,
+            key=lambda q: question_type_order.index(q.get('type', '')) if q.get('type') in question_type_order else len(question_type_order)
+        )
+        
+        # --- END: sorting logic ---
+
         session['generated_questions'] = questions_text
         
         csrf_token = generate_csrf()
         
-        # 4. Pass BOTH the parsed list and the raw text to the template
         return render_template(
             'results.html', 
-            questions_list=questions_list_for_display, # The formatted list for display
-            raw_questions_text=questions_text,         # The raw text for the hidden form field
+            questions_list=sorted_questions, # Use the new, sorted list here
+            raw_questions_text=questions_text,
             csrf_token=csrf_token
         )
 
+    # For GET requests
     csrf_token = generate_csrf()
-    return render_template('index.html', errors={}, csrf_token=csrf_token)
+    return render_template('index.html', csrf_token=csrf_token)
 
 
 # Function to generate questions using Gemini API
@@ -262,7 +323,7 @@ def generate_questions(material, types, count, bloom_level):
     CRITICAL: You MUST respond with only a valid JSON array of objects. Do not include any introductory text, explanations, or markdown formatting outside of the JSON block.
 
     The JSON array should contain one object for each question. Each object must have the following keys:
-    - "type": (String) The type of question ("MCQ", "True/False", or "Short Answer").
+    - "type": (String) The type of question ("True/False", "MCQ", "Fill-in-the-Blank", or "Short Answer").
     - "marks": (Integer) A suggested mark, from 1 to 5, based on complexity.
     - "bloom_level": (String) The Bloom's level you targeted.
     - "text": (String) The content of the question itself.
@@ -272,6 +333,14 @@ def generate_questions(material, types, count, bloom_level):
     JSON Structure Example:
     [
       {{
+        "type": "True/False",
+        "marks": 1,
+        "bloom_level": "Understanding",
+        "text": "Structured data is the most common type of data generated today.",
+        "options": [],
+        "answer": "False"
+      }},
+      {{
         "type": "MCQ",
         "marks": 3,
         "bloom_level": "Remembering",
@@ -279,13 +348,14 @@ def generate_questions(material, types, count, bloom_level):
         "options": ["Small volume", "High velocity", "Simple structure", "Limited sources"],
         "answer": "High velocity"
       }},
+
       {{
-        "type": "True/False",
-        "marks": 1,
-        "bloom_level": "Understanding",
-        "text": "Structured data is the most common type of data generated today.",
+        "type": "Fill-in-the-Blank",
+        "marks": 2,
+        "bloom_level": "Remembering",
+        "text": "The command to initialize a new Git repository is 'git ____'.",
         "options": [],
-        "answer": "False"
+        "answer": "init"
       }}
     ]
 
@@ -479,21 +549,42 @@ def parse_questions(questions_text):
         logging.error(f"An unexpected error occurred in parse_questions: {e}")
         return []
 
-# Change the route from <int:quiz_id> to <public_id>
-# This allows us to use the public_id instead of the primary key
+# Route to view a quiz
+# This route will display the quiz details and questions to the user
 @app.route('/quiz/<public_id>')
 @login_required
 def view_quiz(public_id):
-    # Find the quiz by its public_id instead of its primary key
     quiz = Quiz.query.filter_by(public_id=public_id).first_or_404()
-    return render_template('quiz.html', quiz=quiz, questions=quiz.questions)
+    
+    # Define the desired sort order
+    question_type_order = ["MCQ", "True/False", "Fill-in-the-Blank", "Short Answer"]
+    
+    # Sort the questions fetched from the database
+    sorted_questions = sorted(
+        quiz.questions,
+        key=lambda q: question_type_order.index(q.question_type) if q.question_type in question_type_order else len(question_type_order)
+    )
+    
+    # Pass the newly sorted list to the template
+    return render_template('quiz.html', quiz=quiz, questions=sorted_questions)
 
 # Route to take the quiz
 #  This route will render the quiz form for the user to fill out
 @app.route('/quiz/<public_id>/take', methods=['GET'])
 def take_quiz(public_id):
     quiz = Quiz.query.filter_by(public_id=public_id).first_or_404()
-    return render_template('take_quiz.html', quiz=quiz)
+    
+    # Define the desired sort order
+    question_type_order = ["MCQ", "True/False", "Fill-in-the-Blank", "Short Answer"]
+    
+    # Sort the questions fetched from the database
+    sorted_questions = sorted(
+        quiz.questions,
+        key=lambda q: question_type_order.index(q.question_type) if q.question_type in question_type_order else len(question_type_order)
+    )
+    
+    # Pass both the quiz and the sorted questions list to the template
+    return render_template('take_quiz.html', quiz=quiz, questions=sorted_questions)
 
 @app.route('/quiz/<public_id>/qr')
 def quiz_qr_code(public_id):
@@ -523,6 +614,14 @@ def submit_quiz(public_id):
     total_score = quiz.total_score
     results_for_template = []
 
+    # --- START: Add this new sorting logic ---
+    question_type_order = ["True/False", "MCQ", "Fill-in-the-Blank", "Short Answer"]
+    sorted_questions = sorted(
+        questions,
+        key=lambda q: question_type_order.index(q.question_type) if q.question_type in question_type_order else len(question_type_order)
+    )
+    # --- END: New sorting logic ---
+
     try:
         student_name = request.form.get('student_name', 'Anonymous')
         # Create the attempt record but don't add final scores yet
@@ -534,12 +633,12 @@ def submit_quiz(public_id):
             percentage=0
         )
 
-        for question in questions:
+        for question in sorted_questions:
             student_answer_text = request.form.get(f'question_{question.id}', 'Not Answered')
             correct_answer_text = question.answer.strip()
             
             is_correct = False
-            if question.question_type in ['MCQ', 'True/False']:
+            if question.question_type in ['MCQ', 'True/False', 'Fill-in-the-Blank']:
                 is_correct = student_answer_text.strip().lower() == correct_answer_text.lower()
             elif question.question_type == 'Short Answer':
                 if student_answer_text != 'Not Answered':

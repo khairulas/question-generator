@@ -12,7 +12,7 @@
     </div>
     <hr>
     ```
-    {% for question in quiz.questions %}
+    {% for question in questions %}
     <div class="question-card">
         <h3>Question {{ loop.index }}:</h3>
         <p class="question-text">{{ question.content }}</p>
@@ -39,6 +39,15 @@
                     <input type="radio" name="question_{{ question.id }}" id="q{{ question.id }}-opt-false" value="False" required>
                     <label for="q{{ question.id }}-opt-false">False</label>
                 </div>
+            </div>
+        {% elif question.question_type == 'Fill-in-the-Blank' %}
+            <div class="form-group">
+                <label for="question_{{ question.id }}">Fill in the blank:</label>
+                <input type="text" 
+                    id="question_{{ question.id }}" 
+                    name="question_{{ question.id }}" 
+                    class="form-control" 
+                    required>
             </div>
         
         {% elif question.question_type == 'Short Answer' %}

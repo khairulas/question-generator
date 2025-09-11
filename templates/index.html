@@ -4,18 +4,25 @@
     <h1>Educational Question Generator</h1>
     <p>Generate questions based on your course materials using teknologi gnerative AI. It may make mistake. Please check the output before use it.</p>
     
-    <form method="POST">
+    <form method="POST" enctype="multipart/form-data">
         <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+
         <div class="form-group">
-            <label for="course_material">Course Material:</label>
-            <textarea id="course_material" name="course_material" rows="10" required></textarea>
+            <label for="course_material">Course Material (Paste Text):</label>
+            <textarea id="course_material" name="course_material" rows="10"></textarea>
         </div>
-        
+
+        <div class="form-group">
+            <label for="pdf_file">Or Upload a PDF Document:</label>
+            <input type="file" id="pdf_file" name="pdf_file" accept=".pdf">
+        </div>
+
         <div class="form-group">
             <label>Question Types:</label>
             <div class="checkbox-group">
-                <label><input type="checkbox" name="question_types" value="MCQ"> Multiple Choice</label>
                 <label><input type="checkbox" name="question_types" value="True/False"> True/False</label>
+                <label><input type="checkbox" name="question_types" value="MCQ"> Multiple Choice</label>
+                <label><input type="checkbox" name="question_types" value="Fill-in-the-Blank"> Fill-in-the-Blank</label>
                 <label><input type="checkbox" name="question_types" value="Short Answer"> Short Answer</label>
             </div>
         </div>
@@ -38,6 +45,5 @@
         </div>
         
         <button type="submit">Generate Questions</button>
-        <p></p> 
     </form>
 {% endblock %}

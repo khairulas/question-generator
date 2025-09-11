@@ -15337,3 +15337,220 @@ INFO:werkzeug:127.0.0.1 - - [10/Sep/2025 16:51:22] "GET /quiz/58c0f706-5dbd-40f9
 INFO:werkzeug:127.0.0.1 - - [10/Sep/2025 16:51:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [10/Sep/2025 16:55:41] "GET /quiz/58c0f706-5dbd-40f9-ad99-d6b6782b0b8a/take HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [10/Sep/2025 16:55:41] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 09:27:22] "GET /quiz/58c0f706-5dbd-40f9-ad99-d6b6782b0b8a HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 09:27:22] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 09:27:22] "GET /quiz/58c0f706-5dbd-40f9-ad99-d6b6782b0b8a/qr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 09:27:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 09:27:24] "GET /quiz/58c0f706-5dbd-40f9-ad99-d6b6782b0b8a/take HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 09:27:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 10:41:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 10:41:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 10:41:13] "GET /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 10:41:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 10:47:56] "[35m[1mGET /create-quiz HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 10:47:57] "GET /create-quiz?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 10:47:57] "GET /create-quiz?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 10:47:57] "GET /create-quiz?__debugger__=yes&cmd=resource&f=console.png&s=5e6vBw2CyhpIbCJ4T8s6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 10:47:57] "GET /create-quiz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 10:55:05] "[35m[1mGET /create-quiz HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 10:55:05] "[36mGET /create-quiz?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 10:55:05] "[36mGET /create-quiz?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 10:55:05] "GET /create-quiz?__debugger__=yes&cmd=resource&f=console.png&s=cIL3kR0ph0zBIXoGsGsX HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 10:55:06] "[36mGET /create-quiz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:06:38] "GET /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:06:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:07:35] "POST /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:07:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:07:50] "[32mPOST /save-questions HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:07:50] "GET /quiz/80aff8a4-9835-47dc-965e-6ffb9cfe4e97 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:07:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:07:50] "GET /quiz/80aff8a4-9835-47dc-965e-6ffb9cfe4e97/qr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:08:06] "GET /quiz/80aff8a4-9835-47dc-965e-6ffb9cfe4e97/take HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:08:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:15:21] "POST /quiz/80aff8a4-9835-47dc-965e-6ffb9cfe4e97/submit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:15:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:15:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:15:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:15:52] "GET /quiz/80aff8a4-9835-47dc-965e-6ffb9cfe4e97 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:15:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:15:52] "GET /quiz/80aff8a4-9835-47dc-965e-6ffb9cfe4e97/qr HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:36:54] "GET /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:36:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:37:30] "POST /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:37:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:38:06] "GET /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:38:08] "GET /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:38:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:38:33] "POST /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:38:33] "POST /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:38:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:39:14] "[32mPOST /save-questions HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:39:14] "GET /quiz/b03a41ad-629d-491c-bed5-27b533d22c36 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:39:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:39:14] "GET /quiz/b03a41ad-629d-491c-bed5-27b533d22c36/qr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:39:32] "GET /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:39:42] "POST /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:39:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:44:52] "GET /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:44:56] "POST /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:45:05] "POST /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:45:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:45:22] "[32mPOST /save-questions HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:45:23] "GET /quiz/13beac60-117a-461f-809f-a6d279b46d1e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:45:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:45:23] "GET /quiz/13beac60-117a-461f-809f-a6d279b46d1e/qr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:50:34] "GET /quiz/13beac60-117a-461f-809f-a6d279b46d1e/take HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 11:50:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:00:36] "GET /quiz/13beac60-117a-461f-809f-a6d279b46d1e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:00:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:00:37] "GET /quiz/13beac60-117a-461f-809f-a6d279b46d1e/qr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:00:44] "GET /quiz/13beac60-117a-461f-809f-a6d279b46d1e/take HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:00:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:00:47] "GET /quiz/13beac60-117a-461f-809f-a6d279b46d1e/take HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:00:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:01:06] "GET /quiz/13beac60-117a-461f-809f-a6d279b46d1e/take HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:01:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:01:20] "GET /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:01:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:01:45] "POST /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:01:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:03:09] "[32mPOST /save-questions HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:03:09] "GET /quiz/79e7312e-fa1e-473d-8f46-8810cb0547c1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:03:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:03:09] "GET /quiz/79e7312e-fa1e-473d-8f46-8810cb0547c1/qr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:03:27] "GET /quiz/79e7312e-fa1e-473d-8f46-8810cb0547c1/take HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:03:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:05:05] "GET /quiz/79e7312e-fa1e-473d-8f46-8810cb0547c1/take HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:05:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:20:47] "GET /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:20:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:21:04] "GET /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:21:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:22:18] "GET /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:22:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:22:48] "POST /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:22:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:23:01] "[32mPOST /save-questions HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:23:01] "GET /quiz/db085aac-07b7-4a34-9c9a-25d018a3492c HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:23:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:23:02] "GET /quiz/db085aac-07b7-4a34-9c9a-25d018a3492c/qr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:23:17] "GET /quiz/db085aac-07b7-4a34-9c9a-25d018a3492c/take HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:23:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:24:49] "GET /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:24:59] "POST /create-quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:25:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:26:54] "[32mPOST /save-questions HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:26:54] "GET /quiz/a058b2f0-9904-4b1e-8a46-07995750d7f7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:26:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:26:54] "GET /quiz/a058b2f0-9904-4b1e-8a46-07995750d7f7/qr HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:31:03] "GET /quiz/a058b2f0-9904-4b1e-8a46-07995750d7f7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:31:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:31:04] "GET /quiz/a058b2f0-9904-4b1e-8a46-07995750d7f7/qr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:31:11] "GET /quiz/db085aac-07b7-4a34-9c9a-25d018a3492c/take HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:31:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:35:36] "POST /quiz/db085aac-07b7-4a34-9c9a-25d018a3492c/submit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:35:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-780-598
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:43:12] "POST /quiz/db085aac-07b7-4a34-9c9a-25d018a3492c/submit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:43:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:43:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:43:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:43:39] "GET /quiz/db085aac-07b7-4a34-9c9a-25d018a3492c/attempts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:43:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:43:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2025 12:43:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
