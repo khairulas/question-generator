@@ -12,7 +12,7 @@ from collections import defaultdict
 # --- Standard Library Imports First ---
 from flask import (
     Flask, current_app, flash, jsonify, render_template, 
-    request, redirect, send_file, session, url_for, g
+    request, redirect, send_file, session, url_for
 )
 from werkzeug.security import generate_password_hash, check_password_hash
 from markupsafe import Markup
@@ -46,23 +46,8 @@ load_dotenv()
 # Initialize the Flask app
 app = Flask(__name__)
 
-# --- Logging Configuration in terminal
-# Set up basic logging to capture INFO level messages and above.
-# This is crucial for performance, usability, and security auditing.
-# logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
-# --- Logging Configuration ---
-# Set up basic logging to capture INFO level messages and above.
-# This is crucial for performance, usability, and security auditing.
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    filename='app.log',  # <-- Directs output to the app.log file
-    filemode='a'         # <-- 'a' for append, so logs aren't erased on restart
-)
-
-
 # --- Load Configurations ---
+# Secret key is essential for sessions, CSRF protection, etc.
 app.config['SECRET_KEY'] = os.getenv('FLASK_SECRET_KEY', 'a_default_secret_key_for_development')
 
 # Database Configuration
@@ -73,6 +58,7 @@ if os.getenv('MYSQL_USER'):
     database = os.getenv('MYSQL_DB')
     app.config['SQLALCHEMY_DATABASE_URI'] = f"mysql+pymysql://{username}:{password}@{hostname}/{database}"
 else:
+    # Fallback to SQLite if MySQL env vars are not set
     db_path = os.path.join(os.path.dirname(__file__), 'instance', 'questions.db')
     os.makedirs(os.path.dirname(db_path), exist_ok=True)
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{db_path}'
@@ -102,7 +88,7 @@ csrf = CSRFProtect(app)
 mail = Mail(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
-login_manager.login_view = 'login'
+login_manager.login_view = 'login' # Redirect to login if not authenticated
 
 # ==============================================================================
 # 3. DATABASE MODELS
@@ -116,6 +102,7 @@ class User(UserMixin, db.Model):
     quizzes = db.relationship('Quiz', backref='creator', lazy=True, cascade="all, delete-orphan")
 
     def set_password(self, password):
+        #self.password_hash = generate_password_hash(password)
         self.password_hash = generate_password_hash(password, method='pbkdf2:sha256')
 
     def check_password(self, password):
@@ -132,10 +119,11 @@ class User(UserMixin, db.Model):
             user_id = s.loads(token, salt='password-reset-salt', max_age=3600)
         except (SignatureExpired, BadTimeSignature):
             return None
+        # Return the user_id directly.
+        # The database query will be handled in the route itself.
         return user_id
 
 class Quiz(db.Model):
-    # ... (Quiz model remains the same)
     id = db.Column(db.Integer, primary_key=True)
     public_id = db.Column(db.String(36), unique=True, nullable=False, default=lambda: str(uuid.uuid4()))
     title = db.Column(db.String(100))
@@ -148,7 +136,6 @@ class Quiz(db.Model):
         return sum(q.marks for q in self.questions if q.marks is not None)
 
 class Question(db.Model):
-    # ... (Question model remains the same)
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.Text, nullable=False)
     question_type = db.Column(db.String(50))
@@ -159,7 +146,6 @@ class Question(db.Model):
     marks = db.Column(db.Integer, nullable=False, default=1)
 
 class QuizAttempt(db.Model):
-    # ... (QuizAttempt model remains the same)
     id = db.Column(db.Integer, primary_key=True)
     student_name = db.Column(db.String(100), nullable=False)
     quiz_id = db.Column(db.Integer, db.ForeignKey('quiz.id'), nullable=False)
@@ -171,14 +157,12 @@ class QuizAttempt(db.Model):
     answers = db.relationship('StudentAnswer', backref='attempt', lazy=True, cascade="all, delete-orphan")
 
 class StudentAnswer(db.Model):
-    # ... (StudentAnswer model remains the same)
     id = db.Column(db.Integer, primary_key=True)
     attempt_id = db.Column(db.Integer, db.ForeignKey('quiz_attempt.id'), nullable=False)
     question_id = db.Column(db.Integer, db.ForeignKey('question.id'), nullable=False)
     answer_text = db.Column(db.Text, nullable=False)
     is_correct = db.Column(db.Boolean, nullable=False)
     question = db.relationship('Question')
-
 
 # ==============================================================================
 # 4. FLASK-LOGIN USER LOADER
@@ -191,9 +175,9 @@ def load_user(user_id):
 # ==============================================================================
 # 5. HELPER FUNCTIONS
 # ==============================================================================
+
 def extract_text_from_pdf(pdf_stream):
     """Extracts text from a PDF file stream."""
-    start_time = time.time()
     text = ""
     try:
         with pdfplumber.open(pdf_stream) as pdf:
@@ -201,15 +185,12 @@ def extract_text_from_pdf(pdf_stream):
                 page_text = page.extract_text()
                 if page_text:
                     text += page_text + "\n"
-        duration = time.time() - start_time
-        app.logger.info(f"PDF extraction of {len(pdf.pages)} pages took {duration:.2f}s.")
         return text
     except Exception as e:
-        app.logger.error(f"Error extracting text from PDF: {e}")
+        logging.error(f"Error extracting text from PDF: {e}")
         return None
         
 def generate_questions(material, types, count, bloom_level):
-    start_time = time.time()
     model = genai.GenerativeModel('gemini-1.5-flash')
     type_string = ", ".join(types)
 
@@ -246,6 +227,7 @@ def generate_questions(material, types, count, bloom_level):
         "options": ["Small volume", "High velocity", "Simple structure", "Limited sources"],
         "answer": "High velocity"
       }},
+
       {{
         "type": "Fill-in-the-Blank",
         "marks": 2,
@@ -261,11 +243,9 @@ def generate_questions(material, types, count, bloom_level):
     """
     try:
         response = model.generate_content(prompt)
-        duration = time.time() - start_time
-        app.logger.info(f"Gemini API call for question generation took {duration:.2f}s.")
         return response.text
     except Exception as e:
-        app.logger.error(f"Gemini API Error: {str(e)}")
+        logging.error(f"Gemini API Error: {str(e)}")
         return "An error occurred while generating questions. Please try again later.", 500
         
 def parse_questions(questions_text):
@@ -275,7 +255,7 @@ def parse_questions(questions_text):
     try:
         json_match = re.search(r'\[.*\]|\{.*\}', questions_text, re.DOTALL)
         if not json_match:
-            app.logger.error(f"Could not find valid JSON in AI response: {questions_text}")
+            logging.error(f"Could not find valid JSON in AI response: {questions_text}")
             return []
 
         clean_json_str = json_match.group(0)
@@ -296,10 +276,10 @@ def parse_questions(questions_text):
         return questions_for_app
 
     except json.JSONDecodeError as e:
-        app.logger.error(f"JSON Parsing Error: {e}\nRaw Response was:\n{questions_text}")
+        logging.error(f"JSON Parsing Error: {e}\nRaw Response was:\n{questions_text}")
         return []
     except Exception as e:
-        app.logger.error(f"An unexpected error occurred in parse_questions: {e}")
+        logging.error(f"An unexpected error occurred in parse_questions: {e}")
         return []
 
 def send_reset_email(user):
@@ -314,7 +294,6 @@ def send_reset_email(user):
 
 def grade_short_answer_with_gemini(correct_answer, student_answer):
     """Sends answers to Gemini for grading and parses the JSON response."""
-    start_time = time.time()
     try:
         model = genai.GenerativeModel('gemini-1.5-flash')
         prompt = f"""
@@ -329,14 +308,12 @@ def grade_short_answer_with_gemini(correct_answer, student_answer):
         """
         
         response = model.generate_content(prompt)
-        duration = time.time() - start_time
-        app.logger.info(f"Gemini API call for short answer grading took {duration:.2f}s.")
         cleaned_response = response.text.strip().replace('```json', '').replace('```', '')
         grade_data = json.loads(cleaned_response)
         return grade_data.get('is_correct', False)
 
     except Exception as e:
-        app.logger.error(f"Gemini API grading error: {str(e)}")
+        logging.error(f"Gemini API grading error: {str(e)}")
         return False
 
 def create_overall_analysis_prompt(summary_data):
@@ -357,25 +334,11 @@ def create_overall_analysis_prompt(summary_data):
 
     Keep the tone professional, helpful, and focused on group-level educational improvement.
     """
+
 # ==============================================================================
 # 6. ROUTES AND VIEW FUNCTIONS
 # ==============================================================================
 
-# --- Request/Response Logging ---
-@app.before_request
-def before_request_logging():
-    g.start_time = time.time()
-
-@app.after_request
-def after_request_logging(response):
-    if 'start_time' in g:
-        duration = time.time() - g.start_time
-        app.logger.info(
-            f"{request.method} {request.path} - Status: {response.status_code} - Duration: {duration:.4f}s"
-        )
-    return response
-
-# --- Core Application Routes ---
 @app.route('/')
 @login_required
 def index():
@@ -418,8 +381,6 @@ def create_quiz():
         question_types = form_data.getlist('question_types')
         num_questions = int(form_data.get('num_questions', 2))
         bloom_level = form_data.get('bloom_level')
-
-        app.logger.info(f"User '{current_user.username}' is generating {num_questions} questions.")
         
         questions_text = generate_questions(sanitized_course_material, question_types, num_questions, bloom_level)
         
@@ -471,13 +432,11 @@ def save_questions():
             new_quiz.questions.append(new_q)
         db.session.add(new_quiz)
         db.session.commit()
-        
-        app.logger.info(f"User '{current_user.username}' saved a new quiz titled '{quiz_title}'. Public ID: {new_quiz.public_id}")
         return redirect(url_for('view_quiz', public_id=new_quiz.public_id))
 
     except Exception as e:
         db.session.rollback()
-        app.logger.error(f"Database error while saving quiz for user '{current_user.username}': {str(e)}")
+        logging.error(f"Database error while saving quiz: {str(e)}")
         return render_template('error.html', message=f"A database error occurred: {str(e)}")
 
 # --- Authentication and User Management Routes ---
@@ -517,7 +476,6 @@ def register():
         db.session.add(new_user)
         db.session.commit()
         
-        app.logger.info(f"New user registered: '{username}' from IP {request.remote_addr}")
         flash('Account created successfully! You are now logged in.', 'success')
         login_user(new_user)
         return redirect(url_for('index'))
@@ -532,21 +490,17 @@ def login():
         user = User.query.filter_by(username=username).first()
 
         if user is None or not user.check_password(password):
-            app.logger.warning(f"Failed login attempt for username '{username}' from IP {request.remote_addr}.")
             flash('Invalid username or password.', 'danger')
             return redirect(url_for('login'))
-            
-        login_user(user)
-        app.logger.info(f"User '{username}' logged in successfully from IP {request.remote_addr}.")
-        return redirect(url_for('index'))
         
+        login_user(user)
+        return redirect(url_for('index'))
     csrf_token = generate_csrf()
     return render_template('login.html', csrf_token=csrf_token)
     
 @app.route('/logout')
 @login_required
 def logout():
-    app.logger.info(f"User '{current_user.username}' logged out.")
     logout_user()
     return redirect(url_for('login'))
 
@@ -557,8 +511,6 @@ def forgot_password():
         user = User.query.filter_by(email=email).first()
         if user:
             send_reset_email(user)
-        
-        app.logger.info(f"Password reset requested for email '{email}' from IP {request.remote_addr}.")
         flash('If an account with that email exists, a password reset link has been sent.', 'success')
         return redirect(url_for('login'))
     csrf_token = generate_csrf()
@@ -566,12 +518,14 @@ def forgot_password():
 
 @app.route('/reset-password/<token>', methods=['GET', 'POST'])
 def reset_password(token):
+    # This correctly receives the user_id
     user_id = User.verify_reset_token(token)
     
     if not user_id:
         flash('That is an invalid or expired token.', 'danger')
         return redirect(url_for('forgot_password'))
     
+    # FIX user not found: Use the modern, session-aware method to get the user
     user = db.session.get(User, user_id)
     
     if not user:
@@ -590,10 +544,10 @@ def reset_password(token):
             flash('Password must be at least 8 characters long.', 'danger')
             return redirect(url_for('reset_password', token=token))
 
+        # This is updating the "live" user object from the database
         user.set_password(password)
         db.session.commit()
         
-        app.logger.info(f"Password reset successful for user '{user.username}' (ID: {user_id}) from IP {request.remote_addr}.")
         flash('Your password has been updated! You are now able to log in.', 'success')
         return redirect(url_for('login'))
 
@@ -609,7 +563,6 @@ def change_password():
         confirm_password = request.form.get('confirm_password')
 
         if not current_user.check_password(old_password):
-            app.logger.warning(f"User '{current_user.username}' failed password change due to incorrect old password.")
             flash('Your old password was incorrect. Please try again.', 'danger')
             return redirect(url_for('change_password'))
 
@@ -623,7 +576,6 @@ def change_password():
 
         current_user.set_password(new_password)
         db.session.commit()
-        app.logger.info(f"User '{current_user.username}' successfully changed their password.")
         flash('Your password has been updated successfully!', 'success')
         return redirect(url_for('index'))
 
@@ -643,49 +595,16 @@ def view_quiz(public_id):
     )
     return render_template('quiz.html', quiz=quiz, questions=sorted_questions)
 
-@app.route('/quiz/<public_id>/edit', methods=['GET', 'POST'])
-@login_required
-def edit_quiz(public_id):
-    quiz = Quiz.query.filter_by(public_id=public_id, user_id=current_user.id).first_or_404()
-    
-    question_type_order = ["MCQ", "True/False", "Fill-in-the-Blank", "Short Answer"]
-    sorted_questions = sorted(
-        quiz.questions,
-        key=lambda q: question_type_order.index(q.question_type) if q.question_type in question_type_order else len(question_type_order)
-    )
-
-    if request.method == 'POST':
-        try:
-            quiz.title = request.form.get('quiz_title')
-
-            for index, question in enumerate(sorted_questions):
-                question.content = request.form.get(f'question_text_{index}')
-                question.answer = request.form.get(f'answer_{index}')
-                if question.question_type == 'MCQ':
-                    question.options = request.form.get(f'options_{index}')
-            
-            db.session.commit()
-            app.logger.info(f"User '{current_user.username}' edited quiz '{quiz.public_id}'.")
-            flash('Quiz updated successfully!', 'success')
-            return redirect(url_for('view_quiz', public_id=quiz.public_id))
-            
-        except Exception as e:
-            db.session.rollback()
-            flash(f'An error occurred while updating the quiz: {str(e)}', 'danger')
-
-    csrf_token = generate_csrf()
-    return render_template('edit_quiz.html', quiz=quiz, questions=sorted_questions, csrf_token=csrf_token)
-
 @app.route('/quiz/<public_id>/take', methods=['GET'])
 def take_quiz(public_id):
     quiz = Quiz.query.filter_by(public_id=public_id).first_or_404()
-    app.logger.info(f"Quiz '{public_id}' is being viewed for an attempt.")
     question_type_order = ["MCQ", "True/False", "Fill-in-the-Blank", "Short Answer"]
     sorted_questions = sorted(
         quiz.questions,
         key=lambda q: question_type_order.index(q.question_type) if q.question_type in question_type_order else len(question_type_order)
     )
-    return render_template('take_quiz.html', quiz=quiz, questions=sorted_questions)
+    csrf_token = generate_csrf()
+    return render_template('take_quiz.html', quiz=quiz, questions=sorted_questions, csrf_token=csrf_token)
 
 @app.route('/quiz/<public_id>/submit', methods=['POST'])
 def submit_quiz(public_id):
@@ -751,7 +670,6 @@ def submit_quiz(public_id):
         db.session.add(new_attempt)
         db.session.commit()
 
-        app.logger.info(f"Quiz '{public_id}' submitted by '{student_name}'. Score: {score}/{total_score}.")
         return render_template('quiz_results.html', 
                                score=score, 
                                total_score=total_score,
@@ -760,7 +678,7 @@ def submit_quiz(public_id):
                                results=results_for_template)
     except Exception as e:
         db.session.rollback()
-        app.logger.error(f"Error submitting quiz {public_id}: {str(e)}")
+        logging.error(f"Error submitting quiz {public_id}: {str(e)}")
         return render_template('error.html', message=f"An error occurred while submitting your quiz. Error: {str(e)}")
 
 @app.route('/quiz/<public_id>/attempts')
@@ -776,7 +694,6 @@ def delete_quiz(public_id):
     quiz = Quiz.query.filter_by(public_id=public_id, user_id=current_user.id).first_or_404()
     db.session.delete(quiz)
     db.session.commit()
-    app.logger.info(f"User '{current_user.username}' deleted quiz '{public_id}'.")
     flash('Quiz deleted successfully.', 'success')
     return redirect(url_for('index'))
 
@@ -809,13 +726,9 @@ def overall_analysis(public_id):
         analysis_data_string += f"  Correct Answer: \"{question.answer}\"\n"
 
     try:
-        start_time = time.time()
         model = genai.GenerativeModel('gemini-1.5-flash')
         prompt = create_overall_analysis_prompt(analysis_data_string)
         response = model.generate_content(prompt)
-        duration = time.time() - start_time
-        app.logger.info(f"Gemini API call for overall analysis of quiz '{public_id}' took {duration:.2f}s.")
-        
         analysis_html = response.text
         
         quiz.analysis_text = analysis_html
@@ -825,7 +738,7 @@ def overall_analysis(public_id):
 
     except Exception as e:
         db.session.rollback()
-        app.logger.error(f"Error generating overall analysis for quiz {public_id}: {str(e)}")
+        logging.error(f"Error generating overall analysis for quiz {public_id}: {str(e)}")
         return render_template('error.html', message=f"An error occurred while generating the overall analysis. Error: {str(e)}")    
 
 # --- Static Pages and Utility Routes ---
@@ -856,12 +769,11 @@ def quiz_qr_code(public_id):
 
 @app.errorhandler(404)
 def page_not_found(e):
-    app.logger.warning(f"404 Not Found error for path: {request.path}")
     return render_template('error.html', message="Sorry, the page you are looking for does not exist."), 404
 
 @app.errorhandler(OperationalError)
 def handle_db_connection_error(e):
-    app.logger.critical(f"Database Connection Error: {e}", exc_info=True)
+    app.logger.error(f"Database Connection Error: {e}", exc_info=True)
     db.session.rollback()
     message = "We're currently experiencing technical difficulties. Please try again later."
     return render_template('error.html', message=message), 503
@@ -880,3 +792,4 @@ def markdown_filter(s):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
