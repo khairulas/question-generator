@@ -206,3 +206,221 @@
 2025-09-14 15:53:51,300 - INFO - 127.0.0.1 - - [14/Sep/2025 15:53:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2025-09-14 15:53:51,393 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0162s
 2025-09-14 15:53:51,393 - INFO - 127.0.0.1 - - [14/Sep/2025 15:53:51] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-09-14 18:50:57,471 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-14 18:50:57,471 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-14 18:50:57,473 - INFO -  * Restarting with stat
+2025-09-14 18:50:59,562 - WARNING -  * Debugger is active!
+2025-09-14 18:50:59,562 - INFO -  * Debugger PIN: 143-132-379
+2025-09-14 18:51:39,846 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0499s
+2025-09-14 18:51:39,862 - INFO - 127.0.0.1 - - [14/Sep/2025 18:51:39] "GET /create-quiz HTTP/1.1" 200 -
+2025-09-14 18:51:40,054 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0005s
+2025-09-14 18:51:40,054 - INFO - 127.0.0.1 - - [14/Sep/2025 18:51:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-09-14 18:51:40,198 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-09-14 18:51:40,199 - INFO - 127.0.0.1 - - [14/Sep/2025 18:51:40] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-09-14 18:51:40,430 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0130s
+2025-09-14 18:51:40,431 - INFO - 127.0.0.1 - - [14/Sep/2025 18:51:40] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-09-14 18:52:08,603 - WARNING - Cannot set gray non-stroke color because /'P11' is an invalid float value
+2025-09-14 18:52:08,605 - WARNING - Cannot set gray non-stroke color because /'P12' is an invalid float value
+2025-09-14 18:52:08,605 - WARNING - Cannot set gray non-stroke color because /'P15' is an invalid float value
+2025-09-14 18:52:08,605 - WARNING - Cannot set gray non-stroke color because /'P16' is an invalid float value
+2025-09-14 18:52:08,605 - WARNING - Cannot set gray non-stroke color because /'P17' is an invalid float value
+2025-09-14 18:52:08,610 - WARNING - Cannot set gray non-stroke color because /'P25' is an invalid float value
+2025-09-14 18:52:08,614 - WARNING - Cannot set gray non-stroke color because /'P31' is an invalid float value
+2025-09-14 18:52:08,646 - WARNING - Cannot set gray non-stroke color because /'P36' is an invalid float value
+2025-09-14 18:52:08,646 - WARNING - Cannot set gray non-stroke color because /'P37' is an invalid float value
+2025-09-14 18:52:08,648 - WARNING - Cannot set gray non-stroke color because /'P38' is an invalid float value
+2025-09-14 18:52:08,682 - WARNING - Cannot set gray non-stroke color because /'P44' is an invalid float value
+2025-09-14 18:52:08,683 - WARNING - Cannot set gray non-stroke color because /'P46' is an invalid float value
+2025-09-14 18:52:08,684 - WARNING - Cannot set gray non-stroke color because /'P47' is an invalid float value
+2025-09-14 18:52:08,684 - WARNING - Cannot set gray non-stroke color because /'P50' is an invalid float value
+2025-09-14 18:52:08,716 - WARNING - Cannot set gray non-stroke color because /'P62' is an invalid float value
+2025-09-14 18:52:08,724 - WARNING - Cannot set gray non-stroke color because /'P65' is an invalid float value
+2025-09-14 18:52:08,724 - WARNING - Cannot set gray non-stroke color because /'P66' is an invalid float value
+2025-09-14 18:52:08,725 - WARNING - Cannot set gray non-stroke color because /'P67' is an invalid float value
+2025-09-14 18:52:08,727 - WARNING - Cannot set gray non-stroke color because /'P68' is an invalid float value
+2025-09-14 18:52:08,747 - WARNING - Cannot set gray non-stroke color because /'P71' is an invalid float value
+2025-09-14 18:52:08,748 - WARNING - Cannot set gray non-stroke color because /'P72' is an invalid float value
+2025-09-14 18:52:08,764 - WARNING - Cannot set gray non-stroke color because /'P75' is an invalid float value
+2025-09-14 18:52:08,764 - WARNING - Cannot set gray non-stroke color because /'P76' is an invalid float value
+2025-09-14 18:52:08,860 - WARNING - Cannot set gray non-stroke color because /'P83' is an invalid float value
+2025-09-14 18:52:08,861 - WARNING - Cannot set gray non-stroke color because /'P84' is an invalid float value
+2025-09-14 18:52:08,879 - WARNING - Cannot set gray non-stroke color because /'P89' is an invalid float value
+2025-09-14 18:52:08,879 - WARNING - Cannot set gray non-stroke color because /'P90' is an invalid float value
+2025-09-14 18:52:08,879 - WARNING - Cannot set gray non-stroke color because /'P91' is an invalid float value
+2025-09-14 18:52:08,879 - WARNING - Cannot set gray non-stroke color because /'P92' is an invalid float value
+2025-09-14 18:52:08,897 - WARNING - Cannot set gray non-stroke color because /'P95' is an invalid float value
+2025-09-14 18:52:08,897 - WARNING - Cannot set gray non-stroke color because /'P96' is an invalid float value
+2025-09-14 18:52:09,013 - WARNING - Cannot set gray non-stroke color because /'P99' is an invalid float value
+2025-09-14 18:52:09,013 - WARNING - Cannot set gray non-stroke color because /'P100' is an invalid float value
+2025-09-14 18:52:09,082 - WARNING - Cannot set gray non-stroke color because /'P103' is an invalid float value
+2025-09-14 18:52:09,082 - WARNING - Cannot set gray non-stroke color because /'P104' is an invalid float value
+2025-09-14 18:52:09,146 - WARNING - Cannot set gray non-stroke color because /'P107' is an invalid float value
+2025-09-14 18:52:09,146 - WARNING - Cannot set gray non-stroke color because /'P108' is an invalid float value
+2025-09-14 18:52:09,146 - WARNING - Cannot set gray non-stroke color because /'P109' is an invalid float value
+2025-09-14 18:52:09,164 - WARNING - Cannot set gray non-stroke color because /'P110' is an invalid float value
+2025-09-14 18:52:09,186 - WARNING - Cannot set gray non-stroke color because /'P113' is an invalid float value
+2025-09-14 18:52:09,186 - WARNING - Cannot set gray non-stroke color because /'P114' is an invalid float value
+2025-09-14 18:52:09,213 - WARNING - Cannot set gray non-stroke color because /'P117' is an invalid float value
+2025-09-14 18:52:09,213 - WARNING - Cannot set gray non-stroke color because /'P118' is an invalid float value
+2025-09-14 18:52:09,274 - WARNING - Cannot set gray non-stroke color because /'P123' is an invalid float value
+2025-09-14 18:52:09,275 - WARNING - Cannot set gray non-stroke color because /'P124' is an invalid float value
+2025-09-14 18:52:09,279 - WARNING - Cannot set gray non-stroke color because /'P134' is an invalid float value
+2025-09-14 18:52:09,279 - WARNING - Cannot set gray non-stroke color because /'P135' is an invalid float value
+2025-09-14 18:52:09,297 - WARNING - Cannot set gray non-stroke color because /'P138' is an invalid float value
+2025-09-14 18:52:09,297 - WARNING - Cannot set gray non-stroke color because /'P139' is an invalid float value
+2025-09-14 18:52:09,331 - WARNING - Cannot set gray non-stroke color because /'P142' is an invalid float value
+2025-09-14 18:52:09,332 - WARNING - Cannot set gray non-stroke color because /'P143' is an invalid float value
+2025-09-14 18:52:09,377 - WARNING - Cannot set gray non-stroke color because /'P147' is an invalid float value
+2025-09-14 18:52:09,378 - WARNING - Cannot set gray non-stroke color because /'P148' is an invalid float value
+2025-09-14 18:52:09,393 - WARNING - Cannot set gray non-stroke color because /'P149' is an invalid float value
+2025-09-14 18:52:09,429 - WARNING - Cannot set gray non-stroke color because /'P157' is an invalid float value
+2025-09-14 18:52:09,430 - WARNING - Cannot set gray non-stroke color because /'P158' is an invalid float value
+2025-09-14 18:52:09,479 - WARNING - Cannot set gray non-stroke color because /'P170' is an invalid float value
+2025-09-14 18:52:09,479 - WARNING - Cannot set gray non-stroke color because /'P171' is an invalid float value
+2025-09-14 18:52:09,512 - WARNING - Cannot set gray non-stroke color because /'P174' is an invalid float value
+2025-09-14 18:52:09,513 - WARNING - Cannot set gray non-stroke color because /'P175' is an invalid float value
+2025-09-14 18:52:09,514 - WARNING - Cannot set gray non-stroke color because /'P176' is an invalid float value
+2025-09-14 18:52:09,517 - WARNING - Cannot set gray non-stroke color because /'P177' is an invalid float value
+2025-09-14 18:52:09,520 - WARNING - Cannot set gray non-stroke color because /'P178' is an invalid float value
+2025-09-14 18:52:09,528 - WARNING - Cannot set gray non-stroke color because /'P181' is an invalid float value
+2025-09-14 18:52:09,530 - WARNING - Cannot set gray non-stroke color because /'P182' is an invalid float value
+2025-09-14 18:52:09,545 - WARNING - Cannot set gray non-stroke color because /'P183' is an invalid float value
+2025-09-14 18:52:09,564 - WARNING - Cannot set gray non-stroke color because /'P186' is an invalid float value
+2025-09-14 18:52:09,564 - WARNING - Cannot set gray non-stroke color because /'P187' is an invalid float value
+2025-09-14 18:52:09,599 - WARNING - Cannot set gray non-stroke color because /'P190' is an invalid float value
+2025-09-14 18:52:09,600 - WARNING - Cannot set gray non-stroke color because /'P191' is an invalid float value
+2025-09-14 18:52:09,613 - WARNING - Cannot set gray non-stroke color because /'P194' is an invalid float value
+2025-09-14 18:52:09,613 - WARNING - Cannot set gray non-stroke color because /'P195' is an invalid float value
+2025-09-14 18:52:09,613 - WARNING - Cannot set gray non-stroke color because /'P196' is an invalid float value
+2025-09-14 18:52:09,613 - WARNING - Cannot set gray non-stroke color because /'P197' is an invalid float value
+2025-09-14 18:52:09,697 - WARNING - Cannot set gray non-stroke color because /'P200' is an invalid float value
+2025-09-14 18:52:09,697 - WARNING - Cannot set gray non-stroke color because /'P201' is an invalid float value
+2025-09-14 18:52:09,746 - WARNING - Cannot set gray non-stroke color because /'P204' is an invalid float value
+2025-09-14 18:52:09,746 - WARNING - Cannot set gray non-stroke color because /'P205' is an invalid float value
+2025-09-14 18:52:09,794 - WARNING - Cannot set gray non-stroke color because /'P208' is an invalid float value
+2025-09-14 18:52:09,795 - WARNING - Cannot set gray non-stroke color because /'P209' is an invalid float value
+2025-09-14 18:52:09,830 - WARNING - Cannot set gray non-stroke color because /'P212' is an invalid float value
+2025-09-14 18:52:09,830 - WARNING - Cannot set gray non-stroke color because /'P213' is an invalid float value
+2025-09-14 18:52:09,897 - WARNING - Cannot set gray non-stroke color because /'P216' is an invalid float value
+2025-09-14 18:52:09,897 - WARNING - Cannot set gray non-stroke color because /'P217' is an invalid float value
+2025-09-14 18:52:09,939 - WARNING - Cannot set gray non-stroke color because /'P220' is an invalid float value
+2025-09-14 18:52:09,940 - WARNING - Cannot set gray non-stroke color because /'P221' is an invalid float value
+2025-09-14 18:52:09,986 - INFO - PDF extraction of 32 pages took 1.41s.
+2025-09-14 18:52:09,986 - INFO - POST /create-quiz - Status: 302 - Duration: 1.4082s
+2025-09-14 18:52:09,988 - INFO - 127.0.0.1 - - [14/Sep/2025 18:52:09] "[32mPOST /create-quiz HTTP/1.1[0m" 302 -
+2025-09-14 18:52:10,030 - INFO - GET / - Status: 200 - Duration: 0.0363s
+2025-09-14 18:52:10,030 - INFO - 127.0.0.1 - - [14/Sep/2025 18:52:10] "GET / HTTP/1.1" 200 -
+2025-09-14 18:52:10,365 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-09-14 18:52:10,366 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-09-14 18:52:10,366 - INFO - 127.0.0.1 - - [14/Sep/2025 18:52:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-09-14 18:52:10,367 - INFO - 127.0.0.1 - - [14/Sep/2025 18:52:10] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-09-14 18:52:13,771 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0010s
+2025-09-14 18:52:13,771 - INFO - 127.0.0.1 - - [14/Sep/2025 18:52:13] "GET /create-quiz HTTP/1.1" 200 -
+2025-09-14 18:52:14,099 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0015s
+2025-09-14 18:52:14,099 - INFO - 127.0.0.1 - - [14/Sep/2025 18:52:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-09-14 18:52:14,099 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-09-14 18:52:14,100 - INFO - 127.0.0.1 - - [14/Sep/2025 18:52:14] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-09-14 18:52:24,714 - WARNING - Cannot set gray non-stroke color because /'P11' is an invalid float value
+2025-09-14 18:52:24,714 - WARNING - Cannot set gray non-stroke color because /'P12' is an invalid float value
+2025-09-14 18:52:24,714 - WARNING - Cannot set gray non-stroke color because /'P15' is an invalid float value
+2025-09-14 18:52:24,714 - WARNING - Cannot set gray non-stroke color because /'P16' is an invalid float value
+2025-09-14 18:52:24,714 - WARNING - Cannot set gray non-stroke color because /'P17' is an invalid float value
+2025-09-14 18:52:24,714 - WARNING - Cannot set gray non-stroke color because /'P25' is an invalid float value
+2025-09-14 18:52:24,731 - WARNING - Cannot set gray non-stroke color because /'P31' is an invalid float value
+2025-09-14 18:52:24,747 - WARNING - Cannot set gray non-stroke color because /'P36' is an invalid float value
+2025-09-14 18:52:24,747 - WARNING - Cannot set gray non-stroke color because /'P37' is an invalid float value
+2025-09-14 18:52:24,747 - WARNING - Cannot set gray non-stroke color because /'P38' is an invalid float value
+2025-09-14 18:52:24,780 - WARNING - Cannot set gray non-stroke color because /'P44' is an invalid float value
+2025-09-14 18:52:24,780 - WARNING - Cannot set gray non-stroke color because /'P46' is an invalid float value
+2025-09-14 18:52:24,780 - WARNING - Cannot set gray non-stroke color because /'P47' is an invalid float value
+2025-09-14 18:52:24,780 - WARNING - Cannot set gray non-stroke color because /'P50' is an invalid float value
+2025-09-14 18:52:24,814 - WARNING - Cannot set gray non-stroke color because /'P62' is an invalid float value
+2025-09-14 18:52:24,830 - WARNING - Cannot set gray non-stroke color because /'P65' is an invalid float value
+2025-09-14 18:52:24,830 - WARNING - Cannot set gray non-stroke color because /'P66' is an invalid float value
+2025-09-14 18:52:24,830 - WARNING - Cannot set gray non-stroke color because /'P67' is an invalid float value
+2025-09-14 18:52:24,830 - WARNING - Cannot set gray non-stroke color because /'P68' is an invalid float value
+2025-09-14 18:52:24,847 - WARNING - Cannot set gray non-stroke color because /'P71' is an invalid float value
+2025-09-14 18:52:24,847 - WARNING - Cannot set gray non-stroke color because /'P72' is an invalid float value
+2025-09-14 18:52:24,881 - WARNING - Cannot set gray non-stroke color because /'P75' is an invalid float value
+2025-09-14 18:52:24,881 - WARNING - Cannot set gray non-stroke color because /'P76' is an invalid float value
+2025-09-14 18:52:24,930 - WARNING - Cannot set gray non-stroke color because /'P83' is an invalid float value
+2025-09-14 18:52:24,930 - WARNING - Cannot set gray non-stroke color because /'P84' is an invalid float value
+2025-09-14 18:52:24,969 - WARNING - Cannot set gray non-stroke color because /'P89' is an invalid float value
+2025-09-14 18:52:24,969 - WARNING - Cannot set gray non-stroke color because /'P90' is an invalid float value
+2025-09-14 18:52:24,970 - WARNING - Cannot set gray non-stroke color because /'P91' is an invalid float value
+2025-09-14 18:52:24,973 - WARNING - Cannot set gray non-stroke color because /'P92' is an invalid float value
+2025-09-14 18:52:24,988 - WARNING - Cannot set gray non-stroke color because /'P95' is an invalid float value
+2025-09-14 18:52:24,989 - WARNING - Cannot set gray non-stroke color because /'P96' is an invalid float value
+2025-09-14 18:52:25,063 - WARNING - Cannot set gray non-stroke color because /'P99' is an invalid float value
+2025-09-14 18:52:25,063 - WARNING - Cannot set gray non-stroke color because /'P100' is an invalid float value
+2025-09-14 18:52:25,129 - WARNING - Cannot set gray non-stroke color because /'P103' is an invalid float value
+2025-09-14 18:52:25,129 - WARNING - Cannot set gray non-stroke color because /'P104' is an invalid float value
+2025-09-14 18:52:25,196 - WARNING - Cannot set gray non-stroke color because /'P107' is an invalid float value
+2025-09-14 18:52:25,196 - WARNING - Cannot set gray non-stroke color because /'P108' is an invalid float value
+2025-09-14 18:52:25,196 - WARNING - Cannot set gray non-stroke color because /'P109' is an invalid float value
+2025-09-14 18:52:25,294 - WARNING - Cannot set gray non-stroke color because /'P110' is an invalid float value
+2025-09-14 18:52:25,296 - WARNING - Cannot set gray non-stroke color because /'P113' is an invalid float value
+2025-09-14 18:52:25,296 - WARNING - Cannot set gray non-stroke color because /'P114' is an invalid float value
+2025-09-14 18:52:25,339 - WARNING - Cannot set gray non-stroke color because /'P117' is an invalid float value
+2025-09-14 18:52:25,340 - WARNING - Cannot set gray non-stroke color because /'P118' is an invalid float value
+2025-09-14 18:52:25,392 - WARNING - Cannot set gray non-stroke color because /'P123' is an invalid float value
+2025-09-14 18:52:25,392 - WARNING - Cannot set gray non-stroke color because /'P124' is an invalid float value
+2025-09-14 18:52:25,409 - WARNING - Cannot set gray non-stroke color because /'P134' is an invalid float value
+2025-09-14 18:52:25,409 - WARNING - Cannot set gray non-stroke color because /'P135' is an invalid float value
+2025-09-14 18:52:25,429 - WARNING - Cannot set gray non-stroke color because /'P138' is an invalid float value
+2025-09-14 18:52:25,430 - WARNING - Cannot set gray non-stroke color because /'P139' is an invalid float value
+2025-09-14 18:52:25,454 - WARNING - Cannot set gray non-stroke color because /'P142' is an invalid float value
+2025-09-14 18:52:25,455 - WARNING - Cannot set gray non-stroke color because /'P143' is an invalid float value
+2025-09-14 18:52:25,495 - WARNING - Cannot set gray non-stroke color because /'P147' is an invalid float value
+2025-09-14 18:52:25,496 - WARNING - Cannot set gray non-stroke color because /'P148' is an invalid float value
+2025-09-14 18:52:25,509 - WARNING - Cannot set gray non-stroke color because /'P149' is an invalid float value
+2025-09-14 18:52:25,544 - WARNING - Cannot set gray non-stroke color because /'P157' is an invalid float value
+2025-09-14 18:52:25,544 - WARNING - Cannot set gray non-stroke color because /'P158' is an invalid float value
+2025-09-14 18:52:25,599 - WARNING - Cannot set gray non-stroke color because /'P170' is an invalid float value
+2025-09-14 18:52:25,600 - WARNING - Cannot set gray non-stroke color because /'P171' is an invalid float value
+2025-09-14 18:52:25,621 - WARNING - Cannot set gray non-stroke color because /'P174' is an invalid float value
+2025-09-14 18:52:25,621 - WARNING - Cannot set gray non-stroke color because /'P175' is an invalid float value
+2025-09-14 18:52:25,622 - WARNING - Cannot set gray non-stroke color because /'P176' is an invalid float value
+2025-09-14 18:52:25,625 - WARNING - Cannot set gray non-stroke color because /'P177' is an invalid float value
+2025-09-14 18:52:25,628 - WARNING - Cannot set gray non-stroke color because /'P178' is an invalid float value
+2025-09-14 18:52:25,637 - WARNING - Cannot set gray non-stroke color because /'P181' is an invalid float value
+2025-09-14 18:52:25,638 - WARNING - Cannot set gray non-stroke color because /'P182' is an invalid float value
+2025-09-14 18:52:25,652 - WARNING - Cannot set gray non-stroke color because /'P183' is an invalid float value
+2025-09-14 18:52:25,676 - WARNING - Cannot set gray non-stroke color because /'P186' is an invalid float value
+2025-09-14 18:52:25,676 - WARNING - Cannot set gray non-stroke color because /'P187' is an invalid float value
+2025-09-14 18:52:25,706 - WARNING - Cannot set gray non-stroke color because /'P190' is an invalid float value
+2025-09-14 18:52:25,707 - WARNING - Cannot set gray non-stroke color because /'P191' is an invalid float value
+2025-09-14 18:52:25,728 - WARNING - Cannot set gray non-stroke color because /'P194' is an invalid float value
+2025-09-14 18:52:25,729 - WARNING - Cannot set gray non-stroke color because /'P195' is an invalid float value
+2025-09-14 18:52:25,730 - WARNING - Cannot set gray non-stroke color because /'P196' is an invalid float value
+2025-09-14 18:52:25,732 - WARNING - Cannot set gray non-stroke color because /'P197' is an invalid float value
+2025-09-14 18:52:25,746 - WARNING - Cannot set gray non-stroke color because /'P200' is an invalid float value
+2025-09-14 18:52:25,746 - WARNING - Cannot set gray non-stroke color because /'P201' is an invalid float value
+2025-09-14 18:52:25,801 - WARNING - Cannot set gray non-stroke color because /'P204' is an invalid float value
+2025-09-14 18:52:25,801 - WARNING - Cannot set gray non-stroke color because /'P205' is an invalid float value
+2025-09-14 18:52:25,846 - WARNING - Cannot set gray non-stroke color because /'P208' is an invalid float value
+2025-09-14 18:52:25,847 - WARNING - Cannot set gray non-stroke color because /'P209' is an invalid float value
+2025-09-14 18:52:25,888 - WARNING - Cannot set gray non-stroke color because /'P212' is an invalid float value
+2025-09-14 18:52:25,889 - WARNING - Cannot set gray non-stroke color because /'P213' is an invalid float value
+2025-09-14 18:52:25,941 - WARNING - Cannot set gray non-stroke color because /'P216' is an invalid float value
+2025-09-14 18:52:25,942 - WARNING - Cannot set gray non-stroke color because /'P217' is an invalid float value
+2025-09-14 18:52:25,985 - WARNING - Cannot set gray non-stroke color because /'P220' is an invalid float value
+2025-09-14 18:52:25,986 - WARNING - Cannot set gray non-stroke color because /'P221' is an invalid float value
+2025-09-14 18:52:26,028 - INFO - PDF extraction of 32 pages took 1.33s.
+2025-09-14 18:52:26,079 - INFO - User 'khairulanwars' is generating 2 questions.
+2025-09-14 18:52:28,876 - INFO - Gemini API call for question generation took 2.80s.
+2025-09-14 18:52:28,897 - INFO - POST /create-quiz - Status: 200 - Duration: 4.2040s
+2025-09-14 18:52:28,899 - INFO - 127.0.0.1 - - [14/Sep/2025 18:52:28] "POST /create-quiz HTTP/1.1" 200 -
+2025-09-14 18:52:29,229 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-09-14 18:52:29,229 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-09-14 18:52:29,229 - INFO - 127.0.0.1 - - [14/Sep/2025 18:52:29] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-09-14 18:52:29,229 - INFO - 127.0.0.1 - - [14/Sep/2025 18:52:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-09-14 18:54:48,446 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-09-14 18:54:50,680 - INFO -  * Restarting with stat
+2025-09-14 18:54:52,768 - WARNING -  * Debugger is active!
+2025-09-14 18:54:52,768 - INFO -  * Debugger PIN: 143-132-379
+2025-09-14 18:55:12,263 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-09-14 18:55:12,459 - INFO -  * Restarting with stat
+2025-09-14 18:55:14,816 - WARNING -  * Debugger is active!
+2025-09-14 18:55:14,816 - INFO -  * Debugger PIN: 143-132-379

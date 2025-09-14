@@ -14,6 +14,8 @@ from flask import (
     Flask, current_app, flash, jsonify, render_template, 
     request, redirect, send_file, session, url_for, g
 )
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 from werkzeug.security import generate_password_hash, check_password_hash
 from markupsafe import Markup
 
@@ -45,6 +47,12 @@ load_dotenv()
 
 # Initialize the Flask app
 app = Flask(__name__)
+
+limiter = Limiter(
+    get_remote_address,
+    app=app,
+    default_limits=["200 per day", "50 per hour"]
+)
 
 # --- Logging Configuration in terminal
 # Set up basic logging to capture INFO level messages and above.
@@ -384,6 +392,7 @@ def index():
     return render_template('dashboard.html', quizzes=quizzes, csrf_token=csrf_token)
 
 @app.route('/create-quiz', methods=['GET', 'POST'])
+@limiter.limit("10 per minute")
 @login_required
 def create_quiz():
     if request.method == 'POST':
@@ -781,6 +790,7 @@ def delete_quiz(public_id):
     return redirect(url_for('index'))
 
 @app.route('/quiz/<public_id>/overall_analysis')
+@limiter.limit("3 per minute")
 @login_required
 def overall_analysis(public_id):
     quiz = Quiz.query.filter_by(public_id=public_id, user_id=current_user.id).first_or_404()
