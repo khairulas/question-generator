@@ -1,0 +1,1079 @@
+2025-10-04 12:04:51,172 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-04 12:04:51,172 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 12:04:51,173 - INFO -  * Restarting with stat
+2025-10-04 12:04:52,753 - WARNING -  * Debugger is active!
+2025-10-04 12:04:52,757 - INFO -  * Debugger PIN: 125-780-598
+2025-10-04 12:09:20,268 - INFO - GET / - Status: 302 - Duration: 0.0010s
+2025-10-04 12:09:20,269 - INFO - 127.0.0.1 - - [04/Oct/2025 12:09:20] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-04 12:09:20,287 - INFO - GET /login - Status: 200 - Duration: 0.0038s
+2025-10-04 12:09:20,287 - INFO - 127.0.0.1 - - [04/Oct/2025 12:09:20] "GET /login?next=/ HTTP/1.1" 200 -
+2025-10-04 12:09:20,327 - INFO - GET /static/images/aiquiz-logo.png - Status: 200 - Duration: 0.0000s
+2025-10-04 12:09:20,327 - INFO - 127.0.0.1 - - [04/Oct/2025 12:09:20] "GET /static/images/aiquiz-logo.png HTTP/1.1" 200 -
+2025-10-04 12:09:20,327 - INFO - GET /static/css/styles.css - Status: 200 - Duration: 0.0000s
+2025-10-04 12:09:20,327 - INFO - 127.0.0.1 - - [04/Oct/2025 12:09:20] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-10-04 12:09:21,512 - INFO - GET /static/images/favicon.ico - Status: 200 - Duration: 0.0079s
+2025-10-04 12:09:21,512 - INFO - 127.0.0.1 - - [04/Oct/2025 12:09:21] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+2025-10-04 12:09:35,789 - WARNING - Failed login attempt for username 'khairulanwarsedek@uitm.edu.my' from IP 127.0.0.1.
+2025-10-04 12:09:35,789 - INFO - POST /login - Status: 302 - Duration: 0.0220s
+2025-10-04 12:09:35,789 - INFO - 127.0.0.1 - - [04/Oct/2025 12:09:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-04 12:09:35,794 - INFO - GET /login - Status: 200 - Duration: 0.0000s
+2025-10-04 12:09:35,794 - INFO - 127.0.0.1 - - [04/Oct/2025 12:09:35] "GET /login HTTP/1.1" 200 -
+2025-10-04 12:09:35,819 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:09:35,819 - INFO - 127.0.0.1 - - [04/Oct/2025 12:09:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:09:35,822 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:09:35,822 - INFO - 127.0.0.1 - - [04/Oct/2025 12:09:35] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:09:51,199 - WARNING - Failed login attempt for username 'khairulanwarsedek@uitm.edu.my' from IP 127.0.0.1.
+2025-10-04 12:09:51,199 - INFO - POST /login - Status: 302 - Duration: 0.0000s
+2025-10-04 12:09:51,199 - INFO - 127.0.0.1 - - [04/Oct/2025 12:09:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-04 12:09:51,207 - INFO - GET /login - Status: 200 - Duration: 0.0000s
+2025-10-04 12:09:51,207 - INFO - 127.0.0.1 - - [04/Oct/2025 12:09:51] "GET /login HTTP/1.1" 200 -
+2025-10-04 12:09:51,237 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 12:09:51,238 - INFO - 127.0.0.1 - - [04/Oct/2025 12:09:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:09:51,239 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 12:09:51,239 - INFO - 127.0.0.1 - - [04/Oct/2025 12:09:51] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:10:16,023 - WARNING - Failed login attempt for username 'khairulanwarsedek' from IP 127.0.0.1.
+2025-10-04 12:10:16,023 - INFO - POST /login - Status: 302 - Duration: 0.6608s
+2025-10-04 12:10:16,024 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-04 12:10:16,031 - INFO - GET /login - Status: 200 - Duration: 0.0000s
+2025-10-04 12:10:16,031 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:16] "GET /login HTTP/1.1" 200 -
+2025-10-04 12:10:16,044 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:10:16,044 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:10:16,044 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:10:16,053 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:16] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:10:23,959 - WARNING - Failed login attempt for username 'khairulanwarsedek' from IP 127.0.0.1.
+2025-10-04 12:10:23,959 - INFO - POST /login - Status: 302 - Duration: 0.6619s
+2025-10-04 12:10:23,960 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-04 12:10:23,966 - INFO - GET /login - Status: 200 - Duration: 0.0000s
+2025-10-04 12:10:23,966 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:23] "GET /login HTTP/1.1" 200 -
+2025-10-04 12:10:23,977 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:10:23,977 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:10:23,977 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:10:23,977 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:23] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:10:38,572 - WARNING - Failed login attempt for username 'khairulanwarsedek' from IP 127.0.0.1.
+2025-10-04 12:10:38,572 - INFO - POST /login - Status: 302 - Duration: 0.6729s
+2025-10-04 12:10:38,573 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-04 12:10:38,577 - INFO - GET /login - Status: 200 - Duration: 0.0000s
+2025-10-04 12:10:38,577 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:38] "GET /login HTTP/1.1" 200 -
+2025-10-04 12:10:38,601 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 12:10:38,602 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:10:38,603 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0011s
+2025-10-04 12:10:38,604 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:38] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:10:45,717 - INFO - GET /forgot-password - Status: 200 - Duration: 0.0020s
+2025-10-04 12:10:45,718 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:45] "GET /forgot-password HTTP/1.1" 200 -
+2025-10-04 12:10:45,746 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 12:10:45,746 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:10:45,748 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:10:45,749 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:45] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:10:51,931 - INFO - Password reset requested for email 'khairulanwarsedek@uitm.edu.my' from IP 127.0.0.1.
+2025-10-04 12:10:51,931 - INFO - POST /forgot-password - Status: 302 - Duration: 3.2173s
+2025-10-04 12:10:51,932 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:51] "[32mPOST /forgot-password HTTP/1.1[0m" 302 -
+2025-10-04 12:10:51,940 - INFO - GET /login - Status: 200 - Duration: 0.0000s
+2025-10-04 12:10:51,940 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:51] "GET /login HTTP/1.1" 200 -
+2025-10-04 12:10:51,970 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 12:10:51,970 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:10:51,975 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 12:10:51,975 - INFO - 127.0.0.1 - - [04/Oct/2025 12:10:51] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:11:08,077 - INFO - GET /reset-password/Mw.aOCeSA.WM9KJ8C3M_9o0D-74vHJyYLYr6w - Status: 200 - Duration: 0.0050s
+2025-10-04 12:11:08,078 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:08] "GET /reset-password/Mw.aOCeSA.WM9KJ8C3M_9o0D-74vHJyYLYr6w HTTP/1.1" 200 -
+2025-10-04 12:11:08,094 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:11:08,094 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:11:08,094 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:11:08,094 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:08] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:11:19,028 - INFO - Password reset successful for user 'khairulanwarsedek' (ID: 3) from IP 127.0.0.1.
+2025-10-04 12:11:19,028 - INFO - POST /reset-password/Mw.aOCeSA.WM9KJ8C3M_9o0D-74vHJyYLYr6w - Status: 302 - Duration: 0.7603s
+2025-10-04 12:11:19,029 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:19] "[32mPOST /reset-password/Mw.aOCeSA.WM9KJ8C3M_9o0D-74vHJyYLYr6w HTTP/1.1[0m" 302 -
+2025-10-04 12:11:19,029 - INFO - GET /login - Status: 200 - Duration: 0.0000s
+2025-10-04 12:11:19,029 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:19] "GET /login HTTP/1.1" 200 -
+2025-10-04 12:11:19,093 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:11:19,093 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:11:19,093 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:11:19,093 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:19] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:11:27,329 - INFO - User 'khairulanwarsedek' logged in successfully from IP 127.0.0.1.
+2025-10-04 12:11:27,329 - INFO - POST /login - Status: 302 - Duration: 0.6749s
+2025-10-04 12:11:27,329 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-04 12:11:27,362 - INFO - GET / - Status: 200 - Duration: 0.0327s
+2025-10-04 12:11:27,363 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:27] "GET / HTTP/1.1" 200 -
+2025-10-04 12:11:27,382 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:11:27,382 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:11:27,394 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:11:27,394 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:27] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:11:33,422 - INFO - GET / - Status: 200 - Duration: 0.0030s
+2025-10-04 12:11:33,423 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:33] "GET / HTTP/1.1" 200 -
+2025-10-04 12:11:33,440 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 12:11:33,440 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:11:33,441 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:11:33,442 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:33] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:11:40,220 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b - Status: 200 - Duration: 0.0148s
+2025-10-04 12:11:40,221 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:40] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b HTTP/1.1" 200 -
+2025-10-04 12:11:40,248 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:11:40,249 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:11:40,251 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 12:11:40,251 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:40] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:11:40,321 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/qr - Status: 200 - Duration: 0.0662s
+2025-10-04 12:11:40,321 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:40] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/qr HTTP/1.1" 200 -
+2025-10-04 12:11:43,684 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b - Status: 200 - Duration: 0.0000s
+2025-10-04 12:11:43,684 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:43] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b HTTP/1.1" 200 -
+2025-10-04 12:11:43,696 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:11:43,696 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:11:43,696 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:11:43,711 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:43] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:11:43,722 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/qr - Status: 200 - Duration: 0.0260s
+2025-10-04 12:11:43,722 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:43] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/qr HTTP/1.1" 200 -
+2025-10-04 12:11:43,877 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0010s
+2025-10-04 12:11:43,878 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:43] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 12:11:56,835 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0089s
+2025-10-04 12:11:56,836 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:56] "GET /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:11:56,863 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0011s
+2025-10-04 12:11:56,863 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:11:56,866 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 12:11:56,866 - INFO - 127.0.0.1 - - [04/Oct/2025 12:11:56] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:12:58,997 - INFO - User 'khairulanwarsedek' is generating 10 questions.
+2025-10-04 12:12:59,558 - ERROR - Gemini API Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-04 12:12:59,559 - ERROR - An unexpected error occurred in parse_questions: expected string or bytes-like object, got 'tuple'
+2025-10-04 12:12:59,575 - INFO - POST /create-quiz - Status: 200 - Duration: 0.6141s
+2025-10-04 12:12:59,577 - INFO - 127.0.0.1 - - [04/Oct/2025 12:12:59] "POST /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:12:59,600 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:12:59,600 - INFO - 127.0.0.1 - - [04/Oct/2025 12:12:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:12:59,606 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0020s
+2025-10-04 12:12:59,606 - INFO - 127.0.0.1 - - [04/Oct/2025 12:12:59] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:14:47,152 - INFO - GET / - Status: 200 - Duration: 0.0040s
+2025-10-04 12:14:47,152 - INFO - 127.0.0.1 - - [04/Oct/2025 12:14:47] "GET / HTTP/1.1" 200 -
+2025-10-04 12:14:47,199 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0011s
+2025-10-04 12:14:47,199 - INFO - 127.0.0.1 - - [04/Oct/2025 12:14:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:14:47,201 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:14:47,202 - INFO - 127.0.0.1 - - [04/Oct/2025 12:14:47] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:14:50,245 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0020s
+2025-10-04 12:14:50,245 - INFO - 127.0.0.1 - - [04/Oct/2025 12:14:50] "GET /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:14:50,267 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:14:50,267 - INFO - 127.0.0.1 - - [04/Oct/2025 12:14:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:14:50,271 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:14:50,271 - INFO - 127.0.0.1 - - [04/Oct/2025 12:14:50] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:15:36,316 - INFO - PDF extraction of 55 pages took 0.47s.
+2025-10-04 12:15:36,317 - INFO - User 'khairulanwarsedek' is generating 10 questions.
+2025-10-04 12:15:36,449 - ERROR - Gemini API Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-04 12:15:36,449 - ERROR - An unexpected error occurred in parse_questions: expected string or bytes-like object, got 'tuple'
+2025-10-04 12:15:36,449 - INFO - POST /create-quiz - Status: 200 - Duration: 0.5998s
+2025-10-04 12:15:36,452 - INFO - 127.0.0.1 - - [04/Oct/2025 12:15:36] "POST /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:15:36,474 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:15:36,474 - INFO - 127.0.0.1 - - [04/Oct/2025 12:15:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:15:36,474 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:15:36,474 - INFO - 127.0.0.1 - - [04/Oct/2025 12:15:36] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:16:32,111 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:16:32,111 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:16:32,111 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:16:32,119 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0089s
+2025-10-04 12:16:32,119 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:32] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:16:36,716 - INFO - PDF extraction of 55 pages took 0.46s.
+2025-10-04 12:16:36,716 - INFO - User 'khairulanwarsedek' is generating 10 questions.
+2025-10-04 12:16:36,853 - ERROR - Gemini API Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-04 12:16:36,854 - ERROR - An unexpected error occurred in parse_questions: expected string or bytes-like object, got 'tuple'
+2025-10-04 12:16:36,854 - INFO - POST /create-quiz - Status: 200 - Duration: 0.5989s
+2025-10-04 12:16:36,854 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:36] "POST /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:16:36,896 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:16:36,901 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0047s
+2025-10-04 12:16:36,902 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:36] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:16:36,906 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0013s
+2025-10-04 12:16:36,906 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:16:36,907 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:16:36,908 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:36] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:16:37,662 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0010s
+2025-10-04 12:16:37,662 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:37] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 12:16:41,310 - INFO - GET / - Status: 200 - Duration: 0.0019s
+2025-10-04 12:16:41,310 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:41] "GET / HTTP/1.1" 200 -
+2025-10-04 12:16:41,331 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:16:41,332 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 12:16:41,334 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:41] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:16:41,335 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 12:16:41,336 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:16:41,337 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0024s
+2025-10-04 12:16:41,337 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:41] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:16:43,551 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0021s
+2025-10-04 12:16:43,552 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:43] "GET /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:16:43,571 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:16:43,572 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 12:16:43,573 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:43] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:16:43,579 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0022s
+2025-10-04 12:16:43,579 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:16:43,580 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 12:16:43,580 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:43] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:16:58,076 - INFO - PDF extraction of 55 pages took 0.48s.
+2025-10-04 12:16:58,076 - INFO - POST /create-quiz - Status: 302 - Duration: 0.4844s
+2025-10-04 12:16:58,078 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:58] "[32mPOST /create-quiz HTTP/1.1[0m" 302 -
+2025-10-04 12:16:58,084 - INFO - GET / - Status: 200 - Duration: 0.0000s
+2025-10-04 12:16:58,084 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:58] "GET / HTTP/1.1" 200 -
+2025-10-04 12:16:58,109 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:16:58,110 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 12:16:58,111 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:58] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:16:58,116 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0050s
+2025-10-04 12:16:58,117 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:16:58,118 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:16:58,119 - INFO - 127.0.0.1 - - [04/Oct/2025 12:16:58] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:17:02,103 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0020s
+2025-10-04 12:17:02,104 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:02] "GET /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:17:02,123 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:17:02,124 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 12:17:02,125 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:02] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:17:02,130 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 12:17:02,130 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:17:02,131 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:17:02,133 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:02] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:17:15,607 - INFO - PDF extraction of 55 pages took 0.49s.
+2025-10-04 12:17:15,608 - INFO - User 'khairulanwarsedek' is generating 10 questions.
+2025-10-04 12:17:15,747 - ERROR - Gemini API Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-04 12:17:15,747 - ERROR - An unexpected error occurred in parse_questions: expected string or bytes-like object, got 'tuple'
+2025-10-04 12:17:15,747 - INFO - POST /create-quiz - Status: 200 - Duration: 0.6292s
+2025-10-04 12:17:15,750 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:15] "POST /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:17:15,768 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:17:15,770 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 12:17:15,770 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:15] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:17:15,776 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 12:17:15,777 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:17:15,778 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:17:15,778 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:15] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:17:19,686 - INFO - GET / - Status: 200 - Duration: 0.0030s
+2025-10-04 12:17:19,686 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:19] "GET / HTTP/1.1" 200 -
+2025-10-04 12:17:19,706 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:17:19,707 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 12:17:19,708 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:19] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:17:19,713 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0012s
+2025-10-04 12:17:19,713 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:17:19,715 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0008s
+2025-10-04 12:17:19,715 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:19] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:17:22,819 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0020s
+2025-10-04 12:17:22,820 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:22] "GET /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:17:22,842 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:17:22,844 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 12:17:22,844 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:22] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:17:22,850 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 12:17:22,851 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:17:22,852 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 12:17:22,852 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:22] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:17:53,728 - INFO - PDF extraction of 18 pages took 1.43s.
+2025-10-04 12:17:53,728 - INFO - POST /create-quiz - Status: 302 - Duration: 1.4273s
+2025-10-04 12:17:53,730 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:53] "[32mPOST /create-quiz HTTP/1.1[0m" 302 -
+2025-10-04 12:17:53,740 - INFO - GET / - Status: 200 - Duration: 0.0070s
+2025-10-04 12:17:53,740 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:53] "GET / HTTP/1.1" 200 -
+2025-10-04 12:17:53,768 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:17:53,769 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 12:17:53,770 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:53] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:17:53,779 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:17:53,780 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:17:53,782 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 12:17:53,782 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:53] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:17:58,521 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0010s
+2025-10-04 12:17:58,522 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:58] "GET /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:17:58,544 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:17:58,546 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 12:17:58,548 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:58] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:17:58,550 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:17:58,552 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:17:58,553 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:17:58,555 - INFO - 127.0.0.1 - - [04/Oct/2025 12:17:58] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:18:10,602 - INFO - PDF extraction of 18 pages took 1.47s.
+2025-10-04 12:18:10,604 - INFO - User 'khairulanwarsedek' is generating 10 questions.
+2025-10-04 12:18:10,740 - ERROR - Gemini API Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-04 12:18:10,740 - ERROR - An unexpected error occurred in parse_questions: expected string or bytes-like object, got 'tuple'
+2025-10-04 12:18:10,742 - INFO - POST /create-quiz - Status: 200 - Duration: 1.6111s
+2025-10-04 12:18:10,743 - INFO - 127.0.0.1 - - [04/Oct/2025 12:18:10] "POST /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:18:10,759 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:18:10,768 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0085s
+2025-10-04 12:18:10,770 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 12:18:10,771 - INFO - 127.0.0.1 - - [04/Oct/2025 12:18:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:18:10,771 - INFO - 127.0.0.1 - - [04/Oct/2025 12:18:10] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:18:10,771 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:18:10,772 - INFO - 127.0.0.1 - - [04/Oct/2025 12:18:10] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:48:20,793 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-04 12:48:23,041 - INFO -  * Restarting with stat
+2025-10-04 12:48:25,829 - WARNING -  * Debugger is active!
+2025-10-04 12:48:25,833 - INFO -  * Debugger PIN: 125-780-598
+2025-10-04 12:48:32,264 - INFO - GET / - Status: 200 - Duration: 0.0726s
+2025-10-04 12:48:32,265 - INFO - 127.0.0.1 - - [04/Oct/2025 12:48:32] "GET / HTTP/1.1" 200 -
+2025-10-04 12:48:32,294 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:48:32,306 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0129s
+2025-10-04 12:48:32,307 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0100s
+2025-10-04 12:48:32,307 - INFO - 127.0.0.1 - - [04/Oct/2025 12:48:32] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:48:32,307 - INFO - 127.0.0.1 - - [04/Oct/2025 12:48:32] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:48:32,308 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0129s
+2025-10-04 12:48:32,309 - INFO - 127.0.0.1 - - [04/Oct/2025 12:48:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:48:35,051 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0148s
+2025-10-04 12:48:35,052 - INFO - 127.0.0.1 - - [04/Oct/2025 12:48:35] "GET /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:48:35,064 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:48:35,064 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0000s
+2025-10-04 12:48:35,075 - INFO - 127.0.0.1 - - [04/Oct/2025 12:48:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:48:35,077 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 12:48:35,077 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:48:35,079 - INFO - 127.0.0.1 - - [04/Oct/2025 12:48:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:48:35,079 - INFO - 127.0.0.1 - - [04/Oct/2025 12:48:35] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:48:48,209 - INFO - PDF extraction of 18 pages took 1.42s.
+2025-10-04 12:48:48,229 - INFO - User 'khairulanwarsedek' is generating 10 questions.
+2025-10-04 12:48:48,478 - ERROR - Gemini API Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-04 12:48:48,546 - INFO - 127.0.0.1 - - [04/Oct/2025 12:48:48] "[35m[1mPOST /create-quiz HTTP/1.1[0m" 500 -
+2025-10-04 12:48:48,567 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:48:48,569 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 12:48:48,570 - INFO - 127.0.0.1 - - [04/Oct/2025 12:48:48] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:48:48,593 - INFO - 127.0.0.1 - - [04/Oct/2025 12:48:48] "GET /create-quiz?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-10-04 12:48:48,600 - INFO - 127.0.0.1 - - [04/Oct/2025 12:48:48] "GET /create-quiz?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-04 12:48:48,669 - INFO - 127.0.0.1 - - [04/Oct/2025 12:48:48] "GET /create-quiz?__debugger__=yes&cmd=resource&f=console.png&s=bIcnJQvIkyb9cy288lfL HTTP/1.1" 200 -
+2025-10-04 12:48:49,333 - INFO - 127.0.0.1 - - [04/Oct/2025 12:48:49] "GET /create-quiz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-10-04 12:49:59,164 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-04 12:50:01,412 - INFO -  * Restarting with stat
+2025-10-04 12:50:03,059 - WARNING -  * Debugger is active!
+2025-10-04 12:50:03,064 - INFO -  * Debugger PIN: 125-780-598
+2025-10-04 12:50:07,479 - INFO - GET /login - Status: 200 - Duration: 0.0426s
+2025-10-04 12:50:07,479 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:07] "GET /login HTTP/1.1" 200 -
+2025-10-04 12:50:07,511 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0005s
+2025-10-04 12:50:07,512 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:50:07,513 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0005s
+2025-10-04 12:50:07,513 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:07] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:50:08,620 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0092s
+2025-10-04 12:50:08,621 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:08] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 12:50:17,074 - INFO - User 'khairulanwarsedek' logged in successfully from IP 127.0.0.1.
+2025-10-04 12:50:17,074 - INFO - POST /login - Status: 302 - Duration: 0.6621s
+2025-10-04 12:50:17,075 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-04 12:50:17,090 - INFO - GET / - Status: 200 - Duration: 0.0080s
+2025-10-04 12:50:17,091 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:17] "GET / HTTP/1.1" 200 -
+2025-10-04 12:50:17,112 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:50:17,112 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:50:17,112 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:50:17,112 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:17] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:50:18,730 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0041s
+2025-10-04 12:50:18,730 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:18] "GET /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:50:18,759 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 12:50:18,759 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:50:18,762 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 12:50:18,762 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:18] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:50:25,511 - INFO - PDF extraction of 18 pages took 1.41s.
+2025-10-04 12:50:25,511 - INFO - POST /create-quiz - Status: 302 - Duration: 1.4065s
+2025-10-04 12:50:25,511 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:25] "[32mPOST /create-quiz HTTP/1.1[0m" 302 -
+2025-10-04 12:50:25,534 - INFO - GET / - Status: 200 - Duration: 0.0030s
+2025-10-04 12:50:25,534 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:25] "GET / HTTP/1.1" 200 -
+2025-10-04 12:50:25,556 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 12:50:25,556 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:50:25,558 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 12:50:25,559 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:25] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:50:28,094 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0030s
+2025-10-04 12:50:28,094 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:28] "GET /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:50:28,119 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0011s
+2025-10-04 12:50:28,120 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:50:28,120 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 12:50:28,120 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:28] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:50:39,075 - INFO - PDF extraction of 18 pages took 1.42s.
+2025-10-04 12:50:39,078 - INFO - User 'khairulanwarsedek' is generating 5 questions.
+2025-10-04 12:50:39,345 - ERROR - Gemini API Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-04 12:50:39,345 - ERROR - An unexpected error occurred in parse_questions: expected string or bytes-like object, got 'tuple'
+2025-10-04 12:50:39,360 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:39] "[35m[1mPOST /create-quiz HTTP/1.1[0m" 500 -
+2025-10-04 12:50:39,383 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:39] "[36mGET /create-quiz?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-04 12:50:39,385 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:39] "[36mGET /create-quiz?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-04 12:50:39,444 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:39] "GET /create-quiz?__debugger__=yes&cmd=resource&f=console.png&s=fKp6fkpblaUTiFBihiah HTTP/1.1" 200 -
+2025-10-04 12:50:39,571 - INFO - 127.0.0.1 - - [04/Oct/2025 12:50:39] "[36mGET /create-quiz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-04 12:50:51,412 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-04 12:50:53,650 - INFO -  * Restarting with stat
+2025-10-04 12:50:55,314 - WARNING -  * Debugger is active!
+2025-10-04 12:50:55,318 - INFO -  * Debugger PIN: 125-780-598
+2025-10-04 12:57:46,970 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-04 12:57:47,162 - INFO -  * Restarting with stat
+2025-10-04 12:57:48,900 - WARNING -  * Debugger is active!
+2025-10-04 12:57:48,900 - INFO -  * Debugger PIN: 125-780-598
+2025-10-04 12:59:13,214 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-04 12:59:13,423 - INFO -  * Restarting with stat
+2025-10-04 12:59:15,062 - WARNING -  * Debugger is active!
+2025-10-04 12:59:15,065 - INFO -  * Debugger PIN: 125-780-598
+2025-10-04 12:59:35,688 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-04 12:59:35,688 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 12:59:35,688 - INFO -  * Restarting with stat
+2025-10-04 12:59:37,224 - WARNING -  * Debugger is active!
+2025-10-04 12:59:37,229 - INFO -  * Debugger PIN: 125-780-598
+2025-10-04 12:59:49,900 - INFO - PDF extraction of 18 pages took 1.45s.
+2025-10-04 12:59:49,918 - INFO - User 'khairulanwarsedek' is generating 10 questions.
+2025-10-04 12:59:50,454 - ERROR - Gemini API Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-04 12:59:50,454 - INFO - POST /create-quiz - Status: 302 - Duration: 2.0258s
+2025-10-04 12:59:50,462 - INFO - 127.0.0.1 - - [04/Oct/2025 12:59:50] "[32mPOST /create-quiz HTTP/1.1[0m" 302 -
+2025-10-04 12:59:50,489 - INFO - GET / - Status: 200 - Duration: 0.0147s
+2025-10-04 12:59:50,489 - INFO - 127.0.0.1 - - [04/Oct/2025 12:59:50] "GET / HTTP/1.1" 200 -
+2025-10-04 12:59:50,520 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:59:50,522 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 12:59:50,528 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0079s
+2025-10-04 12:59:50,528 - INFO - 127.0.0.1 - - [04/Oct/2025 12:59:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:59:50,529 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0020s
+2025-10-04 12:59:50,530 - INFO - 127.0.0.1 - - [04/Oct/2025 12:59:50] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:59:50,530 - INFO - 127.0.0.1 - - [04/Oct/2025 12:59:50] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 12:59:53,542 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0030s
+2025-10-04 12:59:53,543 - INFO - 127.0.0.1 - - [04/Oct/2025 12:59:53] "GET /create-quiz HTTP/1.1" 200 -
+2025-10-04 12:59:53,561 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 12:59:53,562 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 12:59:53,562 - INFO - 127.0.0.1 - - [04/Oct/2025 12:59:53] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 12:59:53,567 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 12:59:53,568 - INFO - 127.0.0.1 - - [04/Oct/2025 12:59:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 12:59:53,569 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 12:59:53,570 - INFO - 127.0.0.1 - - [04/Oct/2025 12:59:53] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:00:04,402 - INFO - PDF extraction of 18 pages took 1.39s.
+2025-10-04 13:00:04,402 - INFO - User 'khairulanwarsedek' is generating 5 questions.
+2025-10-04 13:00:04,557 - ERROR - Gemini API Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-04 13:00:04,557 - INFO - POST /create-quiz - Status: 302 - Duration: 1.5422s
+2025-10-04 13:00:04,558 - INFO - 127.0.0.1 - - [04/Oct/2025 13:00:04] "[32mPOST /create-quiz HTTP/1.1[0m" 302 -
+2025-10-04 13:00:04,567 - INFO - GET / - Status: 200 - Duration: 0.0030s
+2025-10-04 13:00:04,567 - INFO - 127.0.0.1 - - [04/Oct/2025 13:00:04] "GET / HTTP/1.1" 200 -
+2025-10-04 13:00:04,590 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:00:04,591 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 13:00:04,592 - INFO - 127.0.0.1 - - [04/Oct/2025 13:00:04] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:00:04,598 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 13:00:04,598 - INFO - 127.0.0.1 - - [04/Oct/2025 13:00:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:00:04,602 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:00:04,603 - INFO - 127.0.0.1 - - [04/Oct/2025 13:00:04] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:01:34,944 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0000s
+2025-10-04 13:01:34,944 - INFO - 127.0.0.1 - - [04/Oct/2025 13:01:34] "GET /create-quiz HTTP/1.1" 200 -
+2025-10-04 13:01:34,981 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:01:34,985 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0041s
+2025-10-04 13:01:34,986 - INFO - 127.0.0.1 - - [04/Oct/2025 13:01:34] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:01:36,292 - INFO - GET / - Status: 200 - Duration: 0.0040s
+2025-10-04 13:01:36,293 - INFO - 127.0.0.1 - - [04/Oct/2025 13:01:36] "GET / HTTP/1.1" 200 -
+2025-10-04 13:01:36,311 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:01:36,312 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 13:01:36,312 - INFO - 127.0.0.1 - - [04/Oct/2025 13:01:36] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:01:46,121 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0020s
+2025-10-04 13:01:46,121 - INFO - 127.0.0.1 - - [04/Oct/2025 13:01:46] "GET /create-quiz HTTP/1.1" 200 -
+2025-10-04 13:01:46,147 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:01:46,147 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0000s
+2025-10-04 13:01:46,152 - INFO - 127.0.0.1 - - [04/Oct/2025 13:01:46] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:01:46,161 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0021s
+2025-10-04 13:01:46,161 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:01:46,161 - INFO - 127.0.0.1 - - [04/Oct/2025 13:01:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:01:46,162 - INFO - 127.0.0.1 - - [04/Oct/2025 13:01:46] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:02:11,337 - INFO - PDF extraction of 18 pages took 1.46s.
+2025-10-04 13:02:11,337 - INFO - User 'khairulanwarsedek' is generating 4 questions.
+2025-10-04 13:02:11,486 - ERROR - Gemini API Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-04 13:02:11,486 - INFO - POST /create-quiz - Status: 302 - Duration: 1.6097s
+2025-10-04 13:02:11,486 - INFO - 127.0.0.1 - - [04/Oct/2025 13:02:11] "[32mPOST /create-quiz HTTP/1.1[0m" 302 -
+2025-10-04 13:02:11,504 - INFO - GET / - Status: 200 - Duration: 0.0000s
+2025-10-04 13:02:11,504 - INFO - 127.0.0.1 - - [04/Oct/2025 13:02:11] "GET / HTTP/1.1" 200 -
+2025-10-04 13:02:11,531 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:02:11,531 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0000s
+2025-10-04 13:02:11,531 - INFO - 127.0.0.1 - - [04/Oct/2025 13:02:11] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:02:11,541 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0013s
+2025-10-04 13:02:11,542 - INFO - 127.0.0.1 - - [04/Oct/2025 13:02:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:02:11,542 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:02:11,543 - INFO - 127.0.0.1 - - [04/Oct/2025 13:02:11] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:10:06,660 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-04 13:10:08,915 - INFO -  * Restarting with stat
+2025-10-04 13:10:10,676 - WARNING -  * Debugger is active!
+2025-10-04 13:10:10,692 - INFO -  * Debugger PIN: 125-780-598
+2025-10-04 13:10:11,777 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0225s
+2025-10-04 13:10:11,777 - INFO - 127.0.0.1 - - [04/Oct/2025 13:10:11] "GET /create-quiz HTTP/1.1" 200 -
+2025-10-04 13:10:11,812 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:10:11,817 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0050s
+2025-10-04 13:10:11,820 - INFO - 127.0.0.1 - - [04/Oct/2025 13:10:11] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:10:11,820 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0026s
+2025-10-04 13:10:11,820 - INFO - 127.0.0.1 - - [04/Oct/2025 13:10:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:10:11,820 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 13:10:11,820 - INFO - 127.0.0.1 - - [04/Oct/2025 13:10:11] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:10:30,410 - INFO - PDF extraction of 18 pages took 1.45s.
+2025-10-04 13:10:30,427 - INFO - User 'khairulanwarsedek' is generating 5 questions.
+2025-10-04 13:10:33,359 - INFO - Gemini API call for question generation took 2.93s.
+2025-10-04 13:10:33,376 - INFO - POST /create-quiz - Status: 200 - Duration: 4.4199s
+2025-10-04 13:10:33,377 - INFO - 127.0.0.1 - - [04/Oct/2025 13:10:33] "POST /create-quiz HTTP/1.1" 200 -
+2025-10-04 13:10:33,400 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:10:33,401 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 13:10:33,402 - INFO - 127.0.0.1 - - [04/Oct/2025 13:10:33] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:10:33,407 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0023s
+2025-10-04 13:10:33,408 - INFO - 127.0.0.1 - - [04/Oct/2025 13:10:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:10:33,408 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:10:33,408 - INFO - 127.0.0.1 - - [04/Oct/2025 13:10:33] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:10:54,177 - INFO - User 'khairulanwarsedek' saved a new quiz titled 'ICT651 quiz 1'. Public ID: 267cff0f-9562-4d4a-b160-77ae0767e8fd
+2025-10-04 13:10:54,177 - INFO - POST /save-questions - Status: 302 - Duration: 0.0151s
+2025-10-04 13:10:54,177 - INFO - 127.0.0.1 - - [04/Oct/2025 13:10:54] "[32mPOST /save-questions HTTP/1.1[0m" 302 -
+2025-10-04 13:10:54,211 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd - Status: 200 - Duration: 0.0337s
+2025-10-04 13:10:54,225 - INFO - 127.0.0.1 - - [04/Oct/2025 13:10:54] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd HTTP/1.1" 200 -
+2025-10-04 13:10:54,245 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:10:54,246 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 13:10:54,247 - INFO - 127.0.0.1 - - [04/Oct/2025 13:10:54] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:10:54,251 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 13:10:54,251 - INFO - 127.0.0.1 - - [04/Oct/2025 13:10:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:10:54,255 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0023s
+2025-10-04 13:10:54,265 - INFO - 127.0.0.1 - - [04/Oct/2025 13:10:54] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:10:54,303 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/qr - Status: 200 - Duration: 0.0480s
+2025-10-04 13:10:54,303 - INFO - 127.0.0.1 - - [04/Oct/2025 13:10:54] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/qr HTTP/1.1" 200 -
+2025-10-04 13:11:10,141 - INFO - GET / - Status: 200 - Duration: 0.0105s
+2025-10-04 13:11:10,141 - INFO - 127.0.0.1 - - [04/Oct/2025 13:11:10] "GET / HTTP/1.1" 200 -
+2025-10-04 13:11:10,171 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:11:10,172 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0013s
+2025-10-04 13:11:10,173 - INFO - 127.0.0.1 - - [04/Oct/2025 13:11:10] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:11:10,181 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 13:11:10,182 - INFO - 127.0.0.1 - - [04/Oct/2025 13:11:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:11:10,183 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:11:10,184 - INFO - 127.0.0.1 - - [04/Oct/2025 13:11:10] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:11:14,738 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd - Status: 200 - Duration: 0.0000s
+2025-10-04 13:11:14,738 - INFO - 127.0.0.1 - - [04/Oct/2025 13:11:14] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd HTTP/1.1" 200 -
+2025-10-04 13:11:14,760 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:11:14,762 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 13:11:14,763 - INFO - 127.0.0.1 - - [04/Oct/2025 13:11:14] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:11:14,767 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 13:11:14,767 - INFO - 127.0.0.1 - - [04/Oct/2025 13:11:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:11:14,769 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:11:14,769 - INFO - 127.0.0.1 - - [04/Oct/2025 13:11:14] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:11:14,781 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/qr - Status: 200 - Duration: 0.0094s
+2025-10-04 13:11:14,782 - INFO - 127.0.0.1 - - [04/Oct/2025 13:11:14] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/qr HTTP/1.1" 200 -
+2025-10-04 13:15:07,834 - INFO - GET / - Status: 200 - Duration: 0.0061s
+2025-10-04 13:15:07,835 - INFO - 127.0.0.1 - - [04/Oct/2025 13:15:07] "GET / HTTP/1.1" 200 -
+2025-10-04 13:15:07,865 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:15:07,867 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 13:15:07,868 - INFO - 127.0.0.1 - - [04/Oct/2025 13:15:07] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:15:07,875 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 13:15:07,877 - INFO - 127.0.0.1 - - [04/Oct/2025 13:15:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:15:07,879 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:15:07,880 - INFO - 127.0.0.1 - - [04/Oct/2025 13:15:07] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:15:12,481 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/edit - Status: 200 - Duration: 0.0227s
+2025-10-04 13:15:12,485 - INFO - 127.0.0.1 - - [04/Oct/2025 13:15:12] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/edit HTTP/1.1" 200 -
+2025-10-04 13:15:12,506 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:15:12,507 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 13:15:12,508 - INFO - 127.0.0.1 - - [04/Oct/2025 13:15:12] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:15:12,511 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 13:15:12,513 - INFO - 127.0.0.1 - - [04/Oct/2025 13:15:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:15:12,514 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:15:12,515 - INFO - 127.0.0.1 - - [04/Oct/2025 13:15:12] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:16:17,745 - INFO - User 'khairulanwarsedek' edited quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b'.
+2025-10-04 13:16:17,746 - INFO - POST /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/edit - Status: 302 - Duration: 0.0130s
+2025-10-04 13:16:17,748 - INFO - 127.0.0.1 - - [04/Oct/2025 13:16:17] "[32mPOST /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/edit HTTP/1.1[0m" 302 -
+2025-10-04 13:16:17,756 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b - Status: 200 - Duration: 0.0000s
+2025-10-04 13:16:17,762 - INFO - 127.0.0.1 - - [04/Oct/2025 13:16:17] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b HTTP/1.1" 200 -
+2025-10-04 13:16:17,788 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:16:17,790 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 13:16:17,791 - INFO - 127.0.0.1 - - [04/Oct/2025 13:16:17] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:16:17,799 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 13:16:17,800 - INFO - 127.0.0.1 - - [04/Oct/2025 13:16:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:16:17,802 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 13:16:17,803 - INFO - 127.0.0.1 - - [04/Oct/2025 13:16:17] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:16:17,815 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/qr - Status: 200 - Duration: 0.0110s
+2025-10-04 13:16:17,816 - INFO - 127.0.0.1 - - [04/Oct/2025 13:16:17] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/qr HTTP/1.1" 200 -
+2025-10-04 13:16:28,241 - WARNING - Attempt to access unavailable quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b'. Reason: This quiz has been manually closed by the instructor.
+2025-10-04 13:16:28,256 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take - Status: 403 - Duration: 0.0160s
+2025-10-04 13:16:28,257 - INFO - 127.0.0.1 - - [04/Oct/2025 13:16:28] "[31m[1mGET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take HTTP/1.1[0m" 403 -
+2025-10-04 13:16:28,293 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 13:16:28,293 - INFO - 127.0.0.1 - - [04/Oct/2025 13:16:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:16:28,293 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 13:16:28,293 - INFO - 127.0.0.1 - - [04/Oct/2025 13:16:28] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:17:09,984 - WARNING - Attempt to access unavailable quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b'. Reason: This quiz has been manually closed by the instructor.
+2025-10-04 13:17:09,985 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take - Status: 403 - Duration: 0.0031s
+2025-10-04 13:17:09,986 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:09] "[31m[1mGET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take HTTP/1.1[0m" 403 -
+2025-10-04 13:17:10,012 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 13:17:10,013 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:17:10,014 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:17:10,014 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:10] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:17:10,178 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0000s
+2025-10-04 13:17:10,178 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:10] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 13:17:24,016 - WARNING - Attempt to access unavailable quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b'. Reason: This quiz has been manually closed by the instructor.
+2025-10-04 13:17:24,016 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take - Status: 403 - Duration: 0.0000s
+2025-10-04 13:17:24,016 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:24] "[31m[1mGET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take HTTP/1.1[0m" 403 -
+2025-10-04 13:17:24,051 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 13:17:24,052 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:17:24,052 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 13:17:24,053 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:24] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:17:24,215 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0007s
+2025-10-04 13:17:24,215 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:24] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 13:17:25,293 - WARNING - Attempt to access unavailable quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b'. Reason: This quiz has been manually closed by the instructor.
+2025-10-04 13:17:25,293 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take - Status: 403 - Duration: 0.0000s
+2025-10-04 13:17:25,293 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:25] "[31m[1mGET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take HTTP/1.1[0m" 403 -
+2025-10-04 13:17:25,316 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 13:17:25,317 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:17:25,317 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:17:25,317 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:25] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:17:25,473 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0000s
+2025-10-04 13:17:25,474 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:25] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 13:17:39,649 - INFO - GET / - Status: 200 - Duration: 0.0057s
+2025-10-04 13:17:39,649 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:39] "GET / HTTP/1.1" 200 -
+2025-10-04 13:17:39,674 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:17:39,675 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 13:17:39,676 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:39] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:17:39,683 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 13:17:39,685 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:17:39,685 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 13:17:39,686 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:39] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:17:57,811 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/edit - Status: 200 - Duration: 0.0000s
+2025-10-04 13:17:57,811 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:57] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/edit HTTP/1.1" 200 -
+2025-10-04 13:17:57,843 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:17:57,845 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0024s
+2025-10-04 13:17:57,846 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:57] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:17:57,849 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 13:17:57,850 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:17:57,856 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:17:57,857 - INFO - 127.0.0.1 - - [04/Oct/2025 13:17:57] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:18:16,952 - WARNING - Attempt to access unavailable quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b'. Reason: This quiz has been manually closed by the instructor.
+2025-10-04 13:18:16,952 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take - Status: 403 - Duration: 0.0000s
+2025-10-04 13:18:16,952 - INFO - 127.0.0.1 - - [04/Oct/2025 13:18:16] "[31m[1mGET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take HTTP/1.1[0m" 403 -
+2025-10-04 13:18:16,989 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 13:18:16,991 - INFO - 127.0.0.1 - - [04/Oct/2025 13:18:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:18:16,991 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0011s
+2025-10-04 13:18:16,992 - INFO - 127.0.0.1 - - [04/Oct/2025 13:18:16] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:18:17,159 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0010s
+2025-10-04 13:18:17,159 - INFO - 127.0.0.1 - - [04/Oct/2025 13:18:17] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 13:20:17,957 - WARNING - Attempt to access unavailable quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b'. Reason: This quiz has been manually closed by the instructor.
+2025-10-04 13:20:17,957 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take - Status: 403 - Duration: 0.0000s
+2025-10-04 13:20:17,957 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:17] "[31m[1mGET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take HTTP/1.1[0m" 403 -
+2025-10-04 13:20:18,001 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0025s
+2025-10-04 13:20:18,001 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:20:18,002 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 13:20:18,003 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:18] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:20:18,224 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0010s
+2025-10-04 13:20:18,224 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:18] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 13:20:30,264 - INFO - GET / - Status: 200 - Duration: 0.0040s
+2025-10-04 13:20:30,264 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:30] "GET / HTTP/1.1" 200 -
+2025-10-04 13:20:30,290 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:20:30,292 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0021s
+2025-10-04 13:20:30,293 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:30] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:20:30,301 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0008s
+2025-10-04 13:20:30,301 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:20:30,303 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:20:30,303 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:30] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:20:34,108 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b - Status: 200 - Duration: 0.0040s
+2025-10-04 13:20:34,109 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:34] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b HTTP/1.1" 200 -
+2025-10-04 13:20:34,136 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:20:34,137 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 13:20:34,139 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:34] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:20:34,143 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 13:20:34,143 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:20:34,146 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0018s
+2025-10-04 13:20:34,148 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:34] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:20:34,157 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/qr - Status: 200 - Duration: 0.0094s
+2025-10-04 13:20:34,157 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:34] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/qr HTTP/1.1" 200 -
+2025-10-04 13:20:39,784 - WARNING - Attempt to access unavailable quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b'. Reason: This quiz has been manually closed by the instructor.
+2025-10-04 13:20:39,785 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take - Status: 403 - Duration: 0.0013s
+2025-10-04 13:20:39,785 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:39] "[31m[1mGET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take HTTP/1.1[0m" 403 -
+2025-10-04 13:20:39,826 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0019s
+2025-10-04 13:20:39,826 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:20:39,826 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 13:20:39,826 - INFO - 127.0.0.1 - - [04/Oct/2025 13:20:39] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:23:59,504 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-04 13:24:01,719 - INFO -  * Restarting with stat
+2025-10-04 13:24:03,421 - WARNING -  * Debugger is active!
+2025-10-04 13:24:03,421 - INFO -  * Debugger PIN: 125-780-598
+2025-10-04 13:24:36,376 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-04 13:24:36,568 - INFO -  * Restarting with stat
+2025-10-04 13:24:38,303 - WARNING -  * Debugger is active!
+2025-10-04 13:24:38,307 - INFO -  * Debugger PIN: 125-780-598
+2025-10-04 13:26:06,557 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-04 13:26:06,765 - INFO -  * Restarting with stat
+2025-10-04 13:26:08,453 - WARNING -  * Debugger is active!
+2025-10-04 13:26:08,456 - INFO -  * Debugger PIN: 125-780-598
+2025-10-04 13:26:17,743 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-04 13:26:17,928 - INFO -  * Restarting with stat
+2025-10-04 13:26:19,623 - WARNING -  * Debugger is active!
+2025-10-04 13:26:19,640 - INFO -  * Debugger PIN: 125-780-598
+2025-10-04 13:26:47,669 - INFO - GET / - Status: 200 - Duration: 0.0359s
+2025-10-04 13:26:47,670 - INFO - 127.0.0.1 - - [04/Oct/2025 13:26:47] "GET / HTTP/1.1" 200 -
+2025-10-04 13:26:47,695 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 13:26:47,695 - INFO - 127.0.0.1 - - [04/Oct/2025 13:26:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:26:47,699 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:26:47,699 - INFO - 127.0.0.1 - - [04/Oct/2025 13:26:47] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:26:49,930 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/edit - Status: 200 - Duration: 0.0110s
+2025-10-04 13:26:49,931 - INFO - 127.0.0.1 - - [04/Oct/2025 13:26:49] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/edit HTTP/1.1" 200 -
+2025-10-04 13:26:49,960 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 13:26:49,960 - INFO - 127.0.0.1 - - [04/Oct/2025 13:26:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:26:49,963 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:26:49,964 - INFO - 127.0.0.1 - - [04/Oct/2025 13:26:49] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:27:14,939 - INFO - User 'khairulanwarsedek' edited quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b'.
+2025-10-04 13:27:14,939 - INFO - POST /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/edit - Status: 302 - Duration: 0.0109s
+2025-10-04 13:27:14,940 - INFO - 127.0.0.1 - - [04/Oct/2025 13:27:14] "[32mPOST /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/edit HTTP/1.1[0m" 302 -
+2025-10-04 13:27:14,940 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b - Status: 200 - Duration: 0.0000s
+2025-10-04 13:27:14,940 - INFO - 127.0.0.1 - - [04/Oct/2025 13:27:14] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b HTTP/1.1" 200 -
+2025-10-04 13:27:14,982 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 13:27:14,983 - INFO - 127.0.0.1 - - [04/Oct/2025 13:27:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:27:14,986 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0020s
+2025-10-04 13:27:14,987 - INFO - 127.0.0.1 - - [04/Oct/2025 13:27:14] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:27:15,008 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/qr - Status: 200 - Duration: 0.0208s
+2025-10-04 13:27:15,009 - INFO - 127.0.0.1 - - [04/Oct/2025 13:27:15] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/qr HTTP/1.1" 200 -
+2025-10-04 13:27:27,599 - WARNING - Attempt to access unavailable quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b'. Reason: This quiz is not yet open. It will be available on October 04, 2025 at 01:28 PM.
+2025-10-04 13:27:27,602 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take - Status: 403 - Duration: 0.0040s
+2025-10-04 13:27:27,603 - INFO - 127.0.0.1 - - [04/Oct/2025 13:27:27] "[31m[1mGET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take HTTP/1.1[0m" 403 -
+2025-10-04 13:27:27,642 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 13:27:27,643 - INFO - 127.0.0.1 - - [04/Oct/2025 13:27:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:27:27,645 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 13:27:27,645 - INFO - 127.0.0.1 - - [04/Oct/2025 13:27:27] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:28:00,926 - INFO - Quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b' is being viewed for an attempt.
+2025-10-04 13:28:00,947 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take - Status: 200 - Duration: 0.0210s
+2025-10-04 13:28:00,947 - INFO - 127.0.0.1 - - [04/Oct/2025 13:28:00] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take HTTP/1.1" 200 -
+2025-10-04 13:28:00,978 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0038s
+2025-10-04 13:28:00,978 - INFO - 127.0.0.1 - - [04/Oct/2025 13:28:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:28:00,978 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 13:28:00,978 - INFO - 127.0.0.1 - - [04/Oct/2025 13:28:00] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:28:01,195 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0000s
+2025-10-04 13:28:01,195 - INFO - 127.0.0.1 - - [04/Oct/2025 13:28:01] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 13:28:35,058 - INFO - Gemini API call for short answer grading took 0.95s.
+2025-10-04 13:28:35,629 - INFO - Gemini API call for short answer grading took 0.57s.
+2025-10-04 13:28:36,149 - INFO - Gemini API call for short answer grading took 0.52s.
+2025-10-04 13:28:36,191 - INFO - Quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b' submitted by 'khairul 1'. Score: 3/21.
+2025-10-04 13:28:36,207 - INFO - POST /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/submit - Status: 200 - Duration: 2.0969s
+2025-10-04 13:28:36,207 - INFO - 127.0.0.1 - - [04/Oct/2025 13:28:36] "POST /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/submit HTTP/1.1" 200 -
+2025-10-04 13:28:36,241 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 13:28:36,241 - INFO - 127.0.0.1 - - [04/Oct/2025 13:28:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:28:36,241 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 13:28:36,241 - INFO - 127.0.0.1 - - [04/Oct/2025 13:28:36] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:28:51,102 - INFO - Quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b' is being viewed for an attempt.
+2025-10-04 13:28:51,104 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take - Status: 200 - Duration: 0.0030s
+2025-10-04 13:28:51,105 - INFO - 127.0.0.1 - - [04/Oct/2025 13:28:51] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take HTTP/1.1" 200 -
+2025-10-04 13:28:51,123 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 13:28:51,124 - INFO - 127.0.0.1 - - [04/Oct/2025 13:28:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:28:51,126 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0011s
+2025-10-04 13:28:51,127 - INFO - 127.0.0.1 - - [04/Oct/2025 13:28:51] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:32:26,297 - INFO - GET / - Status: 200 - Duration: 0.0050s
+2025-10-04 13:32:26,298 - INFO - 127.0.0.1 - - [04/Oct/2025 13:32:26] "GET / HTTP/1.1" 200 -
+2025-10-04 13:32:26,331 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:32:26,336 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0048s
+2025-10-04 13:32:26,339 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0009s
+2025-10-04 13:32:26,339 - INFO - 127.0.0.1 - - [04/Oct/2025 13:32:26] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:32:26,340 - INFO - 127.0.0.1 - - [04/Oct/2025 13:32:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:32:26,342 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:32:26,342 - INFO - 127.0.0.1 - - [04/Oct/2025 13:32:26] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:32:31,596 - INFO - GET / - Status: 200 - Duration: 0.0000s
+2025-10-04 13:32:31,611 - INFO - 127.0.0.1 - - [04/Oct/2025 13:32:31] "GET / HTTP/1.1" 200 -
+2025-10-04 13:32:31,642 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:32:31,644 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0016s
+2025-10-04 13:32:31,645 - INFO - 127.0.0.1 - - [04/Oct/2025 13:32:31] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:32:31,652 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0030s
+2025-10-04 13:32:31,653 - INFO - 127.0.0.1 - - [04/Oct/2025 13:32:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:32:31,653 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:32:31,654 - INFO - 127.0.0.1 - - [04/Oct/2025 13:32:31] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:32:32,315 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0000s
+2025-10-04 13:32:32,316 - INFO - 127.0.0.1 - - [04/Oct/2025 13:32:32] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 13:32:33,622 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/attempts - Status: 200 - Duration: 0.0186s
+2025-10-04 13:32:33,623 - INFO - 127.0.0.1 - - [04/Oct/2025 13:32:33] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/attempts HTTP/1.1" 200 -
+2025-10-04 13:32:33,654 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:32:33,656 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 13:32:33,656 - INFO - 127.0.0.1 - - [04/Oct/2025 13:32:33] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:32:33,662 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 13:32:33,663 - INFO - 127.0.0.1 - - [04/Oct/2025 13:32:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:32:33,665 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0011s
+2025-10-04 13:32:33,665 - INFO - 127.0.0.1 - - [04/Oct/2025 13:32:33] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:33:01,562 - INFO - GET / - Status: 200 - Duration: 0.0040s
+2025-10-04 13:33:01,563 - INFO - 127.0.0.1 - - [04/Oct/2025 13:33:01] "GET / HTTP/1.1" 200 -
+2025-10-04 13:33:01,586 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:33:01,588 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 13:33:01,588 - INFO - 127.0.0.1 - - [04/Oct/2025 13:33:01] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:33:01,596 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0021s
+2025-10-04 13:33:01,596 - INFO - 127.0.0.1 - - [04/Oct/2025 13:33:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:33:01,598 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:33:01,601 - INFO - 127.0.0.1 - - [04/Oct/2025 13:33:01] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 13:33:03,286 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/edit - Status: 200 - Duration: 0.0040s
+2025-10-04 13:33:03,286 - INFO - 127.0.0.1 - - [04/Oct/2025 13:33:03] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/edit HTTP/1.1" 200 -
+2025-10-04 13:33:03,299 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 13:33:03,299 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0000s
+2025-10-04 13:33:03,299 - INFO - 127.0.0.1 - - [04/Oct/2025 13:33:03] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 13:33:03,311 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 13:33:03,313 - INFO - 127.0.0.1 - - [04/Oct/2025 13:33:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 13:33:03,314 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 13:33:03,314 - INFO - 127.0.0.1 - - [04/Oct/2025 13:33:03] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:03:40,707 - INFO - GET / - Status: 200 - Duration: 0.0057s
+2025-10-04 17:03:40,707 - INFO - 127.0.0.1 - - [04/Oct/2025 17:03:40] "GET / HTTP/1.1" 200 -
+2025-10-04 17:03:40,735 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:03:40,741 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0059s
+2025-10-04 17:03:40,744 - INFO - 127.0.0.1 - - [04/Oct/2025 17:03:40] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:03:40,744 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 17:03:40,746 - INFO - 127.0.0.1 - - [04/Oct/2025 17:03:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:03:40,748 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0020s
+2025-10-04 17:03:40,748 - INFO - 127.0.0.1 - - [04/Oct/2025 17:03:40] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:03:53,593 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b - Status: 200 - Duration: 0.0085s
+2025-10-04 17:03:53,593 - INFO - 127.0.0.1 - - [04/Oct/2025 17:03:53] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b HTTP/1.1" 200 -
+2025-10-04 17:03:53,616 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:03:53,617 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 17:03:53,618 - INFO - 127.0.0.1 - - [04/Oct/2025 17:03:53] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:03:53,639 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0144s
+2025-10-04 17:03:53,640 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0129s
+2025-10-04 17:03:53,640 - INFO - 127.0.0.1 - - [04/Oct/2025 17:03:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:03:53,640 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/qr - Status: 200 - Duration: 0.0115s
+2025-10-04 17:03:53,640 - INFO - 127.0.0.1 - - [04/Oct/2025 17:03:53] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:03:53,640 - INFO - 127.0.0.1 - - [04/Oct/2025 17:03:53] "GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/qr HTTP/1.1" 200 -
+2025-10-04 17:03:59,713 - WARNING - Attempt to access unavailable quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b'. Reason: This quiz has closed and is no longer accepting submissions.
+2025-10-04 17:03:59,714 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take - Status: 403 - Duration: 0.0030s
+2025-10-04 17:03:59,715 - INFO - 127.0.0.1 - - [04/Oct/2025 17:03:59] "[31m[1mGET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take HTTP/1.1[0m" 403 -
+2025-10-04 17:03:59,757 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 17:03:59,757 - INFO - 127.0.0.1 - - [04/Oct/2025 17:03:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:03:59,757 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 17:03:59,757 - INFO - 127.0.0.1 - - [04/Oct/2025 17:03:59] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:07:42,877 - WARNING - Attempt to access unavailable quiz 'e96b43df-7c35-44cd-92fb-4a2db3a9af9b'. Reason: This quiz has closed and is no longer accepting submissions.
+2025-10-04 17:07:42,878 - INFO - GET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take - Status: 403 - Duration: 0.0170s
+2025-10-04 17:07:42,879 - INFO - 127.0.0.1 - - [04/Oct/2025 17:07:42] "[31m[1mGET /quiz/e96b43df-7c35-44cd-92fb-4a2db3a9af9b/take HTTP/1.1[0m" 403 -
+2025-10-04 17:07:42,910 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0005s
+2025-10-04 17:07:42,911 - INFO - 127.0.0.1 - - [04/Oct/2025 17:07:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:07:42,913 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 17:07:42,914 - INFO - 127.0.0.1 - - [04/Oct/2025 17:07:42] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:07:43,143 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0199s
+2025-10-04 17:07:43,143 - INFO - 127.0.0.1 - - [04/Oct/2025 17:07:43] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 17:07:53,715 - INFO - GET / - Status: 200 - Duration: 0.0040s
+2025-10-04 17:07:53,716 - INFO - 127.0.0.1 - - [04/Oct/2025 17:07:53] "GET / HTTP/1.1" 200 -
+2025-10-04 17:07:53,749 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:07:53,751 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 17:07:53,751 - INFO - 127.0.0.1 - - [04/Oct/2025 17:07:53] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:07:53,755 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0014s
+2025-10-04 17:07:53,755 - INFO - 127.0.0.1 - - [04/Oct/2025 17:07:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:07:53,760 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0005s
+2025-10-04 17:07:53,761 - INFO - 127.0.0.1 - - [04/Oct/2025 17:07:53] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:08:00,202 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/edit - Status: 200 - Duration: 0.0030s
+2025-10-04 17:08:00,203 - INFO - 127.0.0.1 - - [04/Oct/2025 17:08:00] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/edit HTTP/1.1" 200 -
+2025-10-04 17:08:00,227 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:08:00,230 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0030s
+2025-10-04 17:08:00,231 - INFO - 127.0.0.1 - - [04/Oct/2025 17:08:00] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:08:00,232 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0012s
+2025-10-04 17:08:00,232 - INFO - 127.0.0.1 - - [04/Oct/2025 17:08:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:08:00,235 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 17:08:00,236 - INFO - 127.0.0.1 - - [04/Oct/2025 17:08:00] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:08:10,344 - INFO - User 'khairulanwarsedek' edited quiz '267cff0f-9562-4d4a-b160-77ae0767e8fd'.
+2025-10-04 17:08:10,344 - INFO - POST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/edit - Status: 302 - Duration: 0.0119s
+2025-10-04 17:08:10,345 - INFO - 127.0.0.1 - - [04/Oct/2025 17:08:10] "[32mPOST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/edit HTTP/1.1[0m" 302 -
+2025-10-04 17:08:10,354 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd - Status: 200 - Duration: 0.0030s
+2025-10-04 17:08:10,355 - INFO - 127.0.0.1 - - [04/Oct/2025 17:08:10] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd HTTP/1.1" 200 -
+2025-10-04 17:08:10,384 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:08:10,385 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 17:08:10,386 - INFO - 127.0.0.1 - - [04/Oct/2025 17:08:10] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:08:10,392 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0031s
+2025-10-04 17:08:10,392 - INFO - 127.0.0.1 - - [04/Oct/2025 17:08:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:08:10,395 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0030s
+2025-10-04 17:08:10,406 - INFO - 127.0.0.1 - - [04/Oct/2025 17:08:10] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:08:10,411 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/qr - Status: 200 - Duration: 0.0147s
+2025-10-04 17:08:10,412 - INFO - 127.0.0.1 - - [04/Oct/2025 17:08:10] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/qr HTTP/1.1" 200 -
+2025-10-04 17:08:17,944 - INFO - Quiz '267cff0f-9562-4d4a-b160-77ae0767e8fd' is being viewed for an attempt.
+2025-10-04 17:08:17,978 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/take - Status: 200 - Duration: 0.0351s
+2025-10-04 17:08:17,978 - INFO - 127.0.0.1 - - [04/Oct/2025 17:08:17] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/take HTTP/1.1" 200 -
+2025-10-04 17:08:18,005 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0020s
+2025-10-04 17:08:18,005 - INFO - 127.0.0.1 - - [04/Oct/2025 17:08:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:08:18,006 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 17:08:18,007 - INFO - 127.0.0.1 - - [04/Oct/2025 17:08:18] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:09:50,860 - INFO - GET / - Status: 200 - Duration: 0.0050s
+2025-10-04 17:09:50,862 - INFO - 127.0.0.1 - - [04/Oct/2025 17:09:50] "GET / HTTP/1.1" 200 -
+2025-10-04 17:09:50,897 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:09:50,901 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0037s
+2025-10-04 17:09:50,902 - INFO - 127.0.0.1 - - [04/Oct/2025 17:09:50] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:09:50,909 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0031s
+2025-10-04 17:09:50,909 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0021s
+2025-10-04 17:09:50,911 - INFO - 127.0.0.1 - - [04/Oct/2025 17:09:50] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:09:50,911 - INFO - 127.0.0.1 - - [04/Oct/2025 17:09:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:09:53,824 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/edit - Status: 200 - Duration: 0.0040s
+2025-10-04 17:09:53,825 - INFO - 127.0.0.1 - - [04/Oct/2025 17:09:53] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/edit HTTP/1.1" 200 -
+2025-10-04 17:09:53,857 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:09:53,858 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 17:09:53,859 - INFO - 127.0.0.1 - - [04/Oct/2025 17:09:53] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:09:53,869 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 17:09:53,870 - INFO - 127.0.0.1 - - [04/Oct/2025 17:09:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:09:53,871 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 17:09:53,872 - INFO - 127.0.0.1 - - [04/Oct/2025 17:09:53] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:14:52,787 - INFO - Quiz '267cff0f-9562-4d4a-b160-77ae0767e8fd' is being viewed for an attempt.
+2025-10-04 17:14:52,817 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/take - Status: 200 - Duration: 0.0324s
+2025-10-04 17:14:52,817 - INFO - 127.0.0.1 - - [04/Oct/2025 17:14:52] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/take HTTP/1.1" 200 -
+2025-10-04 17:14:52,852 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 17:14:52,853 - INFO - 127.0.0.1 - - [04/Oct/2025 17:14:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:14:52,853 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 17:14:52,854 - INFO - 127.0.0.1 - - [04/Oct/2025 17:14:52] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:14:53,050 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0000s
+2025-10-04 17:14:53,052 - INFO - 127.0.0.1 - - [04/Oct/2025 17:14:53] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 17:15:59,730 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 17:15:59,730 - INFO - 127.0.0.1 - - [04/Oct/2025 17:15:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:15:59,737 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:15:59,738 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 17:15:59,739 - INFO - 127.0.0.1 - - [04/Oct/2025 17:15:59] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:16:52,909 - INFO - The CSRF token is missing.
+2025-10-04 17:16:52,910 - INFO - 127.0.0.1 - - [04/Oct/2025 17:16:52] "[31m[1mPOST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/submit HTTP/1.1[0m" 400 -
+2025-10-04 17:16:52,974 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:16:52,976 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 17:16:52,977 - INFO - 127.0.0.1 - - [04/Oct/2025 17:16:52] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:16:53,708 - WARNING - 404 Not Found error for path: /favicon.ico
+2025-10-04 17:16:53,710 - INFO - GET /favicon.ico - Status: 404 - Duration: 0.0020s
+2025-10-04 17:16:53,710 - INFO - 127.0.0.1 - - [04/Oct/2025 17:16:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-04 17:17:00,642 - INFO - GET / - Status: 200 - Duration: 0.0040s
+2025-10-04 17:17:00,643 - INFO - 127.0.0.1 - - [04/Oct/2025 17:17:00] "GET / HTTP/1.1" 200 -
+2025-10-04 17:17:00,665 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:17:00,665 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0000s
+2025-10-04 17:17:00,668 - INFO - 127.0.0.1 - - [04/Oct/2025 17:17:00] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:17:00,672 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0020s
+2025-10-04 17:17:00,672 - INFO - 127.0.0.1 - - [04/Oct/2025 17:17:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:17:00,673 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0027s
+2025-10-04 17:17:00,673 - INFO - 127.0.0.1 - - [04/Oct/2025 17:17:00] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:17:04,058 - INFO - GET / - Status: 200 - Duration: 0.0000s
+2025-10-04 17:17:04,058 - INFO - 127.0.0.1 - - [04/Oct/2025 17:17:04] "GET / HTTP/1.1" 200 -
+2025-10-04 17:17:04,075 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:17:04,075 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0000s
+2025-10-04 17:17:04,075 - INFO - 127.0.0.1 - - [04/Oct/2025 17:17:04] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:17:04,086 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0020s
+2025-10-04 17:17:04,086 - INFO - 127.0.0.1 - - [04/Oct/2025 17:17:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:17:04,087 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0020s
+2025-10-04 17:17:04,087 - INFO - 127.0.0.1 - - [04/Oct/2025 17:17:04] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:17:04,813 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0000s
+2025-10-04 17:17:04,813 - INFO - 127.0.0.1 - - [04/Oct/2025 17:17:04] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 17:17:07,340 - INFO - GET / - Status: 200 - Duration: 0.0000s
+2025-10-04 17:17:07,340 - INFO - 127.0.0.1 - - [04/Oct/2025 17:17:07] "GET / HTTP/1.1" 200 -
+2025-10-04 17:17:07,360 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:17:07,360 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0000s
+2025-10-04 17:17:07,368 - INFO - 127.0.0.1 - - [04/Oct/2025 17:17:07] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:17:07,371 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0020s
+2025-10-04 17:17:07,371 - INFO - 127.0.0.1 - - [04/Oct/2025 17:17:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:17:07,372 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 17:17:07,372 - INFO - 127.0.0.1 - - [04/Oct/2025 17:17:07] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:17:08,125 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0000s
+2025-10-04 17:17:08,125 - INFO - 127.0.0.1 - - [04/Oct/2025 17:17:08] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 17:20:47,377 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-04 17:20:49,944 - INFO -  * Restarting with stat
+2025-10-04 17:20:52,820 - WARNING -  * Debugger is active!
+2025-10-04 17:20:52,821 - INFO -  * Debugger PIN: 125-780-598
+2025-10-04 17:21:06,200 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-04 17:21:06,385 - INFO -  * Restarting with stat
+2025-10-04 17:21:08,086 - WARNING -  * Debugger is active!
+2025-10-04 17:21:08,090 - INFO -  * Debugger PIN: 125-780-598
+2025-10-04 17:22:23,116 - INFO - GET / - Status: 200 - Duration: 0.0673s
+2025-10-04 17:22:23,116 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:23] "GET / HTTP/1.1" 200 -
+2025-10-04 17:22:23,144 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:22:23,152 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0024s
+2025-10-04 17:22:23,152 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:22:23,153 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0020s
+2025-10-04 17:22:23,154 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:23] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:22:23,160 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0167s
+2025-10-04 17:22:23,160 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:23] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:22:23,903 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0000s
+2025-10-04 17:22:23,904 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:23] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 17:22:26,833 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/edit - Status: 200 - Duration: 0.1893s
+2025-10-04 17:22:26,833 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:26] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/edit HTTP/1.1" 200 -
+2025-10-04 17:22:26,867 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:22:26,867 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0000s
+2025-10-04 17:22:26,872 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:26] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:22:26,878 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 17:22:26,879 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:22:26,880 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 17:22:26,880 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:26] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:22:34,556 - INFO - User 'khairulanwarsedek' edited quiz '267cff0f-9562-4d4a-b160-77ae0767e8fd'.
+2025-10-04 17:22:34,556 - INFO - POST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/edit - Status: 302 - Duration: 0.0468s
+2025-10-04 17:22:34,556 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:34] "[32mPOST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/edit HTTP/1.1[0m" 302 -
+2025-10-04 17:22:34,587 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd - Status: 200 - Duration: 0.0158s
+2025-10-04 17:22:34,587 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:34] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd HTTP/1.1" 200 -
+2025-10-04 17:22:34,625 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:22:34,627 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 17:22:34,627 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:34] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:22:34,634 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0011s
+2025-10-04 17:22:34,634 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:22:34,646 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0121s
+2025-10-04 17:22:34,646 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:34] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:22:34,676 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/qr - Status: 200 - Duration: 0.0418s
+2025-10-04 17:22:34,676 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:34] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/qr HTTP/1.1" 200 -
+2025-10-04 17:22:45,640 - INFO - Quiz '267cff0f-9562-4d4a-b160-77ae0767e8fd' is being viewed for an attempt.
+2025-10-04 17:22:45,650 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/take - Status: 200 - Duration: 0.0120s
+2025-10-04 17:22:45,651 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:45] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/take HTTP/1.1" 200 -
+2025-10-04 17:22:45,675 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 17:22:45,676 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 17:22:45,676 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:22:45,676 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:45] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:22:45,680 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:22:45,682 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 17:22:45,683 - INFO - 127.0.0.1 - - [04/Oct/2025 17:22:45] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:23:45,792 - INFO - The CSRF token is missing.
+2025-10-04 17:23:45,793 - INFO - 127.0.0.1 - - [04/Oct/2025 17:23:45] "[31m[1mPOST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/submit HTTP/1.1[0m" 400 -
+2025-10-04 17:23:45,838 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:23:45,842 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0037s
+2025-10-04 17:23:45,843 - INFO - 127.0.0.1 - - [04/Oct/2025 17:23:45] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:29:08,804 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:29:08,806 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 17:29:08,809 - INFO - 127.0.0.1 - - [04/Oct/2025 17:29:08] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:29:17,091 - INFO - Quiz '267cff0f-9562-4d4a-b160-77ae0767e8fd' is being viewed for an attempt.
+2025-10-04 17:29:17,101 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/take - Status: 200 - Duration: 0.0110s
+2025-10-04 17:29:17,101 - INFO - 127.0.0.1 - - [04/Oct/2025 17:29:17] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/take HTTP/1.1" 200 -
+2025-10-04 17:29:17,123 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:29:17,123 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0000s
+2025-10-04 17:29:17,123 - INFO - 127.0.0.1 - - [04/Oct/2025 17:29:17] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:29:17,128 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0050s
+2025-10-04 17:29:17,129 - INFO - 127.0.0.1 - - [04/Oct/2025 17:29:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:29:17,129 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 17:29:17,130 - INFO - 127.0.0.1 - - [04/Oct/2025 17:29:17] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:29:17,858 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0010s
+2025-10-04 17:29:17,858 - INFO - 127.0.0.1 - - [04/Oct/2025 17:29:17] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 17:30:17,241 - INFO - Quiz '267cff0f-9562-4d4a-b160-77ae0767e8fd' submitted by 'Anonymous'. Score: 0/5.
+2025-10-04 17:30:17,257 - INFO - POST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/submit - Status: 200 - Duration: 0.0269s
+2025-10-04 17:30:17,258 - INFO - 127.0.0.1 - - [04/Oct/2025 17:30:17] "POST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/submit HTTP/1.1" 200 -
+2025-10-04 17:30:17,302 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:30:17,305 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0032s
+2025-10-04 17:30:17,307 - INFO - 127.0.0.1 - - [04/Oct/2025 17:30:17] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:30:17,307 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 17:30:17,309 - INFO - 127.0.0.1 - - [04/Oct/2025 17:30:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:30:17,309 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 17:30:17,311 - INFO - 127.0.0.1 - - [04/Oct/2025 17:30:17] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:32:00,975 - INFO - Quiz '267cff0f-9562-4d4a-b160-77ae0767e8fd' submitted by 'Anonymous'. Score: 0/5.
+2025-10-04 17:32:00,979 - INFO - POST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/submit - Status: 200 - Duration: 0.0151s
+2025-10-04 17:32:00,980 - INFO - 127.0.0.1 - - [04/Oct/2025 17:32:00] "POST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/submit HTTP/1.1" 200 -
+2025-10-04 17:32:01,010 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 17:32:01,010 - INFO - 127.0.0.1 - - [04/Oct/2025 17:32:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:32:01,013 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 17:32:01,014 - INFO - 127.0.0.1 - - [04/Oct/2025 17:32:01] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:33:00,537 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd - Status: 200 - Duration: 0.0030s
+2025-10-04 17:33:00,538 - INFO - 127.0.0.1 - - [04/Oct/2025 17:33:00] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd HTTP/1.1" 200 -
+2025-10-04 17:33:00,559 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:33:00,559 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0000s
+2025-10-04 17:33:00,559 - INFO - 127.0.0.1 - - [04/Oct/2025 17:33:00] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:33:00,565 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 17:33:00,566 - INFO - 127.0.0.1 - - [04/Oct/2025 17:33:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:33:00,569 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0021s
+2025-10-04 17:33:00,579 - INFO - 127.0.0.1 - - [04/Oct/2025 17:33:00] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:33:00,582 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/qr - Status: 200 - Duration: 0.0106s
+2025-10-04 17:33:00,582 - INFO - 127.0.0.1 - - [04/Oct/2025 17:33:00] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/qr HTTP/1.1" 200 -
+2025-10-04 17:33:01,322 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0000s
+2025-10-04 17:33:01,323 - INFO - 127.0.0.1 - - [04/Oct/2025 17:33:01] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 17:33:02,799 - INFO - GET / - Status: 200 - Duration: 0.0050s
+2025-10-04 17:33:02,799 - INFO - 127.0.0.1 - - [04/Oct/2025 17:33:02] "GET / HTTP/1.1" 200 -
+2025-10-04 17:33:02,821 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:33:02,822 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0010s
+2025-10-04 17:33:02,823 - INFO - 127.0.0.1 - - [04/Oct/2025 17:33:02] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:33:02,829 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 17:33:02,830 - INFO - 127.0.0.1 - - [04/Oct/2025 17:33:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:33:02,832 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 17:33:02,832 - INFO - 127.0.0.1 - - [04/Oct/2025 17:33:02] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:33:07,996 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/attempts - Status: 200 - Duration: 0.0232s
+2025-10-04 17:33:07,997 - INFO - 127.0.0.1 - - [04/Oct/2025 17:33:07] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/attempts HTTP/1.1" 200 -
+2025-10-04 17:33:08,029 - WARNING - 404 Not Found error for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-04 17:33:08,031 - INFO - GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.0020s
+2025-10-04 17:33:08,032 - INFO - 127.0.0.1 - - [04/Oct/2025 17:33:08] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:33:08,044 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 17:33:08,046 - INFO - 127.0.0.1 - - [04/Oct/2025 17:33:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:33:08,046 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0020s
+2025-10-04 17:33:08,048 - INFO - 127.0.0.1 - - [04/Oct/2025 17:33:08] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:34:41,937 - INFO - Quiz '267cff0f-9562-4d4a-b160-77ae0767e8fd' is being viewed for an attempt.
+2025-10-04 17:34:41,983 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/take - Status: 200 - Duration: 0.0462s
+2025-10-04 17:34:41,983 - INFO - 127.0.0.1 - - [04/Oct/2025 17:34:41] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/take HTTP/1.1" 200 -
+2025-10-04 17:34:42,000 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0011s
+2025-10-04 17:34:42,001 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 17:34:42,001 - INFO - 127.0.0.1 - - [04/Oct/2025 17:34:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:34:42,001 - INFO - 127.0.0.1 - - [04/Oct/2025 17:34:42] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:34:42,154 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0000s
+2025-10-04 17:34:42,154 - INFO - 127.0.0.1 - - [04/Oct/2025 17:34:42] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-04 17:35:42,065 - INFO - Quiz '267cff0f-9562-4d4a-b160-77ae0767e8fd' submitted by 'azmi'. Score: 3/5.
+2025-10-04 17:35:42,069 - INFO - POST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/submit - Status: 200 - Duration: 0.0244s
+2025-10-04 17:35:42,070 - INFO - 127.0.0.1 - - [04/Oct/2025 17:35:42] "POST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/submit HTTP/1.1" 200 -
+2025-10-04 17:35:42,103 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 17:35:42,103 - INFO - 127.0.0.1 - - [04/Oct/2025 17:35:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:35:42,109 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 17:35:42,109 - INFO - 127.0.0.1 - - [04/Oct/2025 17:35:42] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:36:58,665 - INFO - Quiz '267cff0f-9562-4d4a-b160-77ae0767e8fd' submitted by 'azmi 2'. Score: 4/5.
+2025-10-04 17:36:58,674 - INFO - POST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/submit - Status: 200 - Duration: 0.0227s
+2025-10-04 17:36:58,675 - INFO - 127.0.0.1 - - [04/Oct/2025 17:36:58] "POST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/submit HTTP/1.1" 200 -
+2025-10-04 17:36:58,717 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 17:36:58,717 - INFO - 127.0.0.1 - - [04/Oct/2025 17:36:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:36:58,718 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0011s
+2025-10-04 17:36:58,718 - INFO - 127.0.0.1 - - [04/Oct/2025 17:36:58] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:37:14,915 - INFO - Quiz '267cff0f-9562-4d4a-b160-77ae0767e8fd' submitted by 'azmi 2'. Score: 5/5.
+2025-10-04 17:37:14,919 - INFO - POST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/submit - Status: 200 - Duration: 0.0244s
+2025-10-04 17:37:14,920 - INFO - 127.0.0.1 - - [04/Oct/2025 17:37:14] "POST /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/submit HTTP/1.1" 200 -
+2025-10-04 17:37:14,944 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 17:37:14,944 - INFO - 127.0.0.1 - - [04/Oct/2025 17:37:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:37:14,950 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 17:37:14,951 - INFO - 127.0.0.1 - - [04/Oct/2025 17:37:14] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:38:55,425 - INFO - GET / - Status: 200 - Duration: 0.0050s
+2025-10-04 17:38:55,426 - INFO - 127.0.0.1 - - [04/Oct/2025 17:38:55] "GET / HTTP/1.1" 200 -
+2025-10-04 17:38:55,457 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 17:38:55,457 - INFO - 127.0.0.1 - - [04/Oct/2025 17:38:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:38:55,461 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-04 17:38:55,461 - INFO - 127.0.0.1 - - [04/Oct/2025 17:38:55] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:38:58,897 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/attempts - Status: 200 - Duration: 0.0000s
+2025-10-04 17:38:58,902 - INFO - 127.0.0.1 - - [04/Oct/2025 17:38:58] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/attempts HTTP/1.1" 200 -
+2025-10-04 17:38:58,927 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-04 17:38:58,927 - INFO - 127.0.0.1 - - [04/Oct/2025 17:38:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:38:58,932 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 17:38:58,932 - INFO - 127.0.0.1 - - [04/Oct/2025 17:38:58] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-04 17:39:10,751 - INFO - Gemini API call for overall analysis of quiz '267cff0f-9562-4d4a-b160-77ae0767e8fd' took 5.13s.
+2025-10-04 17:39:10,783 - INFO - GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/overall_analysis - Status: 200 - Duration: 5.1743s
+2025-10-04 17:39:10,799 - INFO - 127.0.0.1 - - [04/Oct/2025 17:39:10] "GET /quiz/267cff0f-9562-4d4a-b160-77ae0767e8fd/overall_analysis HTTP/1.1" 200 -
+2025-10-04 17:39:10,821 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-04 17:39:10,821 - INFO - 127.0.0.1 - - [04/Oct/2025 17:39:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-04 17:39:10,821 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-04 17:39:10,821 - INFO - 127.0.0.1 - - [04/Oct/2025 17:39:10] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -

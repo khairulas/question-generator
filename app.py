@@ -6,7 +6,7 @@ import json
 import logging
 import os
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 from collections import defaultdict
 
 # --- Standard Library Imports First ---
@@ -147,6 +147,10 @@ class Quiz(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     public_id = db.Column(db.String(36), unique=True, nullable=False, default=lambda: str(uuid.uuid4()))
     title = db.Column(db.String(100))
+    is_active = db.Column(db.Boolean, nullable=False, default=True)
+    opens_at = db.Column(db.DateTime, nullable=True)     
+    closes_at = db.Column(db.DateTime, nullable=True) 
+    time_limit = db.Column(db.Integer, nullable=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     analysis_text = db.Column(db.Text, nullable=True)
     questions = db.relationship('Question', backref='quiz', cascade="all, delete-orphan")
@@ -218,7 +222,7 @@ def extract_text_from_pdf(pdf_stream):
         
 def generate_questions(material, types, count, bloom_level):
     start_time = time.time()
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.0-flash')
     type_string = ", ".join(types)
 
     prompt = f"""
@@ -274,7 +278,7 @@ def generate_questions(material, types, count, bloom_level):
         return response.text
     except Exception as e:
         app.logger.error(f"Gemini API Error: {str(e)}")
-        return "An error occurred while generating questions. Please try again later.", 500
+        raise Exception("An error occurred while generating questions.")
         
 def parse_questions(questions_text):
     """
@@ -324,7 +328,7 @@ def grade_short_answer_with_gemini(correct_answer, student_answer):
     """Sends answers to Gemini for grading and parses the JSON response."""
     start_time = time.time()
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.0-flash')
         prompt = f"""
         You are an expert examiner grading a short-answer question.
         Determine if the student's answer is semantically and factually correct based on the answer key.
@@ -430,9 +434,23 @@ def create_quiz():
 
         app.logger.info(f"User '{current_user.username}' is generating {num_questions} questions.")
         
-        questions_text = generate_questions(sanitized_course_material, question_types, num_questions, bloom_level)
+        try:
+            questions_text = generate_questions(sanitized_course_material, question_types, num_questions, bloom_level)
+        except Exception as e:
+            flash(str(e), 'danger')
+            return redirect(url_for('index'))
         
-        questions_list_for_display = parse_questions(questions_text)
+        #questions_list_for_display = parse_questions(questions_text)
+        json_match = re.search(r'\[.*\]|\{.*\}', questions_text, re.DOTALL)
+        if json_match:
+            clean_json_str = json_match.group(0)
+            # Parse only the clean JSON string
+            questions_list_for_display = parse_questions(clean_json_str)
+        else:
+            # If no JSON is found, the list will be empty
+            questions_list_for_display = []
+            app.logger.error(f"Could not find JSON in Gemini response for user '{current_user.username}'.")
+
 
         question_type_order = ["MCQ", "True/False", "Fill-in-the-Blank", "Short Answer"]
         sorted_questions = sorted(
@@ -667,6 +685,20 @@ def edit_quiz(public_id):
         try:
             quiz.title = request.form.get('quiz_title')
 
+            # ADD THIS LOGIC TO HANDLE SCHEDULING
+            # Parse datetime-local string format (YYYY-MM-DDTHH:MM)
+            opens_at_str = request.form.get('opens_at')
+            closes_at_str = request.form.get('closes_at')
+            time_limit_str = request.form.get('time_limit')
+
+            quiz.opens_at = datetime.fromisoformat(opens_at_str) if opens_at_str else None
+            quiz.closes_at = datetime.fromisoformat(closes_at_str) if closes_at_str else None
+            quiz.time_limit = int(time_limit_str) if time_limit_str else None
+
+            # If a schedule is set, assume the user wants the quiz to be active.
+            if quiz.opens_at or quiz.closes_at:
+                quiz.is_active = True
+
             for index, question in enumerate(sorted_questions):
                 question.content = request.form.get(f'question_text_{index}')
                 question.answer = request.form.get(f'answer_{index}')
@@ -688,19 +720,53 @@ def edit_quiz(public_id):
 @app.route('/quiz/<public_id>/take', methods=['GET'])
 def take_quiz(public_id):
     quiz = Quiz.query.filter_by(public_id=public_id).first_or_404()
+    now = datetime.now()
+
+    # ENHANCE THIS LOGIC TO HANDLE QUIZ AVAILABILITY
+    message = None
+    if not quiz.is_active:
+        message = "This quiz has been manually closed by the instructor."
+    elif quiz.opens_at and now < quiz.opens_at:
+        message = f"This quiz is not yet open. It will be available on {quiz.opens_at.strftime('%B %d, %Y at %I:%M %p')}."
+    elif quiz.closes_at and now > quiz.closes_at:
+        message = "This quiz has closed and is no longer accepting submissions."
+
+    if message:
+        app.logger.warning(f"Attempt to access unavailable quiz '{public_id}'. Reason: {message}")
+        return render_template('quiz_unavailable.html', quiz=quiz, message=message), 403
+
     app.logger.info(f"Quiz '{public_id}' is being viewed for an attempt.")
     question_type_order = ["MCQ", "True/False", "Fill-in-the-Blank", "Short Answer"]
     sorted_questions = sorted(
         quiz.questions,
         key=lambda q: question_type_order.index(q.question_type) if q.question_type in question_type_order else len(question_type_order)
     )
-    return render_template('take_quiz.html', quiz=quiz, questions=sorted_questions)
+
+    # ✅ PASS TIMER DATA TO THE TEMPLATE
+    # Convert closes_at to an ISO string for JavaScript
+    closes_at_iso = quiz.closes_at.isoformat() if quiz.closes_at else None
+    csrf_token = generate_csrf()
+    return render_template(
+        'take_quiz.html', 
+        quiz=quiz, 
+        questions=sorted_questions,
+        time_limit_minutes=quiz.time_limit,
+        closes_at_iso=closes_at_iso,
+        csrf_token=csrf_token
+    )
 
 @app.route('/quiz/<public_id>/submit', methods=['POST'])
 def submit_quiz(public_id):
     quiz = Quiz.query.filter_by(public_id=public_id).first_or_404()
-    questions = quiz.questions
+    now = datetime.now(timezone.utc)
+
+    # ✅ ADD THIS CHECK
+    if quiz.closes_at and now > quiz.closes_at.replace(tzinfo=timezone.utc):
+        app.logger.warning(f"Late submission attempt for quiz '{public_id}'.")
+        message = "The deadline for this quiz has passed. Your submission was not accepted."
+        return render_template('quiz_unavailable.html', quiz=quiz, message=message), 403
     
+    questions = quiz.questions
     score = 0
     total_score = quiz.total_score
     results_for_template = []
@@ -820,7 +886,7 @@ def overall_analysis(public_id):
 
     try:
         start_time = time.time()
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.0-flash')
         prompt = create_overall_analysis_prompt(analysis_data_string)
         response = model.generate_content(prompt)
         duration = time.time() - start_time
