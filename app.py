@@ -391,9 +391,23 @@ def after_request_logging(response):
 @app.route('/')
 @login_required
 def index():
-    quizzes = Quiz.query.filter_by(user_id=current_user.id).order_by(Quiz.id.desc()).all()
+    # Get the search query from the URL, if it exists
+    search_query = request.args.get('search', '')
+
+    # Start with the base query for the user's quizzes
+    query = Quiz.query.filter_by(user_id=current_user.id)
+
+    # If there's a search query, filter the quizzes by title
+    if search_query:
+        query = query.filter(Quiz.title.ilike(f'%{search_query}%'))
+
+    # Order the results and execute the query
+    quizzes = query.order_by(Quiz.id.desc()).all()
+
     csrf_token = generate_csrf()
-    return render_template('dashboard.html', quizzes=quizzes, csrf_token=csrf_token)
+
+    # Pass the quizzes and the search query to the template
+    return render_template('dashboard.html', quizzes=quizzes, search_query=search_query, csrf_token=csrf_token)
 
 @app.route('/create-quiz', methods=['GET', 'POST'])
 @limiter.limit("10 per minute")
@@ -842,8 +856,37 @@ def submit_quiz(public_id):
 @login_required
 def view_attempts(public_id):
     quiz = Quiz.query.filter_by(public_id=public_id, user_id=current_user.id).first_or_404()
-    attempts = sorted(quiz.attempts, key=lambda x: x.timestamp, reverse=True)
-    return render_template('quiz_attempts.html', quiz=quiz, attempts=attempts)
+
+    # Get filter values from the request URL
+    student_name_filter = request.args.get('student_name', '')
+    date_filter_str = request.args.get('submission_date', '')
+
+    # Start with the base query
+    query = QuizAttempt.query.filter_by(quiz_id=quiz.id)
+
+    # Apply student name filter if provided
+    if student_name_filter:
+        query = query.filter(QuizAttempt.student_name.ilike(f'%{student_name_filter}%'))
+
+    # Apply date filter if provided
+    if date_filter_str:
+        try:
+            submission_date = datetime.strptime(date_filter_str, '%Y-%m-%d').date()
+            # Filter for attempts on that specific day
+            query = query.filter(db.func.date(QuizAttempt.timestamp) == submission_date)
+        except ValueError:
+            flash('Invalid date format. Please use YYYY-MM-DD.', 'danger')
+
+    # Order the filtered results and execute the query
+    attempts = query.order_by(QuizAttempt.timestamp.desc()).all()
+
+    return render_template(
+        'quiz_attempts.html', 
+        quiz=quiz, 
+        attempts=attempts,
+        student_name_filter=student_name_filter,
+        date_filter=date_filter_str
+    )
 
 @app.route('/quiz/<public_id>/delete', methods=['POST'])
 @login_required

@@ -1077,3 +1077,323 @@
 2025-10-04 17:39:10,821 - INFO - 127.0.0.1 - - [04/Oct/2025 17:39:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2025-10-04 17:39:10,821 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
 2025-10-04 17:39:10,821 - INFO - 127.0.0.1 - - [04/Oct/2025 17:39:10] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-14 15:44:57,747 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-14 15:44:57,750 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 15:45:24,700 - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-14 15:45:24,701 - WARNING - python-dotenv could not parse statement starting at line 5
+2025-10-14 15:45:24,701 - WARNING - python-dotenv could not parse statement starting at line 9
+2025-10-14 15:45:24,701 - WARNING - python-dotenv could not parse statement starting at line 18
+2025-10-14 15:45:24,702 - WARNING - python-dotenv could not parse statement starting at line 20
+2025-10-14 15:45:24,702 - WARNING - python-dotenv could not parse statement starting at line 22
+2025-10-14 15:45:24,898 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-14 15:45:24,899 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 15:45:24,900 - INFO -  * Restarting with stat
+2025-10-14 15:45:26,857 - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-14 15:45:26,857 - WARNING - python-dotenv could not parse statement starting at line 5
+2025-10-14 15:45:26,858 - WARNING - python-dotenv could not parse statement starting at line 9
+2025-10-14 15:45:26,858 - WARNING - python-dotenv could not parse statement starting at line 18
+2025-10-14 15:45:26,858 - WARNING - python-dotenv could not parse statement starting at line 20
+2025-10-14 15:45:26,858 - WARNING - python-dotenv could not parse statement starting at line 22
+2025-10-14 15:45:26,898 - WARNING -  * Debugger is active!
+2025-10-14 15:45:26,909 - INFO -  * Debugger PIN: 125-780-598
+2025-10-14 15:46:37,931 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-14 15:46:37,931 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 15:46:46,531 - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-14 15:46:46,531 - WARNING - python-dotenv could not parse statement starting at line 5
+2025-10-14 15:46:46,531 - WARNING - python-dotenv could not parse statement starting at line 9
+2025-10-14 15:46:46,531 - WARNING - python-dotenv could not parse statement starting at line 18
+2025-10-14 15:46:46,531 - WARNING - python-dotenv could not parse statement starting at line 20
+2025-10-14 15:46:46,531 - WARNING - python-dotenv could not parse statement starting at line 22
+2025-10-14 15:46:46,585 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-14 15:46:46,585 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 15:46:46,586 - INFO -  * Restarting with stat
+2025-10-14 15:46:48,502 - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-14 15:46:48,502 - WARNING - python-dotenv could not parse statement starting at line 5
+2025-10-14 15:46:48,502 - WARNING - python-dotenv could not parse statement starting at line 9
+2025-10-14 15:46:48,502 - WARNING - python-dotenv could not parse statement starting at line 18
+2025-10-14 15:46:48,502 - WARNING - python-dotenv could not parse statement starting at line 20
+2025-10-14 15:46:48,502 - WARNING - python-dotenv could not parse statement starting at line 22
+2025-10-14 15:46:48,530 - WARNING -  * Debugger is active!
+2025-10-14 15:46:48,534 - INFO -  * Debugger PIN: 125-780-598
+2025-10-16 16:16:57,553 - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-16 16:16:57,553 - WARNING - python-dotenv could not parse statement starting at line 5
+2025-10-16 16:16:57,553 - WARNING - python-dotenv could not parse statement starting at line 9
+2025-10-16 16:16:57,554 - WARNING - python-dotenv could not parse statement starting at line 18
+2025-10-16 16:16:57,554 - WARNING - python-dotenv could not parse statement starting at line 20
+2025-10-16 16:16:57,554 - WARNING - python-dotenv could not parse statement starting at line 22
+2025-10-16 16:16:57,709 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-16 16:16:57,710 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 16:16:57,710 - INFO -  * Restarting with stat
+2025-10-16 16:16:59,380 - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-16 16:16:59,380 - WARNING - python-dotenv could not parse statement starting at line 5
+2025-10-16 16:16:59,381 - WARNING - python-dotenv could not parse statement starting at line 9
+2025-10-16 16:16:59,381 - WARNING - python-dotenv could not parse statement starting at line 18
+2025-10-16 16:16:59,381 - WARNING - python-dotenv could not parse statement starting at line 20
+2025-10-16 16:16:59,381 - WARNING - python-dotenv could not parse statement starting at line 22
+2025-10-16 16:16:59,409 - WARNING -  * Debugger is active!
+2025-10-16 16:16:59,410 - INFO -  * Debugger PIN: 128-708-873
+2025-10-16 16:22:20,647 - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-16 16:22:20,647 - WARNING - python-dotenv could not parse statement starting at line 5
+2025-10-16 16:22:20,647 - WARNING - python-dotenv could not parse statement starting at line 9
+2025-10-16 16:22:20,647 - WARNING - python-dotenv could not parse statement starting at line 18
+2025-10-16 16:22:20,647 - WARNING - python-dotenv could not parse statement starting at line 20
+2025-10-16 16:22:20,647 - WARNING - python-dotenv could not parse statement starting at line 22
+2025-10-16 16:22:20,680 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-16 16:22:20,680 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 16:22:20,680 - INFO -  * Restarting with stat
+2025-10-16 16:22:22,230 - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-16 16:22:22,230 - WARNING - python-dotenv could not parse statement starting at line 5
+2025-10-16 16:22:22,230 - WARNING - python-dotenv could not parse statement starting at line 9
+2025-10-16 16:22:22,230 - WARNING - python-dotenv could not parse statement starting at line 18
+2025-10-16 16:22:22,230 - WARNING - python-dotenv could not parse statement starting at line 20
+2025-10-16 16:22:22,230 - WARNING - python-dotenv could not parse statement starting at line 22
+2025-10-16 16:22:22,263 - WARNING -  * Debugger is active!
+2025-10-16 16:22:22,263 - INFO -  * Debugger PIN: 128-708-873
+2025-10-16 16:22:44,914 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-16 16:22:45,111 - INFO -  * Restarting with stat
+2025-10-16 16:22:46,730 - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-16 16:22:46,730 - WARNING - python-dotenv could not parse statement starting at line 5
+2025-10-16 16:22:46,730 - WARNING - python-dotenv could not parse statement starting at line 9
+2025-10-16 16:22:46,731 - WARNING - python-dotenv could not parse statement starting at line 18
+2025-10-16 16:22:46,731 - WARNING - python-dotenv could not parse statement starting at line 20
+2025-10-16 16:22:46,731 - WARNING - python-dotenv could not parse statement starting at line 22
+2025-10-16 16:22:46,750 - WARNING -  * Debugger is active!
+2025-10-16 16:22:46,750 - INFO -  * Debugger PIN: 128-708-873
+2025-10-16 16:25:07,555 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-16 16:25:07,555 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 16:25:07,555 - INFO -  * Restarting with stat
+2025-10-16 16:25:09,135 - WARNING -  * Debugger is active!
+2025-10-16 16:25:09,138 - INFO -  * Debugger PIN: 128-708-873
+2025-10-16 16:30:56,370 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-16 16:30:56,370 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 16:30:56,370 - INFO -  * Restarting with stat
+2025-10-16 16:30:57,873 - WARNING -  * Debugger is active!
+2025-10-16 16:30:57,876 - INFO -  * Debugger PIN: 128-708-873
+2025-10-16 16:32:07,428 - INFO - GET / - Status: 302 - Duration: 0.0063s
+2025-10-16 16:32:07,429 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:07] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-16 16:32:07,704 - INFO - GET /login - Status: 200 - Duration: 0.0127s
+2025-10-16 16:32:07,704 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:07] "GET /login?next=/ HTTP/1.1" 200 -
+2025-10-16 16:32:07,739 - INFO - GET /static/css/styles.css - Status: 200 - Duration: 0.0000s
+2025-10-16 16:32:07,739 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:07] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-10-16 16:32:08,070 - INFO - GET /static/images/aiquiz-logo.png - Status: 200 - Duration: 0.0166s
+2025-10-16 16:32:08,070 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:08] "GET /static/images/aiquiz-logo.png HTTP/1.1" 200 -
+2025-10-16 16:32:09,370 - INFO - GET /static/images/favicon.ico - Status: 200 - Duration: 0.0293s
+2025-10-16 16:32:09,370 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:09] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+2025-10-16 16:32:25,473 - INFO - GET /register - Status: 200 - Duration: 0.0187s
+2025-10-16 16:32:25,473 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:25] "GET /register HTTP/1.1" 200 -
+2025-10-16 16:32:25,806 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-16 16:32:25,806 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 16:32:25,806 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-16 16:32:25,806 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:25] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 16:32:47,506 - INFO - New user registered: 'khairulanwarsedek' from IP 127.0.0.1
+2025-10-16 16:32:47,506 - INFO - POST /register - Status: 302 - Duration: 0.6701s
+2025-10-16 16:32:47,506 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:47] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-10-16 16:32:47,867 - INFO - GET / - Status: 200 - Duration: 0.0278s
+2025-10-16 16:32:47,868 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:47] "GET / HTTP/1.1" 200 -
+2025-10-16 16:32:48,094 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0020s
+2025-10-16 16:32:48,095 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 16:32:48,204 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-16 16:32:48,205 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:48] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 16:32:52,875 - INFO - GET /create-quiz - Status: 200 - Duration: 0.0179s
+2025-10-16 16:32:52,877 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:52] "GET /create-quiz HTTP/1.1" 200 -
+2025-10-16 16:32:53,206 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0012s
+2025-10-16 16:32:53,207 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 16:32:53,208 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0011s
+2025-10-16 16:32:53,209 - INFO - 127.0.0.1 - - [16/Oct/2025 16:32:53] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 16:33:17,333 - INFO - PDF extraction of 47 pages took 2.21s.
+2025-10-16 16:33:17,376 - INFO - User 'khairulanwarsedek' is generating 4 questions.
+2025-10-16 16:33:20,138 - INFO - Gemini API call for question generation took 2.76s.
+2025-10-16 16:33:20,184 - INFO - POST /create-quiz - Status: 200 - Duration: 5.0653s
+2025-10-16 16:33:20,185 - INFO - 127.0.0.1 - - [16/Oct/2025 16:33:20] "POST /create-quiz HTTP/1.1" 200 -
+2025-10-16 16:33:20,508 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-16 16:33:20,509 - INFO - 127.0.0.1 - - [16/Oct/2025 16:33:20] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 16:33:20,509 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0020s
+2025-10-16 16:33:20,509 - INFO - 127.0.0.1 - - [16/Oct/2025 16:33:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 16:33:37,648 - INFO - User 'khairulanwarsedek' saved a new quiz titled 'ICT400 Quiz Topic 1 '. Public ID: a8ec195c-0505-460e-bd9d-a7fd06da4870
+2025-10-16 16:33:37,649 - INFO - POST /save-questions - Status: 302 - Duration: 0.0232s
+2025-10-16 16:33:37,649 - INFO - 127.0.0.1 - - [16/Oct/2025 16:33:37] "[32mPOST /save-questions HTTP/1.1[0m" 302 -
+2025-10-16 16:33:37,991 - INFO - GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870 - Status: 200 - Duration: 0.0360s
+2025-10-16 16:33:37,992 - INFO - 127.0.0.1 - - [16/Oct/2025 16:33:37] "GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870 HTTP/1.1" 200 -
+2025-10-16 16:33:38,205 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-16 16:33:38,205 - INFO - 127.0.0.1 - - [16/Oct/2025 16:33:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 16:33:38,330 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0070s
+2025-10-16 16:33:38,331 - INFO - 127.0.0.1 - - [16/Oct/2025 16:33:38] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 16:33:38,379 - INFO - GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/qr - Status: 200 - Duration: 0.0568s
+2025-10-16 16:33:38,379 - INFO - 127.0.0.1 - - [16/Oct/2025 16:33:38] "GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/qr HTTP/1.1" 200 -
+2025-10-16 16:33:49,171 - INFO - Quiz 'a8ec195c-0505-460e-bd9d-a7fd06da4870' is being viewed for an attempt.
+2025-10-16 16:33:49,212 - INFO - GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/take - Status: 200 - Duration: 0.0425s
+2025-10-16 16:33:49,213 - INFO - 127.0.0.1 - - [16/Oct/2025 16:33:49] "GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/take HTTP/1.1" 200 -
+2025-10-16 16:33:49,557 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0150s
+2025-10-16 16:33:49,558 - INFO - 127.0.0.1 - - [16/Oct/2025 16:33:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 16:33:49,560 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0040s
+2025-10-16 16:33:49,561 - INFO - 127.0.0.1 - - [16/Oct/2025 16:33:49] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 16:34:24,602 - INFO - Quiz 'a8ec195c-0505-460e-bd9d-a7fd06da4870' submitted by 'Khairul'. Score: 3/4.
+2025-10-16 16:34:24,620 - INFO - POST /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/submit - Status: 200 - Duration: 0.0331s
+2025-10-16 16:34:24,621 - INFO - 127.0.0.1 - - [16/Oct/2025 16:34:24] "POST /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/submit HTTP/1.1" 200 -
+2025-10-16 16:34:24,960 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-16 16:34:24,960 - INFO - 127.0.0.1 - - [16/Oct/2025 16:34:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 16:34:24,964 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-16 16:34:24,964 - INFO - 127.0.0.1 - - [16/Oct/2025 16:34:24] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:01:08,795 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-16 17:01:11,112 - INFO -  * Restarting with stat
+2025-10-16 17:01:12,777 - WARNING -  * Debugger is active!
+2025-10-16 17:01:12,781 - INFO -  * Debugger PIN: 128-708-873
+2025-10-16 17:01:54,667 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-16 17:01:54,667 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 17:01:54,667 - INFO -  * Restarting with stat
+2025-10-16 17:01:56,330 - WARNING -  * Debugger is active!
+2025-10-16 17:01:56,330 - INFO -  * Debugger PIN: 128-708-873
+2025-10-16 17:02:08,809 - INFO - GET / - Status: 200 - Duration: 0.0459s
+2025-10-16 17:02:08,810 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:08] "GET / HTTP/1.1" 200 -
+2025-10-16 17:02:09,013 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-16 17:02:09,013 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:02:09,147 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0004s
+2025-10-16 17:02:09,147 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:09] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:02:15,202 - INFO - GET / - Status: 200 - Duration: 0.0058s
+2025-10-16 17:02:15,203 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:15] "GET /?search=ict400 HTTP/1.1" 200 -
+2025-10-16 17:02:15,529 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-16 17:02:15,529 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:15] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:02:15,529 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-16 17:02:15,529 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:02:19,529 - INFO - GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/edit - Status: 200 - Duration: 0.0253s
+2025-10-16 17:02:19,530 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:19] "GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/edit HTTP/1.1" 200 -
+2025-10-16 17:02:19,848 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0008s
+2025-10-16 17:02:19,848 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:02:19,850 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-16 17:02:19,851 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:19] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:02:46,124 - INFO - User 'khairulanwarsedek' edited quiz 'a8ec195c-0505-460e-bd9d-a7fd06da4870'.
+2025-10-16 17:02:46,124 - INFO - POST /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/edit - Status: 302 - Duration: 0.0120s
+2025-10-16 17:02:46,125 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:46] "[32mPOST /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/edit HTTP/1.1[0m" 302 -
+2025-10-16 17:02:46,466 - INFO - GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870 - Status: 200 - Duration: 0.0191s
+2025-10-16 17:02:46,466 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:46] "GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870 HTTP/1.1" 200 -
+2025-10-16 17:02:46,700 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-16 17:02:46,700 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:02:46,797 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-16 17:02:46,797 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:46] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:02:46,819 - INFO - GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/qr - Status: 200 - Duration: 0.0200s
+2025-10-16 17:02:46,819 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:46] "GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/qr HTTP/1.1" 200 -
+2025-10-16 17:02:56,202 - INFO - GET / - Status: 200 - Duration: 0.0030s
+2025-10-16 17:02:56,202 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:56] "GET / HTTP/1.1" 200 -
+2025-10-16 17:02:56,532 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-16 17:02:56,533 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-16 17:02:56,533 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:56] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:02:56,533 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:02:59,564 - INFO - GET / - Status: 200 - Duration: 0.0000s
+2025-10-16 17:02:59,564 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:59] "GET / HTTP/1.1" 200 -
+2025-10-16 17:02:59,900 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0020s
+2025-10-16 17:02:59,900 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-16 17:02:59,900 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:02:59,901 - INFO - 127.0.0.1 - - [16/Oct/2025 17:02:59] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:03:00,168 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0010s
+2025-10-16 17:03:00,169 - INFO - 127.0.0.1 - - [16/Oct/2025 17:03:00] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-16 17:04:14,936 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-16 17:04:14,936 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 17:04:14,936 - INFO -  * Restarting with stat
+2025-10-16 17:04:16,565 - WARNING -  * Debugger is active!
+2025-10-16 17:04:16,582 - INFO -  * Debugger PIN: 128-708-873
+2025-10-16 17:04:20,282 - INFO - GET / - Status: 200 - Duration: 0.0643s
+2025-10-16 17:04:20,282 - INFO - 127.0.0.1 - - [16/Oct/2025 17:04:20] "GET / HTTP/1.1" 200 -
+2025-10-16 17:04:20,484 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-16 17:04:20,484 - INFO - 127.0.0.1 - - [16/Oct/2025 17:04:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:04:20,615 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-16 17:04:20,615 - INFO - 127.0.0.1 - - [16/Oct/2025 17:04:20] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:04:20,670 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0005s
+2025-10-16 17:04:20,670 - INFO - 127.0.0.1 - - [16/Oct/2025 17:04:20] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-16 17:05:33,147 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-16 17:05:33,147 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 17:05:33,149 - INFO -  * Restarting with stat
+2025-10-16 17:05:34,783 - WARNING -  * Debugger is active!
+2025-10-16 17:05:34,783 - INFO -  * Debugger PIN: 128-708-873
+2025-10-16 17:05:35,533 - INFO - GET / - Status: 200 - Duration: 0.0465s
+2025-10-16 17:05:35,533 - INFO - 127.0.0.1 - - [16/Oct/2025 17:05:35] "GET / HTTP/1.1" 200 -
+2025-10-16 17:05:35,751 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0003s
+2025-10-16 17:05:35,751 - INFO - 127.0.0.1 - - [16/Oct/2025 17:05:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:05:35,871 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-16 17:05:35,872 - INFO - 127.0.0.1 - - [16/Oct/2025 17:05:35] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:05:35,885 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0000s
+2025-10-16 17:05:35,886 - INFO - 127.0.0.1 - - [16/Oct/2025 17:05:35] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-16 17:08:23,258 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-16 17:08:23,258 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 17:08:23,258 - INFO -  * Restarting with stat
+2025-10-16 17:08:24,878 - WARNING -  * Debugger is active!
+2025-10-16 17:08:24,881 - INFO -  * Debugger PIN: 128-708-873
+2025-10-16 17:08:26,218 - INFO - GET / - Status: 200 - Duration: 0.0335s
+2025-10-16 17:08:26,218 - INFO - 127.0.0.1 - - [16/Oct/2025 17:08:26] "GET / HTTP/1.1" 200 -
+2025-10-16 17:08:26,435 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-16 17:08:26,435 - INFO - 127.0.0.1 - - [16/Oct/2025 17:08:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:08:26,561 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-16 17:08:26,561 - INFO - 127.0.0.1 - - [16/Oct/2025 17:08:26] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:08:26,577 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0020s
+2025-10-16 17:08:26,577 - INFO - 127.0.0.1 - - [16/Oct/2025 17:08:26] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-16 17:08:44,788 - INFO - GET / - Status: 200 - Duration: 0.0030s
+2025-10-16 17:08:44,789 - INFO - 127.0.0.1 - - [16/Oct/2025 17:08:44] "GET /?search=2025 HTTP/1.1" 200 -
+2025-10-16 17:08:45,046 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0020s
+2025-10-16 17:08:45,047 - INFO - 127.0.0.1 - - [16/Oct/2025 17:08:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:08:45,117 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-16 17:08:45,117 - INFO - 127.0.0.1 - - [16/Oct/2025 17:08:45] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:08:51,160 - INFO - GET / - Status: 200 - Duration: 0.0031s
+2025-10-16 17:08:51,164 - INFO - 127.0.0.1 - - [16/Oct/2025 17:08:51] "GET /?search= HTTP/1.1" 200 -
+2025-10-16 17:08:51,485 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-16 17:08:51,487 - INFO - 127.0.0.1 - - [16/Oct/2025 17:08:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:08:51,488 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-16 17:08:51,488 - INFO - 127.0.0.1 - - [16/Oct/2025 17:08:51] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:09:31,431 - INFO - GET / - Status: 200 - Duration: 0.0208s
+2025-10-16 17:09:31,431 - INFO - 127.0.0.1 - - [16/Oct/2025 17:09:31] "GET /?search= HTTP/1.1" 200 -
+2025-10-16 17:09:31,768 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0020s
+2025-10-16 17:09:31,768 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-16 17:09:31,768 - INFO - 127.0.0.1 - - [16/Oct/2025 17:09:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:09:31,769 - INFO - 127.0.0.1 - - [16/Oct/2025 17:09:31] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:09:32,019 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0000s
+2025-10-16 17:09:32,020 - INFO - 127.0.0.1 - - [16/Oct/2025 17:09:32] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-10-16 17:25:33,746 - INFO -  * Detected change in 'D:\\python_projects\\question-generator-7\\app.py', reloading
+2025-10-16 17:25:33,936 - INFO -  * Restarting with stat
+2025-10-16 17:25:35,571 - WARNING -  * Debugger is active!
+2025-10-16 17:25:35,571 - INFO -  * Debugger PIN: 128-708-873
+2025-10-16 17:26:29,176 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-16 17:26:29,176 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 17:26:29,177 - INFO -  * Restarting with stat
+2025-10-16 17:26:30,785 - WARNING -  * Debugger is active!
+2025-10-16 17:26:30,792 - INFO -  * Debugger PIN: 128-708-873
+2025-10-16 17:26:33,679 - INFO - GET / - Status: 200 - Duration: 0.0453s
+2025-10-16 17:26:33,680 - INFO - 127.0.0.1 - - [16/Oct/2025 17:26:33] "GET / HTTP/1.1" 200 -
+2025-10-16 17:26:33,907 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0031s
+2025-10-16 17:26:33,910 - INFO - 127.0.0.1 - - [16/Oct/2025 17:26:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:26:34,017 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0013s
+2025-10-16 17:26:34,017 - INFO - 127.0.0.1 - - [16/Oct/2025 17:26:34] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:26:36,612 - INFO - GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/attempts - Status: 200 - Duration: 0.0178s
+2025-10-16 17:26:36,613 - INFO - 127.0.0.1 - - [16/Oct/2025 17:26:36] "GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/attempts HTTP/1.1" 200 -
+2025-10-16 17:26:36,933 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0006s
+2025-10-16 17:26:36,934 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-16 17:26:36,934 - INFO - 127.0.0.1 - - [16/Oct/2025 17:26:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:26:36,934 - INFO - 127.0.0.1 - - [16/Oct/2025 17:26:36] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:26:45,982 - INFO - GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/attempts - Status: 200 - Duration: 0.0271s
+2025-10-16 17:26:45,983 - INFO - 127.0.0.1 - - [16/Oct/2025 17:26:45] "GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/attempts?student_name=&submission_date=2025-10-16 HTTP/1.1" 200 -
+2025-10-16 17:26:46,318 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-10-16 17:26:46,318 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0010s
+2025-10-16 17:26:46,318 - INFO - 127.0.0.1 - - [16/Oct/2025 17:26:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:26:46,319 - INFO - 127.0.0.1 - - [16/Oct/2025 17:26:46] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:26:54,491 - INFO - GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/attempts - Status: 200 - Duration: 0.0040s
+2025-10-16 17:26:54,492 - INFO - 127.0.0.1 - - [16/Oct/2025 17:26:54] "GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/attempts?student_name=aa&submission_date=2025-10-16 HTTP/1.1" 200 -
+2025-10-16 17:26:54,820 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0019s
+2025-10-16 17:26:54,820 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-16 17:26:54,820 - INFO - 127.0.0.1 - - [16/Oct/2025 17:26:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:26:54,820 - INFO - 127.0.0.1 - - [16/Oct/2025 17:26:54] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-10-16 17:27:00,322 - INFO - GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/attempts - Status: 200 - Duration: 0.0000s
+2025-10-16 17:27:00,322 - INFO - 127.0.0.1 - - [16/Oct/2025 17:27:00] "GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/attempts?student_name=Khairul&submission_date=2025-10-16 HTTP/1.1" 200 -
+2025-10-16 17:27:00,651 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0000s
+2025-10-16 17:27:00,652 - INFO - 127.0.0.1 - - [16/Oct/2025 17:27:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-16 17:27:00,652 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
+2025-10-16 17:27:00,653 - INFO - 127.0.0.1 - - [16/Oct/2025 17:27:00] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -

@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Your Dashboard</h1>
+
+<form method="GET" action="{{ url_for('index') }}" class="quiz-filter-form">
+    <input type="text" name="search" placeholder="Filter by quiz title..." value="{{ search_query or '' }}">
+    <button type="submit">Filter</button>
+</form>
+
 <p>Here are the quizzes you've created.</p>
 <a href="{{ url_for('create_quiz') }}" class="btn">Create a New Quiz</a>
 <hr>
@@ -9,8 +15,15 @@
     {% for quiz in quizzes %}
         <div class="question-card">
             <h3>{{ quiz.title }}</h3>
-            <p>Attempts: {{ quiz.attempts|length }}</p>
-            
+            <p><strong>Attempts:</strong> {{ quiz.attempts|length }}
+                {% if quiz.opens_at %}
+                    <strong>Opens:</strong> {{ quiz.opens_at.strftime('%Y-%m-%d %I:%M %p') }}
+                {% endif %}
+                {% if quiz.closes_at %}
+                    <strong>Closes:</strong> {{ quiz.closes_at.strftime('%Y-%m-%d %I:%M %p') }}
+                {% endif %}
+            </p>
+
            <div class="quiz-actions">
                 <a href="{{ url_for('view_quiz', public_id=quiz.public_id) }}" class="btn-action-icon" title="View/Share Quiz">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -36,7 +49,7 @@
                         </svg>
                     </button>
                 </form>
-            </div>
+           </div>
         </div>
     {% endfor %}
 {% else %}
