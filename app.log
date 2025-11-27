@@ -1397,3 +1397,295 @@
 2025-10-16 17:27:00,652 - INFO - 127.0.0.1 - - [16/Oct/2025 17:27:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2025-10-16 17:27:00,652 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0000s
 2025-10-16 17:27:00,653 - INFO - 127.0.0.1 - - [16/Oct/2025 17:27:00] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-02 16:17:20,843 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-02 16:17:20,844 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-02 16:17:20,845 - INFO -  * Restarting with stat
+2025-11-02 16:17:22,448 - WARNING -  * Debugger is active!
+2025-11-02 16:17:22,451 - INFO -  * Debugger PIN: 125-780-598
+2025-11-02 16:18:22,220 - WARNING - 404 Not Found error for path: /login_page
+2025-11-02 16:18:22,233 - INFO - GET /login_page - Status: 404 - Duration: 0.0133s
+2025-11-02 16:18:22,233 - INFO - 127.0.0.1 - - [02/Nov/2025 16:18:22] "[33mGET /login_page?next=/ HTTP/1.1[0m" 404 -
+2025-11-02 16:18:22,345 - INFO - GET /static/css/styles.css - Status: 200 - Duration: 0.0104s
+2025-11-02 16:18:22,345 - INFO - 127.0.0.1 - - [02/Nov/2025 16:18:22] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-11-02 16:18:22,361 - INFO - GET /static/images/aiquiz-logo.png - Status: 200 - Duration: 0.0104s
+2025-11-02 16:18:22,362 - INFO - 127.0.0.1 - - [02/Nov/2025 16:18:22] "GET /static/images/aiquiz-logo.png HTTP/1.1" 200 -
+2025-11-02 16:18:30,915 - INFO - GET / - Status: 302 - Duration: 0.0002s
+2025-11-02 16:18:30,915 - INFO - 127.0.0.1 - - [02/Nov/2025 16:18:30] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-02 16:18:30,923 - INFO - GET /login - Status: 200 - Duration: 0.0021s
+2025-11-02 16:18:30,923 - INFO - 127.0.0.1 - - [02/Nov/2025 16:18:30] "GET /login?next=/ HTTP/1.1" 200 -
+2025-11-02 16:18:30,960 - INFO - GET /static/css/styles.css - Status: 200 - Duration: 0.0005s
+2025-11-02 16:18:30,960 - INFO - 127.0.0.1 - - [02/Nov/2025 16:18:30] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-11-02 16:18:30,963 - INFO - GET /static/images/aiquiz-logo.png - Status: 200 - Duration: 0.0004s
+2025-11-02 16:18:30,964 - INFO - 127.0.0.1 - - [02/Nov/2025 16:18:30] "GET /static/images/aiquiz-logo.png HTTP/1.1" 200 -
+2025-11-02 16:18:31,029 - INFO - GET /static/images/favicon.ico - Status: 200 - Duration: 0.0112s
+2025-11-02 16:18:31,029 - INFO - 127.0.0.1 - - [02/Nov/2025 16:18:31] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+2025-11-02 16:18:49,771 - WARNING - Failed login attempt for username 'khairul' from IP 127.0.0.1.
+2025-11-02 16:18:49,771 - INFO - POST /login - Status: 302 - Duration: 0.0871s
+2025-11-02 16:18:49,772 - INFO - 127.0.0.1 - - [02/Nov/2025 16:18:49] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-11-02 16:18:49,780 - INFO - GET /login - Status: 200 - Duration: 0.0004s
+2025-11-02 16:18:49,780 - INFO - 127.0.0.1 - - [02/Nov/2025 16:18:49] "GET /login HTTP/1.1" 200 -
+2025-11-02 16:18:49,817 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0003s
+2025-11-02 16:18:49,817 - INFO - 127.0.0.1 - - [02/Nov/2025 16:18:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-02 16:18:49,820 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0004s
+2025-11-02 16:18:49,820 - INFO - 127.0.0.1 - - [02/Nov/2025 16:18:49] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-02 16:19:32,692 - INFO - GET / - Status: 302 - Duration: 0.0002s
+2025-11-02 16:19:32,692 - INFO - 127.0.0.1 - - [02/Nov/2025 16:19:32] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-02 16:19:32,702 - INFO - GET /login - Status: 200 - Duration: 0.0004s
+2025-11-02 16:19:32,702 - INFO - 127.0.0.1 - - [02/Nov/2025 16:19:32] "GET /login?next=/ HTTP/1.1" 200 -
+2025-11-02 16:19:32,737 - INFO - GET /static/css/styles.css - Status: 200 - Duration: 0.0004s
+2025-11-02 16:19:32,737 - INFO - 127.0.0.1 - - [02/Nov/2025 16:19:32] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-11-02 16:19:32,747 - INFO - GET /static/images/aiquiz-logo.png - Status: 200 - Duration: 0.0004s
+2025-11-02 16:19:32,747 - INFO - 127.0.0.1 - - [02/Nov/2025 16:19:32] "GET /static/images/aiquiz-logo.png HTTP/1.1" 200 -
+2025-11-02 16:19:33,900 - INFO - GET /static/images/favicon.ico - Status: 200 - Duration: 0.0004s
+2025-11-02 16:19:33,900 - INFO - 127.0.0.1 - - [02/Nov/2025 16:19:33] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+2025-11-02 16:20:16,690 - WARNING - Failed login attempt for username 'khairul' from IP 127.0.0.1.
+2025-11-02 16:20:16,690 - INFO - POST /login - Status: 302 - Duration: 0.0013s
+2025-11-02 16:20:16,691 - INFO - 127.0.0.1 - - [02/Nov/2025 16:20:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-11-02 16:20:16,699 - INFO - GET /login - Status: 200 - Duration: 0.0004s
+2025-11-02 16:20:16,700 - INFO - 127.0.0.1 - - [02/Nov/2025 16:20:16] "GET /login HTTP/1.1" 200 -
+2025-11-02 16:20:16,750 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0003s
+2025-11-02 16:20:16,750 - INFO - 127.0.0.1 - - [02/Nov/2025 16:20:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-02 16:20:16,752 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0004s
+2025-11-02 16:20:16,753 - INFO - 127.0.0.1 - - [02/Nov/2025 16:20:16] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-02 16:20:24,394 - INFO - GET /forgot-password - Status: 200 - Duration: 0.0024s
+2025-11-02 16:20:24,394 - INFO - 127.0.0.1 - - [02/Nov/2025 16:20:24] "GET /forgot-password HTTP/1.1" 200 -
+2025-11-02 16:20:24,421 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0003s
+2025-11-02 16:20:24,421 - INFO - 127.0.0.1 - - [02/Nov/2025 16:20:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-02 16:20:24,426 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0004s
+2025-11-02 16:20:24,426 - INFO - 127.0.0.1 - - [02/Nov/2025 16:20:24] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-02 16:21:08,953 - INFO - User 'khairulanwarsedek' logged in successfully from IP 127.0.0.1.
+2025-11-02 16:21:08,953 - INFO - POST /login - Status: 302 - Duration: 0.7063s
+2025-11-02 16:21:08,954 - INFO - 127.0.0.1 - - [02/Nov/2025 16:21:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-11-02 16:21:08,981 - INFO - GET / - Status: 200 - Duration: 0.0183s
+2025-11-02 16:21:08,982 - INFO - 127.0.0.1 - - [02/Nov/2025 16:21:08] "GET / HTTP/1.1" 200 -
+2025-11-02 16:21:09,018 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0003s
+2025-11-02 16:21:09,018 - INFO - 127.0.0.1 - - [02/Nov/2025 16:21:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-02 16:21:09,023 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0003s
+2025-11-02 16:21:09,023 - INFO - 127.0.0.1 - - [02/Nov/2025 16:21:09] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-02 16:21:19,524 - INFO - GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/edit - Status: 200 - Duration: 0.0100s
+2025-11-02 16:21:19,525 - INFO - 127.0.0.1 - - [02/Nov/2025 16:21:19] "GET /quiz/a8ec195c-0505-460e-bd9d-a7fd06da4870/edit HTTP/1.1" 200 -
+2025-11-02 16:21:19,549 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0004s
+2025-11-02 16:21:19,549 - INFO - 127.0.0.1 - - [02/Nov/2025 16:21:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-02 16:21:19,553 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0003s
+2025-11-02 16:21:19,554 - INFO - 127.0.0.1 - - [02/Nov/2025 16:21:19] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-02 16:21:37,626 - INFO - User 'khairulanwarsedek' logged in successfully from IP 127.0.0.1.
+2025-11-02 16:21:37,626 - INFO - POST /login - Status: 302 - Duration: 0.6818s
+2025-11-02 16:21:37,627 - INFO - 127.0.0.1 - - [02/Nov/2025 16:21:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-11-02 16:21:37,637 - INFO - GET / - Status: 200 - Duration: 0.0036s
+2025-11-02 16:21:37,638 - INFO - 127.0.0.1 - - [02/Nov/2025 16:21:37] "GET / HTTP/1.1" 200 -
+2025-11-02 16:21:37,667 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0005s
+2025-11-02 16:21:37,667 - INFO - 127.0.0.1 - - [02/Nov/2025 16:21:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-02 16:21:37,673 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0004s
+2025-11-02 16:21:37,673 - INFO - 127.0.0.1 - - [02/Nov/2025 16:21:37] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-08 10:42:25,186 - INFO - Firebase Admin SDK initialized.
+2025-11-08 10:42:25,421 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-08 10:42:25,421 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-08 10:42:25,423 - INFO -  * Restarting with stat
+2025-11-08 10:42:26,676 - INFO - Firebase Admin SDK initialized.
+2025-11-08 10:42:26,743 - WARNING -  * Debugger is active!
+2025-11-08 10:42:26,746 - INFO -  * Debugger PIN: 125-780-598
+2025-11-09 09:54:17,930 - INFO - Firebase Admin SDK initialized.
+2025-11-09 09:54:18,231 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-09 09:54:18,231 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-09 09:54:18,233 - INFO -  * Restarting with stat
+2025-11-09 09:54:19,953 - INFO - Firebase Admin SDK initialized.
+2025-11-09 09:54:20,034 - WARNING -  * Debugger is active!
+2025-11-09 09:54:20,045 - INFO -  * Debugger PIN: 125-780-598
+2025-11-09 09:59:34,901 - INFO - Firebase Admin SDK initialized.
+2025-11-09 09:59:34,992 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-09 09:59:34,992 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-09 09:59:34,994 - INFO -  * Restarting with stat
+2025-11-09 09:59:36,622 - INFO - Firebase Admin SDK initialized.
+2025-11-09 09:59:36,701 - WARNING -  * Debugger is active!
+2025-11-09 09:59:36,706 - INFO -  * Debugger PIN: 125-780-598
+2025-11-09 10:09:22,173 - INFO - Firebase Admin SDK initialized.
+2025-11-09 10:09:22,264 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-09 10:09:22,264 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-09 10:09:22,265 - INFO -  * Restarting with stat
+2025-11-09 10:09:23,498 - INFO - Firebase Admin SDK initialized.
+2025-11-09 10:09:23,564 - WARNING -  * Debugger is active!
+2025-11-09 10:09:23,567 - INFO -  * Debugger PIN: 125-780-598
+2025-11-09 10:37:18,123 - INFO - Firebase Admin SDK initialized.
+2025-11-09 10:37:18,186 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-09 10:37:18,186 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-09 10:37:18,187 - INFO -  * Restarting with stat
+2025-11-09 10:37:19,505 - INFO - Firebase Admin SDK initialized.
+2025-11-09 10:37:19,540 - WARNING -  * Debugger is active!
+2025-11-09 10:37:19,544 - INFO -  * Debugger PIN: 125-780-598
+2025-11-09 10:41:58,904 - INFO - Firebase Admin SDK initialized.
+2025-11-09 10:41:58,967 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-09 10:41:58,967 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-09 10:42:26,045 - INFO - GET / - Status: 302 - Duration: 0.0032s
+2025-11-09 10:42:26,050 - INFO - 127.0.0.1 - - [09/Nov/2025 10:42:26] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-09 10:42:26,334 - INFO - GET /login - Status: 200 - Duration: 0.0331s
+2025-11-09 10:42:26,334 - INFO - 127.0.0.1 - - [09/Nov/2025 10:42:26] "GET /login?next=/ HTTP/1.1" 200 -
+2025-11-09 10:42:26,381 - INFO - GET /static/css/styles.css - Status: 200 - Duration: 0.0116s
+2025-11-09 10:42:26,381 - INFO - 127.0.0.1 - - [09/Nov/2025 10:42:26] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-11-09 10:42:26,681 - INFO - GET /static/images/aiquiz-logo.png - Status: 200 - Duration: 0.0108s
+2025-11-09 10:42:26,681 - INFO - 127.0.0.1 - - [09/Nov/2025 10:42:26] "GET /static/images/aiquiz-logo.png HTTP/1.1" 200 -
+2025-11-09 10:42:27,701 - INFO - GET /static/images/favicon.ico - Status: 200 - Duration: 0.0096s
+2025-11-09 10:42:27,701 - INFO - 127.0.0.1 - - [09/Nov/2025 10:42:27] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+2025-11-09 10:42:42,167 - WARNING - Failed login attempt for username 'khairul' from IP 127.0.0.1.
+2025-11-09 10:42:42,168 - INFO - POST /login - Status: 302 - Duration: 1.0787s
+2025-11-09 10:42:42,170 - INFO - 127.0.0.1 - - [09/Nov/2025 10:42:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-11-09 10:42:42,175 - INFO - GET /login - Status: 200 - Duration: 0.0004s
+2025-11-09 10:42:42,176 - INFO - 127.0.0.1 - - [09/Nov/2025 10:42:42] "GET /login HTTP/1.1" 200 -
+2025-11-09 10:42:42,518 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0012s
+2025-11-09 10:42:42,518 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0009s
+2025-11-09 10:42:42,518 - INFO - 127.0.0.1 - - [09/Nov/2025 10:42:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:42:42,518 - INFO - 127.0.0.1 - - [09/Nov/2025 10:42:42] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:42:51,692 - WARNING - Failed login attempt for username 'khairulanwarsedek' from IP 127.0.0.1.
+2025-11-09 10:42:51,693 - INFO - POST /login - Status: 302 - Duration: 0.1325s
+2025-11-09 10:42:51,694 - INFO - 127.0.0.1 - - [09/Nov/2025 10:42:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-11-09 10:42:52,027 - INFO - GET /login - Status: 200 - Duration: 0.0017s
+2025-11-09 10:42:52,028 - INFO - 127.0.0.1 - - [09/Nov/2025 10:42:52] "GET /login HTTP/1.1" 200 -
+2025-11-09 10:42:52,266 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0010s
+2025-11-09 10:42:52,267 - INFO - 127.0.0.1 - - [09/Nov/2025 10:42:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:42:52,370 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0007s
+2025-11-09 10:42:52,370 - INFO - 127.0.0.1 - - [09/Nov/2025 10:42:52] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:43:05,053 - WARNING - Failed login attempt for username 'khairulanwar' from IP 127.0.0.1.
+2025-11-09 10:43:05,053 - INFO - POST /login - Status: 302 - Duration: 0.1205s
+2025-11-09 10:43:05,054 - INFO - 127.0.0.1 - - [09/Nov/2025 10:43:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-11-09 10:43:05,379 - INFO - GET /login - Status: 200 - Duration: 0.0016s
+2025-11-09 10:43:05,381 - INFO - 127.0.0.1 - - [09/Nov/2025 10:43:05] "GET /login HTTP/1.1" 200 -
+2025-11-09 10:43:05,623 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0003s
+2025-11-09 10:43:05,626 - INFO - 127.0.0.1 - - [09/Nov/2025 10:43:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:43:05,722 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0005s
+2025-11-09 10:43:05,722 - INFO - 127.0.0.1 - - [09/Nov/2025 10:43:05] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:43:08,828 - INFO - GET /forgot-password - Status: 200 - Duration: 0.0115s
+2025-11-09 10:43:08,828 - INFO - 127.0.0.1 - - [09/Nov/2025 10:43:08] "GET /forgot-password HTTP/1.1" 200 -
+2025-11-09 10:43:09,173 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0005s
+2025-11-09 10:43:09,174 - INFO - 127.0.0.1 - - [09/Nov/2025 10:43:09] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:43:09,174 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0019s
+2025-11-09 10:43:09,174 - INFO - 127.0.0.1 - - [09/Nov/2025 10:43:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:43:14,679 - INFO - Password reset requested for email 'khairulanwarsedek@uitm.edu.my' from IP 127.0.0.1.
+2025-11-09 10:43:14,679 - INFO - POST /forgot-password - Status: 302 - Duration: 0.1034s
+2025-11-09 10:43:14,681 - INFO - 127.0.0.1 - - [09/Nov/2025 10:43:14] "[32mPOST /forgot-password HTTP/1.1[0m" 302 -
+2025-11-09 10:43:15,011 - INFO - GET /login - Status: 200 - Duration: 0.0017s
+2025-11-09 10:43:15,012 - INFO - 127.0.0.1 - - [09/Nov/2025 10:43:15] "GET /login HTTP/1.1" 200 -
+2025-11-09 10:43:15,269 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0013s
+2025-11-09 10:43:15,270 - INFO - 127.0.0.1 - - [09/Nov/2025 10:43:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:43:15,368 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0005s
+2025-11-09 10:43:15,368 - INFO - 127.0.0.1 - - [09/Nov/2025 10:43:15] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:43:54,663 - INFO - GET /register - Status: 200 - Duration: 0.0231s
+2025-11-09 10:43:54,663 - INFO - 127.0.0.1 - - [09/Nov/2025 10:43:54] "GET /register HTTP/1.1" 200 -
+2025-11-09 10:43:55,007 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0011s
+2025-11-09 10:43:55,007 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0009s
+2025-11-09 10:43:55,007 - INFO - 127.0.0.1 - - [09/Nov/2025 10:43:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:43:55,008 - INFO - 127.0.0.1 - - [09/Nov/2025 10:43:55] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:44:21,127 - INFO - 127.0.0.1 - - [09/Nov/2025 10:44:21] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-11-09 10:44:21,481 - INFO - 127.0.0.1 - - [09/Nov/2025 10:44:21] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-11-09 10:44:21,489 - INFO - 127.0.0.1 - - [09/Nov/2025 10:44:21] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-11-09 10:44:21,745 - INFO - 127.0.0.1 - - [09/Nov/2025 10:44:21] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=7PmfnH7qGpLLfiRgjLNp HTTP/1.1" 200 -
+2025-11-09 10:44:21,849 - INFO - 127.0.0.1 - - [09/Nov/2025 10:44:21] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-11-09 10:49:46,864 - INFO - Firebase Admin SDK initialized.
+2025-11-09 10:49:46,923 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-09 10:49:46,923 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-09 10:49:59,779 - INFO - New user registered: 'khairulanwarsedek'
+2025-11-09 10:49:59,779 - INFO - POST /register - Status: 302 - Duration: 2.3552s
+2025-11-09 10:49:59,780 - INFO - 127.0.0.1 - - [09/Nov/2025 10:49:59] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-11-09 10:50:00,013 - INFO - GET / - Status: 200 - Duration: 0.2268s
+2025-11-09 10:50:00,014 - INFO - 127.0.0.1 - - [09/Nov/2025 10:50:00] "GET / HTTP/1.1" 200 -
+2025-11-09 10:50:00,343 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0013s
+2025-11-09 10:50:00,343 - INFO - 127.0.0.1 - - [09/Nov/2025 10:50:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:50:00,343 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0011s
+2025-11-09 10:50:00,344 - INFO - 127.0.0.1 - - [09/Nov/2025 10:50:00] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:50:08,140 - INFO - GET / - Status: 200 - Duration: 0.1902s
+2025-11-09 10:50:08,140 - INFO - 127.0.0.1 - - [09/Nov/2025 10:50:08] "GET / HTTP/1.1" 200 -
+2025-11-09 10:50:08,494 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0011s
+2025-11-09 10:50:08,494 - INFO - 127.0.0.1 - - [09/Nov/2025 10:50:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:50:08,494 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0011s
+2025-11-09 10:50:08,495 - INFO - 127.0.0.1 - - [09/Nov/2025 10:50:08] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:50:12,361 - INFO - GET /create-quiz - Status: 200 - Duration: 0.1157s
+2025-11-09 10:50:12,361 - INFO - 127.0.0.1 - - [09/Nov/2025 10:50:12] "GET /create-quiz HTTP/1.1" 200 -
+2025-11-09 10:50:12,695 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0007s
+2025-11-09 10:50:12,695 - INFO - 127.0.0.1 - - [09/Nov/2025 10:50:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:50:12,697 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0005s
+2025-11-09 10:50:12,697 - INFO - 127.0.0.1 - - [09/Nov/2025 10:50:12] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:50:46,757 - INFO - PDF extraction of 18 pages took 1.38s.
+2025-11-09 10:50:46,806 - INFO - User 'khairulanwarsedek' is generating 8 questions.
+2025-11-09 10:50:50,876 - INFO - Gemini API call for question generation took 4.07s.
+2025-11-09 10:50:50,903 - INFO - POST /create-quiz - Status: 200 - Duration: 5.6047s
+2025-11-09 10:50:50,904 - INFO - 127.0.0.1 - - [09/Nov/2025 10:50:50] "POST /create-quiz HTTP/1.1" 200 -
+2025-11-09 10:50:51,230 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0005s
+2025-11-09 10:50:51,231 - INFO - 127.0.0.1 - - [09/Nov/2025 10:50:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:50:51,234 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0005s
+2025-11-09 10:50:51,234 - INFO - 127.0.0.1 - - [09/Nov/2025 10:50:51] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:51:14,216 - INFO - User 'khairulanwarsedek' saved a new quiz titled 'ICT651 Chapter 1 Quiz Testing'. Firestore ID: v12aHI7gk9aBujdy4Rjc
+2025-11-09 10:51:14,217 - INFO - POST /save-questions - Status: 302 - Duration: 0.7406s
+2025-11-09 10:51:14,219 - INFO - 127.0.0.1 - - [09/Nov/2025 10:51:14] "[32mPOST /save-questions HTTP/1.1[0m" 302 -
+2025-11-09 10:51:14,864 - INFO - GET /quiz/v12aHI7gk9aBujdy4Rjc - Status: 200 - Duration: 0.3205s
+2025-11-09 10:51:14,864 - INFO - 127.0.0.1 - - [09/Nov/2025 10:51:14] "GET /quiz/v12aHI7gk9aBujdy4Rjc HTTP/1.1" 200 -
+2025-11-09 10:51:14,882 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0005s
+2025-11-09 10:51:14,882 - INFO - 127.0.0.1 - - [09/Nov/2025 10:51:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:51:15,196 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0011s
+2025-11-09 10:51:15,196 - INFO - 127.0.0.1 - - [09/Nov/2025 10:51:15] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:51:15,265 - INFO - GET /quiz/v12aHI7gk9aBujdy4Rjc/qr - Status: 200 - Duration: 0.0692s
+2025-11-09 10:51:15,265 - INFO - 127.0.0.1 - - [09/Nov/2025 10:51:15] "GET /quiz/v12aHI7gk9aBujdy4Rjc/qr HTTP/1.1" 200 -
+2025-11-09 10:51:36,517 - INFO - GET /quiz/v12aHI7gk9aBujdy4Rjc/take - Status: 200 - Duration: 0.2877s
+2025-11-09 10:51:36,517 - INFO - 127.0.0.1 - - [09/Nov/2025 10:51:36] "GET /quiz/v12aHI7gk9aBujdy4Rjc/take HTTP/1.1" 200 -
+2025-11-09 10:51:36,866 - INFO - GET /static/css/styles.css - Status: 200 - Duration: 0.0009s
+2025-11-09 10:51:36,866 - INFO - 127.0.0.1 - - [09/Nov/2025 10:51:36] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-11-09 10:51:36,866 - INFO - GET /static/images/aiquiz-logo.png - Status: 200 - Duration: 0.0007s
+2025-11-09 10:51:36,866 - INFO - 127.0.0.1 - - [09/Nov/2025 10:51:36] "GET /static/images/aiquiz-logo.png HTTP/1.1" 200 -
+2025-11-09 10:51:39,560 - INFO - GET /static/images/favicon.ico - Status: 200 - Duration: 0.0007s
+2025-11-09 10:51:39,561 - INFO - 127.0.0.1 - - [09/Nov/2025 10:51:39] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+2025-11-09 10:54:10,889 - INFO - Gemini API call for short answer grading took 0.85s.
+2025-11-09 10:54:11,691 - INFO - Gemini API call for short answer grading took 0.80s.
+2025-11-09 10:54:11,941 - INFO - Quiz 'v12aHI7gk9aBujdy4Rjc' submitted by 'khairul'. Score: 8/15.
+2025-11-09 10:54:11,963 - INFO - POST /quiz/v12aHI7gk9aBujdy4Rjc/submit - Status: 200 - Duration: 2.0987s
+2025-11-09 10:54:11,963 - INFO - 127.0.0.1 - - [09/Nov/2025 10:54:11] "POST /quiz/v12aHI7gk9aBujdy4Rjc/submit HTTP/1.1" 200 -
+2025-11-09 10:54:11,996 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0004s
+2025-11-09 10:54:11,996 - INFO - 127.0.0.1 - - [09/Nov/2025 10:54:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:54:12,002 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0003s
+2025-11-09 10:54:12,002 - INFO - 127.0.0.1 - - [09/Nov/2025 10:54:12] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:54:50,479 - INFO - GET / - Status: 200 - Duration: 0.1922s
+2025-11-09 10:54:50,480 - INFO - 127.0.0.1 - - [09/Nov/2025 10:54:50] "GET / HTTP/1.1" 200 -
+2025-11-09 10:54:50,536 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0005s
+2025-11-09 10:54:50,536 - INFO - 127.0.0.1 - - [09/Nov/2025 10:54:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:54:50,813 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0005s
+2025-11-09 10:54:50,814 - INFO - 127.0.0.1 - - [09/Nov/2025 10:54:50] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:54:53,531 - INFO - GET /quiz/v12aHI7gk9aBujdy4Rjc/edit - Status: 200 - Duration: 0.2897s
+2025-11-09 10:54:53,531 - INFO - 127.0.0.1 - - [09/Nov/2025 10:54:53] "GET /quiz/v12aHI7gk9aBujdy4Rjc/edit HTTP/1.1" 200 -
+2025-11-09 10:54:53,849 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0003s
+2025-11-09 10:54:53,850 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0016s
+2025-11-09 10:54:53,850 - INFO - 127.0.0.1 - - [09/Nov/2025 10:54:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:54:53,850 - INFO - 127.0.0.1 - - [09/Nov/2025 10:54:53] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:56:33,619 - INFO - User 'khairulanwarsedek' edited quiz 'v12aHI7gk9aBujdy4Rjc'.
+2025-11-09 10:56:33,619 - INFO - POST /quiz/v12aHI7gk9aBujdy4Rjc/edit - Status: 302 - Duration: 0.4458s
+2025-11-09 10:56:33,620 - INFO - 127.0.0.1 - - [09/Nov/2025 10:56:33] "[32mPOST /quiz/v12aHI7gk9aBujdy4Rjc/edit HTTP/1.1[0m" 302 -
+2025-11-09 10:56:33,913 - INFO - GET /quiz/v12aHI7gk9aBujdy4Rjc - Status: 200 - Duration: 0.2871s
+2025-11-09 10:56:33,914 - INFO - 127.0.0.1 - - [09/Nov/2025 10:56:33] "GET /quiz/v12aHI7gk9aBujdy4Rjc HTTP/1.1" 200 -
+2025-11-09 10:56:34,258 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0139s
+2025-11-09 10:56:34,258 - INFO - 127.0.0.1 - - [09/Nov/2025 10:56:34] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:56:34,258 - INFO - GET /quiz/v12aHI7gk9aBujdy4Rjc/qr - Status: 200 - Duration: 0.0142s
+2025-11-09 10:56:34,258 - INFO - 127.0.0.1 - - [09/Nov/2025 10:56:34] "GET /quiz/v12aHI7gk9aBujdy4Rjc/qr HTTP/1.1" 200 -
+2025-11-09 10:56:34,259 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0177s
+2025-11-09 10:56:34,259 - INFO - 127.0.0.1 - - [09/Nov/2025 10:56:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:56:40,789 - INFO - GET /quiz/v12aHI7gk9aBujdy4Rjc/take - Status: 200 - Duration: 0.1962s
+2025-11-09 10:56:40,789 - INFO - 127.0.0.1 - - [09/Nov/2025 10:56:40] "GET /quiz/v12aHI7gk9aBujdy4Rjc/take HTTP/1.1" 200 -
+2025-11-09 10:56:42,803 - INFO - GET /quiz/v12aHI7gk9aBujdy4Rjc/take - Status: 200 - Duration: 0.1749s
+2025-11-09 10:56:42,803 - INFO - 127.0.0.1 - - [09/Nov/2025 10:56:42] "GET /quiz/v12aHI7gk9aBujdy4Rjc/take HTTP/1.1" 200 -
+2025-11-09 10:56:42,830 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0004s
+2025-11-09 10:56:42,831 - INFO - 127.0.0.1 - - [09/Nov/2025 10:56:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 10:56:43,142 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0003s
+2025-11-09 10:56:43,142 - INFO - 127.0.0.1 - - [09/Nov/2025 10:56:43] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
+2025-11-09 10:56:43,732 - INFO - GET /static/images/favicon.ico - Status: 304 - Duration: 0.0004s
+2025-11-09 10:56:43,732 - INFO - 127.0.0.1 - - [09/Nov/2025 10:56:43] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-11-09 11:01:44,728 - INFO - Gemini API call for short answer grading took 0.91s.
+2025-11-09 11:01:45,494 - INFO - Gemini API call for short answer grading took 0.77s.
+2025-11-09 11:01:45,927 - INFO - Quiz 'v12aHI7gk9aBujdy4Rjc' submitted by 'khairul 2'. Score: 7/15.
+2025-11-09 11:01:45,927 - INFO - POST /quiz/v12aHI7gk9aBujdy4Rjc/submit - Status: 200 - Duration: 2.7170s
+2025-11-09 11:01:45,928 - INFO - 127.0.0.1 - - [09/Nov/2025 11:01:45] "POST /quiz/v12aHI7gk9aBujdy4Rjc/submit HTTP/1.1" 200 -
+2025-11-09 11:01:45,964 - INFO - GET /static/css/styles.css - Status: 304 - Duration: 0.0005s
+2025-11-09 11:01:45,965 - INFO - 127.0.0.1 - - [09/Nov/2025 11:01:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-09 11:01:45,966 - INFO - GET /static/images/aiquiz-logo.png - Status: 304 - Duration: 0.0006s
+2025-11-09 11:01:45,966 - INFO - 127.0.0.1 - - [09/Nov/2025 11:01:45] "[36mGET /static/images/aiquiz-logo.png HTTP/1.1[0m" 304 -
